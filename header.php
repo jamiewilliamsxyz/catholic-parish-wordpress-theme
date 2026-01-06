@@ -16,7 +16,7 @@
       <?php
       wp_nav_menu(
         array(
-          "theme-location" => "navbar-menu"
+          "theme_location" => "navbar-menu"
         )
       );
       ?>
