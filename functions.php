@@ -16,3 +16,14 @@ function parish_enqueue_styles()
 
   wp_enqueue_style("parish-style", get_stylesheet_uri(), [], $version);
 }
+
+// Theme support
+add_theme_support("menus");
+
+// Menus
+register_nav_menus(
+  array(
+    "navbar-menu" => "Navbar Menu Location",
+    "footer-menu" => "Footer Menu Location"
+  )
+);
