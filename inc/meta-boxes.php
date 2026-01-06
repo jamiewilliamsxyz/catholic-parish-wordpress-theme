@@ -36,7 +36,7 @@ function parish_newsletter_meta_box($post)
   $pdf_file = get_post_meta($post->ID, "pdf_file", true);
 
 ?>
-  <label for="pdf_file">PDF File URL</label>
+  <label for="pdf_file">PDF File URL</label><br />
   <input type="url" name="pdf_file" value="<?php echo esc_attr($pdf_file); ?>" />
 <?php
 }
@@ -48,65 +48,65 @@ function parish_clergy_meta_box($post)
   $about = get_post_meta($post->ID, "about", true);
 
 ?>
-  <label for="email">Email</label>
-  <input type="email" name="email" value="<?php echo esc_attr($email); ?>" />
+  <label for="email">Email</label><br />
+  <input type="email" name="email" value="<?php echo esc_attr($email); ?>" /><br />
 
-  <label for="phone">Phone</label>
-  <input type="text" name="phone" value="<?php echo esc_attr($phone); ?>" />
+  <label for="phone">Phone</label><br />
+  <input type="text" name="phone" value="<?php echo esc_attr($phone); ?>" /><br />
 
-  <label for="about">About</label>
-  <textarea name="about"><?php echo esc_textarea($about); ?></textarea>
+  <label for="about">About</label><br />
+  <textarea name="about" rows="8" cols="50"><?php echo esc_textarea($about); ?></textarea>
 <?php
 }
 
-function parish_church_group_meta_box($post)
+function parish_group_meta_box($post)
 {
-  $leader_name  = get_post_meta($post->ID, "leader_name", true);
+  $leader_name = get_post_meta($post->ID, "leader_name", true);
   $leader_email = get_post_meta($post->ID, "leader_email", true);
   $leader_phone = get_post_meta($post->ID, "leader_phone", true);
-  $description  = get_post_meta($post->ID, "description", true);
+  $description = get_post_meta($post->ID, "description", true);
   $meeting_time = get_post_meta($post->ID, "meeting_time", true);
-  $location     = get_post_meta($post->ID, "location", true);
+  $location = get_post_meta($post->ID, "location", true);
 
 ?>
-  <label for="leader_name">Leader Name</label>
-  <input type="text" name="leader_name" value="<?php echo esc_attr($leader_name); ?>" />
+  <label for="leader_name">Leader Name</label><br />
+  <input type="text" name="leader_name" value="<?php echo esc_attr($leader_name); ?>" /><br />
 
-  <label for="leader_email">Leader Email</label>
-  <input type="email" name="leader_email" value="<?php echo esc_attr($leader_email); ?>" />
+  <label for="leader_email">Leader Email</label><br />
+  <input type="email" name="leader_email" value="<?php echo esc_attr($leader_email); ?>" /><br />
 
-  <label for="leader_phone">Leader Phone</label>
-  <input type="text" name="leader_phone" value="<?php echo esc_attr($leader_phone); ?>" />
+  <label for="leader_phone">Leader Phone</label><br />
+  <input type="text" name="leader_phone" value="<?php echo esc_attr($leader_phone); ?>" /><br />
 
-  <label for="description">Description</label>
-  <textarea name="description"><?php echo esc_textarea($description); ?></textarea>
+  <label for="description">Description</label><br />
+  <textarea name="description" rows="8" cols="50"><?php echo esc_textarea($description); ?></textarea><br />
 
-  <label for="meeting_time">Meeting Time</label>
-  <input type="text" name="meeting_time" value="<?php echo esc_attr($meeting_time); ?>" />
+  <label for="meeting_time">Meeting Time</label><br />
+  <input type="text" name="meeting_time" value="<?php echo esc_attr($meeting_time); ?>" /><br />
 
-  <label for="location">Location</label>
+  <label for="location">Location</label><br />
   <input type="text" name="location" value="<?php echo esc_attr($location); ?>" />
 <?php
 }
 
 // Save meta box data
-add_action('save_post', 'parish_save_meta_boxes');
+add_action("save_post", "parish_save_meta_boxes");
 
 function parish_save_meta_boxes($post_id)
 {
-  if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
+  if (defined("DOING_AUTOSAVE") && DOING_AUTOSAVE) return;
 
-  if (isset($_POST['pdf_file'])) update_post_meta($post_id, 'pdf_file', esc_url_raw($_POST['pdf_file']));
+  if (isset($_POST["pdf_file"])) update_post_meta($post_id, "pdf_file", esc_url_raw($_POST["pdf_file"]));
 
-  if (isset($_POST['email'])) update_post_meta($post_id, 'email', sanitize_email($_POST['email']));
-  if (isset($_POST['phone'])) update_post_meta($post_id, 'phone', sanitize_text_field($_POST['phone']));
-  if (isset($_POST['about'])) update_post_meta($post_id, 'about', sanitize_textarea_field($_POST['about']));
+  if (isset($_POST["email"])) update_post_meta($post_id, "email", sanitize_email($_POST["email"]));
+  if (isset($_POST["phone"])) update_post_meta($post_id, "phone", sanitize_text_field($_POST["phone"]));
+  if (isset($_POST["about"])) update_post_meta($post_id, "about", sanitize_textarea_field($_POST["about"]));
 
 
-  if (isset($_POST['leader_name']))  update_post_meta($post_id, 'leader_name', sanitize_text_field($_POST['leader_name']));
-  if (isset($_POST['leader_email'])) update_post_meta($post_id, 'leader_email', sanitize_email($_POST['leader_email']));
-  if (isset($_POST['leader_phone'])) update_post_meta($post_id, 'leader_phone', sanitize_text_field($_POST['leader_phone']));
-  if (isset($_POST['description']))  update_post_meta($post_id, 'description', sanitize_textarea_field($_POST['description']));
-  if (isset($_POST['meeting_time'])) update_post_meta($post_id, 'meeting_time', sanitize_text_field($_POST['meeting_time']));
-  if (isset($_POST['location']))     update_post_meta($post_id, 'location', sanitize_text_field($_POST['location']));
+  if (isset($_POST["leader_name"])) update_post_meta($post_id, "leader_name", sanitize_text_field($_POST["leader_name"]));
+  if (isset($_POST["leader_email"])) update_post_meta($post_id, "leader_email", sanitize_email($_POST["leader_email"]));
+  if (isset($_POST["leader_phone"])) update_post_meta($post_id, "leader_phone", sanitize_text_field($_POST["leader_phone"]));
+  if (isset($_POST["description"])) update_post_meta($post_id, "description", sanitize_textarea_field($_POST["description"]));
+  if (isset($_POST["meeting_time"])) update_post_meta($post_id, "meeting_time", sanitize_text_field($_POST["meeting_time"]));
+  if (isset($_POST["location"])) update_post_meta($post_id, "location", sanitize_text_field($_POST["location"]));
 }
