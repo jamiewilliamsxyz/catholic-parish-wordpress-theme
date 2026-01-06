@@ -18,7 +18,7 @@ function parish_register_taxonomies()
 
   ));
 
-  register_taxonomy("parish_church_group_type", "parish_clergy_member", array(
+  register_taxonomy("parish_church_group_type", "parish_church_group", array(
     "labels" => array(
       "name" => __("Group Types", "catholic-parish"),
       "singular_name" => __("Group Type", "catholic-parish")

@@ -30,7 +30,7 @@ function parish_register_cpts()
     "show_in_rest" => true,
     "has_archive" => true,
     "rewrite" => array("slug" => "newsletters"),
-    "supports" => ["title", "custom-fields"],
+    "supports" => ["title"],
   ));
 
   register_post_type("parish_clergy_member", array(
@@ -43,7 +43,7 @@ function parish_register_cpts()
     "public" => true,
     "show_in_rest" => true,
     "rewrite" => array("slug" => "clergy"),
-    "supports" => ["title", "custom-fields", "thumbnail"],
+    "supports" => ["title", "thumbnail"],
 
   ));
 
@@ -57,6 +57,6 @@ function parish_register_cpts()
     "public" => true,
     "show_in_rest" => true,
     "rewrite" => array("slug" => "church-groups"),
-    "supports" => ["title", "custom-fields"],
+    "supports" => ["title"],
   ));
 }
