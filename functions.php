@@ -20,10 +20,9 @@ function parish_enqueue_styles()
 // Theme support
 add_theme_support("menus");
 
-// Menus
+// Menu registration
 register_nav_menus(
   array(
     "navbar-menu" => "Navbar Menu Location",
-    "footer-menu" => "Footer Menu Location"
   )
 );

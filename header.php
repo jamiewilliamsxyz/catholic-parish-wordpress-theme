@@ -16,6 +16,8 @@
       <?php
       wp_nav_menu(
         array(
+          "menu_class" => "navbar-menu",
+          "container_class" => "navbar-menu-container",
           "theme_location" => "navbar-menu"
         )
       );
