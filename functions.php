@@ -14,7 +14,11 @@ function parish_enqueue_styles()
 {
   $version = wp_get_theme()->get("Version");
 
+  // Style.css
   wp_enqueue_style("parish-style", get_stylesheet_uri(), [], $version);
+
+  // Font
+  wp_enqueue_style("parish-font", "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 }
 
 // Theme setup
