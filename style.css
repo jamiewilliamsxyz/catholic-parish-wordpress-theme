@@ -51,6 +51,7 @@ body {
 }
 
 .parish-navbar-menu {
+  display: none;
   padding: 0 20px 20px 20px;
 }
 

@@ -26,8 +26,11 @@
         }
         ?>
 
-        <button class="parish-navbar-menu-icon">
-          <?php echo file_get_contents(get_template_directory() . "/assets/icons/parish-menu-icon-closed.svg"); ?>
+        <button id="parishMenuToggle" class="parish-navbar-menu-icon">
+          <?php
+          echo file_get_contents(get_template_directory() .
+            "/assets/icons/parish-menu-icon-closed.svg");
+          ?>
         </button>
       </div>
 
@@ -35,6 +38,7 @@
       wp_nav_menu(
         array(
           "menu_class" => "parish-navbar-menu",
+          "menu_id" => "parishNavbarMenu",
           "theme_location" => "parish-navbar-menu"
         )
       );
