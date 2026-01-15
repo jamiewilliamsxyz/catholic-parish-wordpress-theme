@@ -17,12 +17,18 @@ function parish_enqueue_styles()
   wp_enqueue_style("parish-style", get_stylesheet_uri(), [], $version);
 }
 
-// Theme support
-add_theme_support("menus");
+// Theme setup
+add_action("after_setup_theme", "parish_theme_setup");
 
-// Menu registration
-register_nav_menus(
-  array(
-    "navbar-menu" => "Navbar Menu Location",
-  )
-);
+function parish_theme_setup()
+{
+  // Theme support
+  add_theme_support("menus");
+
+  // Menu registration
+  register_nav_menus(
+    array(
+      "navbar-menu" => "Navbar Menu Location",
+    )
+  );
+}
