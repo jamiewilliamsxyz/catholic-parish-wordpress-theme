@@ -23,14 +23,35 @@ body {
   font-family: "Lora", serif;
 }
 
-.parish-navbar-menu {
+.parish-navbar {
   background-color: rgb(38, 38, 38);
-  padding: 20px;
   font-size: 18px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   position: fixed;
   z-index: 1000;
   width: 100%;
+}
+
+.parish-navbar-topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.custom-logo {
+  border-radius: 1px;
+}
+
+.parish-navbar-menu-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.parish-navbar-menu {
+  padding: 0 20px 20px 20px;
 }
 
 .parish-navbar-menu > ul {
@@ -43,7 +64,6 @@ body {
 .parish-navbar-menu > ul > li > a {
   color: rgb(221, 221, 221);
   text-decoration: none;
-  cursor: hover;
   transition: 200ms;
 }
 

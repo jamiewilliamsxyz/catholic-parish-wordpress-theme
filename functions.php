@@ -28,6 +28,11 @@ function parish_theme_setup()
 {
   // Theme support
   add_theme_support("menus");
+  add_theme_support("custom-logo", array(
+    "height" => 48,
+    "width" => 48,
+    "unlink-homepage-logo" => true
+  ));
 
   // Menu registration
   register_nav_menus(

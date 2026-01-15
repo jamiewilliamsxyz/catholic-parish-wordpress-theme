@@ -12,7 +12,25 @@
 <body <?php body_class(); ?>>
 
   <header>
-    <nav>
+    <nav class="parish-navbar">
+      <div class="parish-navbar-topbar">
+        <?php
+        if (has_custom_logo()) {
+          the_custom_logo();
+        } else {
+        ?>
+          <a href="<?php echo esc_url(home_url("/")); ?>">
+            <?php bloginfo("name") ?>
+          </a>
+        <?php
+        }
+        ?>
+
+        <button class="parish-navbar-menu-icon">
+          <?php echo file_get_contents(get_template_directory() . "/assets/icons/parish-menu-icon-closed.svg"); ?>
+        </button>
+      </div>
+
       <?php
       wp_nav_menu(
         array(
