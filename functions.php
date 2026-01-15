@@ -28,7 +28,7 @@ function parish_theme_setup()
   // Menu registration
   register_nav_menus(
     array(
-      "navbar-menu" => "Navbar Menu Location",
+      "navbar-menu" => __("Navbar Menu Location", "catholic-parish"),
     )
   );
 }
