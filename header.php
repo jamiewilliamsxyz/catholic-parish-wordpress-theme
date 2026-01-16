@@ -38,10 +38,15 @@
       wp_nav_menu(
         array(
           "menu_class" => "parish-navbar-menu",
+          "container_class" => "parish-navbar-menu-container",
           "menu_id" => "parishNavbarMenu",
+          "container_id" => "parishNavbarMenuContainer",
           "theme_location" => "parish-navbar-menu"
         )
       );
       ?>
     </nav>
   </header>
+
+  <div id="parishMenuBackdrop" class="parish-menu-backdrop" hidden></div>
+  <div id="parishContentContainer" class="parish-content-container">

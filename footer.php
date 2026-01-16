@@ -2,6 +2,8 @@
   <p>Footer</p>
 </footer>
 
+</div>
+
 <?php wp_footer(); ?>
 
 </body>
