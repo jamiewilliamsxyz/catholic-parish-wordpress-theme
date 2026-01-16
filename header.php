@@ -6,11 +6,9 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <title><?php bloginfo('name') ?></title>
   <?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>
-
   <header>
     <nav class="parish-navbar">
       <div class="parish-navbar-topbar">
@@ -26,10 +24,15 @@
         }
         ?>
 
-        <button id="parishMenuToggle" class="parish-navbar-menu-icon">
+        <button aria-expanded="false" id="parishMenuToggle" class="parish-navbar-menu-icon">
           <?php
           echo file_get_contents(get_template_directory() .
             "/assets/icons/parish-menu-icon-closed.svg");
+          ?>
+
+          <?php
+          echo file_get_contents(get_template_directory() .
+            "/assets/icons/parish-menu-icon-opened.svg");
           ?>
         </button>
       </div>
