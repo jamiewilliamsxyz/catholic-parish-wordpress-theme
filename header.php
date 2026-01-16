@@ -39,7 +39,6 @@
         array(
           "menu_class" => "parish-navbar-menu",
           "container_class" => "parish-navbar-menu-container",
-          "menu_id" => "parishNavbarMenu",
           "container_id" => "parishNavbarMenuContainer",
           "theme_location" => "parish-navbar-menu"
         )
