@@ -138,3 +138,44 @@ body {
   text-decoration-thickness: 1.5px;
   text-underline-offset: 2px;
 }
+
+@media (min-width: 1080px) {
+  .parish-content-container {
+    padding-top: 161px;
+  }
+
+  .parish-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 40px 15px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgb(38, 38, 38);
+  }
+
+  .parish-navbar-topbar {
+    padding: 0;
+    background-color: none;
+    box-shadow: none;
+  }
+  .parish-navbar-menu-icon {
+    display: none;
+  }
+
+  .parish-navbar-menu-container {
+    background-color: none;
+    padding: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .parish-navbar-menu-container.menu-open {
+    box-shadow: none;
+  }
+
+  .parish-navbar-menu {
+    flex-direction: row;
+    gap: 36px;
+  }
+}
