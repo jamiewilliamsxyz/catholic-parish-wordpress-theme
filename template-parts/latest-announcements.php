@@ -17,7 +17,7 @@ if ($announcements) :
             <span><?php echo get_the_date(); ?></span>
             <h4><?php the_title(); ?></h4>
             <p><?php the_excerpt(); ?></p>
-            <a href="<?php esc_url(the_permalink()); ?>">Read more</a>
+            <a href="<?php the_permalink(); ?>">Read more</a>
           </div>
         <?php endforeach;
         wp_reset_postdata(); ?>
