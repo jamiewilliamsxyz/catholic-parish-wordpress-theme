@@ -301,7 +301,9 @@ body {
 .parish-announcement-card,
 .parish-no-announcements {
   max-height: fit-content;
-  max-width: 500px;
+  width: 100%;
+  max-width: 650px;
+  box-sizing: border-box;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -326,9 +328,10 @@ body {
 
 .parish-announcement-card > p {
   color: rgba(204, 204, 204);
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .parish-no-announcements {
@@ -395,5 +398,6 @@ body {
 
   .parish-announcement-card > p {
     font-size: 18px;
+    -webkit-line-clamp: 1;
   }
 }
