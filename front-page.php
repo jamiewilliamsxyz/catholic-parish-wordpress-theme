@@ -17,6 +17,9 @@
     </header>
   </section>
 
+  <?php
+  get_template_part('template-parts/latest-announcements');
+  ?>
 </main>
 
 <?php get_footer(); ?>

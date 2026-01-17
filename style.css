@@ -218,7 +218,7 @@ body {
   z-index: 10;
 }
 
-.parish-hero h1 {
+.parish-hero > header > h1 {
   text-align: center;
   font-size: 56px;
   font-weight: 600;
@@ -226,7 +226,7 @@ body {
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.parish-hero h2 {
+.parish-hero > header > div > h2 {
   font-size: 16px;
   font-weight: 400;
   color: rgba(234, 234, 234);
@@ -242,6 +242,99 @@ body {
   max-width: 450px;
 }
 
+.parish-announcements {
+  background-color: rgba(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+  padding: 48px 24px 48px 24px;
+}
+
+.parish-announcements > h3 {
+  font-size: 38px;
+  text-align: center;
+  font-weight: 600;
+  color: rgba(38, 38, 38);
+}
+
+.parish-announcements-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.parish-see-more-link,
+.parish-announcement-card > a {
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: solid 1.5px rgba(125, 211, 252, 0.85);
+  width: fit-content;
+  border-radius: 1px;
+  transition: opacity 200ms;
+}
+
+.parish-see-more-link:hover,
+.parish-announcement-card > a:hover {
+  opacity: 0.7;
+}
+
+.parish-see-more-link {
+  color: rgba(47, 47, 47);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.parish-announcement-card > a {
+  color: rgba(221, 221, 221);
+}
+
+.parish-latest-announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.parish-announcement-card,
+.parish-no-announcements {
+  max-height: fit-content;
+  max-width: 500px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgba(38, 38, 38);
+  border-bottom: solid 2px rgba(125, 211, 252);
+  border-radius: 1px;
+}
+
+.parish-announcement-card > span {
+  color: rgba(204, 204, 204);
+}
+
+.parish-announcement-card > h4,
+.parish-no-announcements > p {
+  color: rgba(234, 234, 234);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  margin-top: 8px;
+}
+
+.parish-announcement-card > p {
+  color: rgba(204, 204, 204);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.parish-no-announcements {
+  text-align: center;
+}
+
 @media (min-width: 1080px) {
   .parish-hero {
     padding: 92px 48px 92px 48px;
@@ -249,11 +342,58 @@ body {
     align-items: center;
   }
 
-  .parish-hero h1 {
+  .parish-hero > header > h1 {
     font-size: 64px;
   }
 
-  .parish-hero h2 {
+  .parish-hero > header > div > h2 {
+    font-size: 18px;
+  }
+
+  .parish-announcements {
+    background-color: rgba(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+    padding: 54px 24px 54px 24px;
+  }
+
+  .parish-announcements > h3 {
+    font-size: 44px;
+  }
+
+  .parish-announcements-content {
+    gap: 42px;
+  }
+
+  .parish-see-more-link {
+    font-size: 20px;
+  }
+
+  .parish-announcement-card > a {
+    font-size: 18px;
+  }
+
+  .parish-latest-announcements {
+    flex-direction: row;
+  }
+
+  .parish-announcement-card,
+  .parish-no-announcements {
+    width: 375px;
+  }
+
+  .parish-announcement-card > span {
+    font-size: 18px;
+  }
+
+  .parish-announcement-card > h4,
+  .parish-no-announcements > p {
+    font-size: 22px;
+  }
+
+  .parish-announcement-card > p {
     font-size: 18px;
   }
 }
