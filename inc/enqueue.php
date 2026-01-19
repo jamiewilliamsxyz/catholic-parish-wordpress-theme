@@ -22,12 +22,14 @@ function parish_enqueue_scripts()
     $version
   );
 
-  wp_enqueue_style(
-    "parish-front-page-style",
-    $template_uri . "/assets/css/font-page.css",
-    [],
-    $version
-  );
+  if (is_front_page()) {
+    wp_enqueue_style(
+      "parish-front-page-style",
+      $template_uri . "/assets/css/font-page.css",
+      [],
+      $version
+    );
+  }
 
   // Google font
   wp_enqueue_style(
