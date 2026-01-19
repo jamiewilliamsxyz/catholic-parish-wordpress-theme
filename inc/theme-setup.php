@@ -6,6 +6,8 @@ function parish_theme_setup()
 {
   // Theme support
   add_theme_support("menus");
+  add_theme_support('title-tag');
+  add_theme_support('html5');
 
   add_theme_support("custom-logo", array(
     "height" => 48,
