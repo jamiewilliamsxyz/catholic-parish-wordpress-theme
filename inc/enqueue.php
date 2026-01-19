@@ -5,9 +5,10 @@ add_action("wp_enqueue_scripts", "parish_enqueue_styles");
 
 function parish_enqueue_styles()
 {
+  $template_uri = get_template_directory_uri();
   $version = wp_get_theme()->get("Version");
 
-  // Style.css
+  // CSS
   wp_enqueue_style(
     "parish-style",
     get_stylesheet_uri(),
@@ -15,7 +16,21 @@ function parish_enqueue_styles()
     $version
   );
 
-  // Font
+  wp_enqueue_style(
+    "parish-header-style",
+    $template_uri . "/assets/css/header.css",
+    [],
+    $version
+  );
+
+  wp_enqueue_style(
+    "parish-front-page-style",
+    $template_uri . "/assets/css/font-page.css",
+    [],
+    $version
+  );
+
+  // Google font
   wp_enqueue_style(
     "parish-font",
     "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
