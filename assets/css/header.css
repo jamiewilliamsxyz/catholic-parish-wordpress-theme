@@ -120,7 +120,11 @@
 
 /* Desktop */
 
-@media (min-width: 1080px) {
+@media (min-width: 950px) {
+  .parish-menu-backdrop {
+    display: none;
+  }
+
   .parish-content-container {
     padding-top: 161px;
   }
