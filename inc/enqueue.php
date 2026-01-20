@@ -31,6 +31,23 @@ function parish_enqueue_scripts()
     );
   }
 
+  if (is_archive()) {
+    wp_enqueue_style(
+      "parish-archive-style",
+      $template_uri . "/assets/css/archive.css",
+      [],
+      $version
+    );
+  }
+
+  wp_enqueue_style(
+    "parish-pagination-style",
+    $template_uri . "/assets/css/pagination.css",
+    [],
+    $version
+  );
+
+
   // Google font
   wp_enqueue_style(
     "parish-font",
