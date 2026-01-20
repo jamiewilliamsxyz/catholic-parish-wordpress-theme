@@ -3,7 +3,7 @@
   padding: 20px;
   color: rgb(234, 234, 234);
   text-align: center;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 950px) {
