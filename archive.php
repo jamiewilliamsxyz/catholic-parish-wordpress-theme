@@ -20,9 +20,7 @@
         <?php endwhile; ?>
       </div>
 
-      <div class="parish-pagination-container">
-        <?php get_template_part("template-parts/pagination") ?>
-      </div>
+      <?php get_template_part("template-parts/pagination") ?>
 
     <?php else : ?>
       <p class="parish-archive-no-posts"><?php _e("No posts found", "catholic-parish"); ?></p>
