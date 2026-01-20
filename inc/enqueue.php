@@ -22,6 +22,13 @@ function parish_enqueue_scripts()
     $version
   );
 
+  wp_enqueue_style(
+    "parish-footer-style",
+    $template_uri . "/assets/css/footer.css",
+    [],
+    $version
+  );
+
   if (is_front_page()) {
     wp_enqueue_style(
       "parish-front-page-style",

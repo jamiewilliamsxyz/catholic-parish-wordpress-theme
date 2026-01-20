@@ -1,4 +1,4 @@
-<footer>
+<footer class="parish-footer">
   <p>Footer</p>
 </footer>
 

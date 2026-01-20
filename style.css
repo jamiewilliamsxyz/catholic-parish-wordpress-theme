@@ -22,3 +22,7 @@ Text Domain: catholic-parish
 body {
   font-family: "Lora", serif;
 }
+
+main {
+  min-height: 85vh;
+}
