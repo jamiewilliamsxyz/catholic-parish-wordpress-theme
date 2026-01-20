@@ -137,6 +137,9 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
+}
+
+.parish-announcement-card > h4 {
   margin-top: 8px;
 }
 
@@ -190,21 +193,20 @@
     font-size: 20px;
   }
 
-  .parish-announcement-card > a {
+  .parish-announcement-card > a,
+  .parish-announcement-card > span,
+  .parish-announcement-card > p {
     font-size: 18px;
   }
 
   .parish-latest-announcements {
     flex-direction: row;
+    gap: 20px;
   }
 
   .parish-announcement-card,
   .parish-no-announcements {
     width: 375px;
-  }
-
-  .parish-announcement-card > span {
-    font-size: 18px;
   }
 
   .parish-announcement-card > h4,
@@ -213,7 +215,6 @@
   }
 
   .parish-announcement-card > p {
-    font-size: 18px;
     -webkit-line-clamp: 1;
   }
 }

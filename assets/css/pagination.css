@@ -10,6 +10,8 @@ nav.pagination {
 nav.pagination > .nav-links {
   display: flex;
   gap: 8px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 nav.pagination > .nav-links > .page-numbers {
@@ -48,6 +50,6 @@ nav.pagination > .nav-links > .next > svg {
 
 @media (min-width: 1080px) {
   nav.pagination {
-    font-size: 18px;
+    font-size: 20px;
   }
 }

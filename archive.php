@@ -5,28 +5,35 @@
     <h1><?php post_type_archive_title(); ?></h1>
   </header>
 
-  <section>
-    <?php
-    if (have_posts()) : ?>
 
-      <div class="parish-archive-posts">
+  <?php
+  if (have_posts()) : ?>
+
+    <section>
+      <div class="parish-archive-container">
         <?php while (have_posts()) : the_post() ?>
-          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <span><?php echo get_the_date(); ?></span>
-            <h2><?php the_title(); ?></h2>
-            <p><?php the_excerpt(); ?></p>
+          <article class="parish-archive-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <div class="parish-archive-card-content">
+              <span><?php echo get_the_date(); ?></span>
+              <h2><?php the_title(); ?></h2>
+              <p><?php the_excerpt(); ?></p>
+            </div>
             <a href="<?php the_permalink(); ?>"><?php _e("Read more", "catholic-parish"); ?></a>
           </article>
         <?php endwhile; ?>
       </div>
+    </section>
 
-      <?php get_template_part("template-parts/pagination") ?>
+    <?php get_template_part("template-parts/pagination") ?>
 
-    <?php else : ?>
-      <p class="parish-archive-no-posts"><?php _e("No posts found", "catholic-parish"); ?></p>
+  <?php else : ?>
 
-    <?php endif; ?>
-  </section>
+    <div class="parish-archive-no-posts">
+      <p><?php _e("No posts found", "catholic-parish"); ?></p>
+    </div>
+
+  <?php endif; ?>
+
 </main>
 
 <?php get_footer(); ?>

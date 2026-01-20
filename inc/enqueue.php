@@ -25,7 +25,7 @@ function parish_enqueue_scripts()
   if (is_front_page()) {
     wp_enqueue_style(
       "parish-front-page-style",
-      $template_uri . "/assets/css/font-page.css",
+      $template_uri . "/assets/css/front-page.css",
       [],
       $version
     );
@@ -46,7 +46,6 @@ function parish_enqueue_scripts()
     [],
     $version
   );
-
 
   // Google font
   wp_enqueue_style(
