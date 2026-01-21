@@ -5,7 +5,6 @@
     <h1><?php post_type_archive_title(); ?></h1>
   </header>
 
-
   <?php
   if (have_posts()) : ?>
 
