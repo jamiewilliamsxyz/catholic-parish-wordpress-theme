@@ -15,14 +15,14 @@ if ($announcements) :
     <div class="parish-announcements-content">
       <div class="parish-latest-announcements">
         <?php foreach ($announcements as $post) : setup_postdata($post); ?>
-          <div class="parish-announcement-card">
+          <article class="parish-announcement-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <span><?php echo get_the_date(); ?></span>
             <h4><?php the_title(); ?></h4>
             <p><?php the_excerpt(); ?></p>
             <a href="<?php the_permalink(); ?>">
               <?php esc_html_e("Read more", "catholic-parish") ?>
             </a>
-          </div>
+          </article>
         <?php endforeach;
         wp_reset_postdata(); ?>
       </div>
