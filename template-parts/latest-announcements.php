@@ -28,13 +28,8 @@ if ($announcements) :
       </div>
     <?php else : ?>
       <div class="parish-no-announcements">
-        <p>
-          <?php esc_html_e("There are no announcements at the moment", "catholic-parish") ?>
-        </p>
-
-        <p>
-          <?php esc_html_e("Please check back soon", "catholic-parish") ?>
-        </p>
+        <p><?php esc_html_e("There are no announcements at the moment", "catholic-parish") ?></p>
+        <p><?php esc_html_e("Please check back soon", "catholic-parish") ?></p>
       </div>
     <?php endif; ?>
 
