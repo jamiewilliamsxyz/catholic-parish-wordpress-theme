@@ -1,5 +1,5 @@
 .parish-content-container {
-  padding-top: 93px; /* Taking into account topbar nav height */
+  padding-top: 84px; /* Taking into account topbar nav height */
 }
 
 .parish-menu-backdrop {
@@ -27,12 +27,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 18px;
   background-color: rgb(38, 38, 38);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .custom-logo {
+  display: flex;
   border-radius: 1px;
 }
 
@@ -78,7 +79,7 @@
 
 .parish-navbar-menu-container {
   background-color: rgb(38, 38, 38);
-  padding: 0 20px 20px 20px;
+  padding: 0 18px 18px 18px;
   opacity: 0;
   transform: translateY(-10px);
   pointer-events: none;
@@ -126,21 +127,21 @@
   }
 
   .parish-content-container {
-    padding-top: 161px;
+    padding-top: 137px;
   }
 
   .parish-navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    padding: 30px 40px 15px 40px;
+    gap: 32px;
+    padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: rgb(38, 38, 38);
   }
 
   .parish-navbar-topbar {
-    padding: 0;
+    padding: 14px 0 0 0;
     background-color: none;
     box-shadow: none;
   }

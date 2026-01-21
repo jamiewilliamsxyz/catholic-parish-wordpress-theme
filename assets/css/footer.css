@@ -1,13 +1,163 @@
 .parish-footer {
   background-color: rgb(38, 38, 38);
-  padding: 20px;
-  color: rgb(234, 234, 234);
-  text-align: center;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-@media (min-width: 950px) {
+.parish-foot-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.parish-foot-identity {
+  max-width: 450px;
+}
+
+.parish-foot-title-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.parish-foot-title-info > h5 {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(234, 234, 234);
+  text-decoration: underline;
+  text-decoration-color: rgb(125, 211, 252);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+
+.parish-foot-info,
+.parish-foot-links-content,
+.parish-foot-links-content > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.parish-foot-info > h6,
+.parish-foot-links-content > h6 {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(221, 221, 221);
+}
+
+.parish-foot-info > p {
+  font-size: 14px;
+  color: rgb(204, 204, 204);
+}
+
+.parish-foot-links {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.parish-foot-links-content > ul {
+  list-style: none;
+}
+
+.parish-foot-links-content > ul > li > a {
+  font-size: 14px;
+  color: rgb(204, 204, 204);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 200ms;
+}
+
+.parish-foot-links-content > ul > li > a:hover {
+  opacity: 0.7;
+}
+
+.parish-copyright-bar-wrapper-mobile {
+  display: block;
+}
+
+.parish-copyright-bar-wrapper-desktop {
+  display: none;
+}
+
+.parish-copyright-bar {
+  font-size: 12px;
+  color: rgb(187, 187, 187);
+}
+
+/* Desktop */
+
+@media (min-width: 900px) {
+  .parish-copyright-bar-wrapper-mobile {
+    display: none;
+  }
+
+  .parish-copyright-bar-wrapper-desktop {
+    display: block;
+  }
+
   .parish-footer {
-    padding: 20px 48px;
+    padding: 30px 30px;
+  }
+
+  .parish-foot-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-self: center;
+    width: 100%;
+    min-height: auto;
+    max-width: 1150px;
+  }
+
+  .parish-foot-identity {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+  }
+
+  .parish-foot-title-info > h5 {
+    font-size: 24px;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+
+  .parish-foot-info,
+  .parish-foot-links-content,
+  .parish-foot-links-content > ul {
+    gap: 10px;
+  }
+
+  .parish-foot-info > h6,
+  .parish-foot-links-content > h6 {
+    font-size: 18px;
+  }
+
+  .parish-foot-info > p {
+    font-size: 16px;
+  }
+
+  .parish-foot-links {
+    align-self: center;
+    gap: 48px;
+  }
+
+  .parish-foot-links-content > ul > li > a {
+    font-size: 16px;
+  }
+
+  .parish-copyright-bar {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .parish-footer {
+    padding: 40px 0;
   }
 }
