@@ -18,7 +18,7 @@
               <h2><?php the_title(); ?></h2>
               <p><?php the_excerpt(); ?></p>
             </div>
-            <a href="<?php the_permalink(); ?>"><?php _e("Read more", "catholic-parish"); ?></a>
+            <a href="<?php the_permalink(); ?>"><?php esc_html_e("Read more", "catholic-parish"); ?></a>
           </article>
         <?php endwhile; ?>
       </div>
@@ -29,7 +29,7 @@
   <?php else : ?>
 
     <div class="parish-archive-no-posts">
-      <p><?php _e("No posts found", "catholic-parish"); ?></p>
+      <p><?php esc_html_e("No posts found", "catholic-parish"); ?></p>
     </div>
 
   <?php endif; ?>

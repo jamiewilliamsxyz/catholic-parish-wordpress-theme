@@ -8,7 +8,9 @@ $announcements = get_posts([
 if ($announcements) :
 ?>
   <section class="parish-announcements">
-    <h3>Latest Announcements</h3>
+    <h3>
+      <?php esc_html_e("Latest Announcements", "catholic-parish") ?>
+    </h3>
 
     <div class="parish-announcements-content">
       <div class="parish-latest-announcements">
@@ -17,15 +19,22 @@ if ($announcements) :
             <span><?php echo get_the_date(); ?></span>
             <h4><?php the_title(); ?></h4>
             <p><?php the_excerpt(); ?></p>
-            <a href="<?php the_permalink(); ?>">Read more</a>
+            <a href="<?php the_permalink(); ?>">
+              <?php esc_html_e("Read more", "catholic-parish") ?>
+            </a>
           </div>
         <?php endforeach;
         wp_reset_postdata(); ?>
       </div>
     <?php else : ?>
       <div class="parish-no-announcements">
-        <p>There are no announcements at the moment</p>
-        <p>Please check back soon</p>
+        <p>
+          <?php esc_html_e("There are no announcements at the moment", "catholic-parish") ?>
+        </p>
+
+        <p>
+          <?php esc_html_e("Please check back soon", "catholic-parish") ?>
+        </p>
       </div>
     <?php endif; ?>
 

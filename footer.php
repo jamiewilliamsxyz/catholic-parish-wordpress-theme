@@ -5,7 +5,7 @@
         <h5><?php bloginfo("name"); ?></h5>
 
         <div class="parish-foot-info">
-          <h6><?php _e("Parish Info", "catholic-parish"); ?></h6>
+          <h6><?php esc_html_e("Parish Info", "catholic-parish"); ?></h6>
           <p><?php bloginfo("description"); ?></p>
         </div>
       </div>
