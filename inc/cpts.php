@@ -14,6 +14,7 @@ function parish_register_cpts()
     "public" => true,
     "show_in_rest" => true,
     "has_archive" => true,
+    "show_in_nav_menus" => true,
     "rewrite" => array("slug" => "announcements"),
     "supports" =>
     ["title", "editor", "excerpt", "thumbnail"],
@@ -29,6 +30,7 @@ function parish_register_cpts()
     "public" => true,
     "show_in_rest" => true,
     "has_archive" => true,
+    "show_in_nav_menus" => true,
     "rewrite" => array("slug" => "newsletters"),
     "supports" => ["title"],
   ));
@@ -56,6 +58,8 @@ function parish_register_cpts()
     "menu_icon" => "dashicons-groups",
     "public" => true,
     "show_in_rest" => true,
+    "has_archive" => true,
+    "show_in_nav_menus" => true,
     "rewrite" => array("slug" => "church-groups"),
     "supports" => ["title"],
   ));
