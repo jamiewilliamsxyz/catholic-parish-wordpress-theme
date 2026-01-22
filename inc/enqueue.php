@@ -6,7 +6,7 @@ add_action("admin_enqueue_scripts", "parish_enqueue_admin_styles");
 
 function parish_enqueue_admin_styles($hook)
 {
-  if ($hook !== 'post.php' && $hook !== 'post-new.php') return
+  if ($hook !== "post.php" && $hook !== "post-new.php") return
 
     wp_enqueue_style(
       "parish-admin-style",
