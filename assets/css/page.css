@@ -1,0 +1,163 @@
+.parish-page-main > header {
+  text-align: center;
+  padding: 48px 24px;
+  background-color: rgb(250, 250, 250);
+}
+
+.parish-page-main > header > h1 {
+  font-size: 34px;
+  font-weight: 600;
+  color: rgb(38, 38, 38);
+}
+
+.parish-page-content-wrapper {
+  background-color: rgb(234, 234, 234);
+}
+
+.parish-page-content {
+  padding: 24px;
+  color: rgb(47, 47, 47);
+}
+
+.parish-page-content h1,
+.parish-page-content h2,
+.parish-page-content h3,
+.parish-page-content h4,
+.parish-page-content h5,
+.parish-page-content h6 {
+  color: rgb(38, 38, 38);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.parish-page-content h1 {
+  font-size: 32px;
+}
+
+.parish-page-content h2 {
+  font-size: 28px;
+}
+
+.parish-page-content h3 {
+  font-size: 24px;
+}
+
+.parish-page-content h4 {
+  font-size: 20px;
+}
+
+.parish-page-content h5,
+.parish-page-content h6 {
+  font-size: 16px;
+}
+
+.parish-page-content ul,
+.parish-page-content ol,
+.parish-page-content p,
+.parish-page-content blockquote,
+.parish-page-content img {
+  margin-bottom: 15px;
+}
+
+.parish-page-content ul,
+ol {
+  margin-left: 20px;
+}
+
+.parish-page-content li {
+  margin-bottom: 5px;
+}
+
+.parish-page-content blockquote {
+  border-left: solid 2px rgb(125, 211, 252);
+  padding-left: 10px;
+}
+
+.parish-page-content a {
+  font-weight: 500;
+  color: rgb(38, 38, 38);
+  text-decoration-color: rgba(125, 211, 252, 0.7);
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+  transition: opacity 200ms;
+}
+
+.parish-page-content a:hover {
+  opacity: 0.7;
+}
+
+/* Desktop */
+
+@media (min-width: 780px) {
+  .parish-page-main > header {
+    padding: 54px 24px;
+  }
+
+  .parish-page-main > header > h1 {
+    font-size: 48px;
+  }
+
+  .parish-page-content {
+    max-width: 750px;
+    margin: 0 auto;
+    align-self: center;
+    padding: 48px 0;
+    font-size: 18px;
+  }
+
+  .parish-page-content h1,
+  .parish-page-content h2,
+  .parish-page-content h3,
+  .parish-page-content h4,
+  .parish-page-content h5,
+  .parish-page-content h6 {
+    margin: 15px 0;
+  }
+
+  .parish-page-content h1 {
+    font-size: 40px;
+  }
+
+  .parish-page-content h2 {
+    font-size: 36px;
+  }
+
+  .parish-page-content h3 {
+    font-size: 28px;
+  }
+
+  .parish-page-content h4 {
+    font-size: 20px;
+  }
+
+  .parish-page-content h5,
+  .parish-page-content h6 {
+    font-size: 18px;
+  }
+
+  .parish-page-content ul,
+  .parish-page-content ol,
+  .parish-page-content p,
+  .parish-page-content blockquote,
+  .parish-page-content img {
+    margin-bottom: 20px;
+  }
+
+  .parish-page-content ul,
+  ol {
+    margin-left: 25px;
+  }
+
+  .parish-page-content li {
+    margin-bottom: 10px;
+  }
+
+  .parish-page-content blockquote {
+    border-left: solid 3px rgb(125, 211, 252);
+    padding-left: 15px;
+  }
+
+  .parish-page-content a {
+    text-underline-offset: 2px;
+  }
+}
