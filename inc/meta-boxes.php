@@ -38,8 +38,12 @@ function parish_newsletter_meta_box($post)
   wp_nonce_field("parish_save_newsletter", "parish_newsletter_nonce");
 
 ?>
-  <label for="pdf_file">PDF File URL</label><br />
-  <input type="url" name="pdf_file" value="<?php echo esc_attr($pdf_file); ?>" />
+  <div class="parish-meta-box">
+    <div class="parish-meta-box-field">
+      <label for="pdf_file">PDF File URL</label>
+      <input type="url" name="pdf_file" value="<?php echo esc_attr($pdf_file); ?>" />
+    </div>
+  </div>
 <?php
 }
 
@@ -52,14 +56,22 @@ function parish_clergy_meta_box($post)
   wp_nonce_field("parish_save_clergy", "parish_clergy_nonce");
 
 ?>
-  <label for="email">Email</label><br />
-  <input type="email" name="email" value="<?php echo esc_attr($email); ?>" /><br />
+  <div class="parish-meta-box">
+    <div class="parish-meta-box-field">
+      <label for="email">Email</label>
+      <input type="email" name="email" value="<?php echo esc_attr($email); ?>" />
+    </div>
 
-  <label for="phone">Phone</label><br />
-  <input type="text" name="phone" value="<?php echo esc_attr($phone); ?>" /><br />
+    <div class="parish-meta-box-field">
+      <label for="phone">Phone</label>
+      <input type="text" name="phone" value="<?php echo esc_attr($phone); ?>" />
+    </div>
 
-  <label for="about">About</label><br />
-  <textarea name="about" rows="8" cols="50"><?php echo esc_textarea($about); ?></textarea>
+    <div class="parish-meta-box-field">
+      <label for="about">About</label>
+      <textarea name="about" rows="8" cols="50"><?php echo esc_textarea($about); ?></textarea>
+    </div>
+  </div>
 <?php
 }
 
@@ -75,23 +87,37 @@ function parish_group_meta_box($post)
   wp_nonce_field("parish_save_group", "parish_group_nonce");
 
 ?>
-  <label for="leader_name">Leader Name</label><br />
-  <input type="text" name="leader_name" value="<?php echo esc_attr($leader_name); ?>" /><br />
+  <div class="parish-meta-box">
+    <div class="parish-meta-box-field">
+      <label for="leader_name">Leader Name</label>
+      <input type="text" name="leader_name" value="<?php echo esc_attr($leader_name); ?>" />
+    </div>
 
-  <label for="leader_email">Leader Email</label><br />
-  <input type="email" name="leader_email" value="<?php echo esc_attr($leader_email); ?>" /><br />
+    <div class="parish-meta-box-field">
+      <label for="leader_email">Leader Email</label>
+      <input type="email" name="leader_email" value="<?php echo esc_attr($leader_email); ?>" />
+    </div>
 
-  <label for="leader_phone">Leader Phone</label><br />
-  <input type="text" name="leader_phone" value="<?php echo esc_attr($leader_phone); ?>" /><br />
+    <div class="parish-meta-box-field">
+      <label for="leader_phone">Leader Phone</label>
+      <input type="text" name="leader_phone" value="<?php echo esc_attr($leader_phone); ?>" />
+    </div>
 
-  <label for="description">Description</label><br />
-  <textarea name="description" rows="8" cols="50"><?php echo esc_textarea($description); ?></textarea><br />
+    <div class="parish-meta-box-field">
+      <label for="description">Description</label>
+      <textarea name="description" rows="8" cols="50"><?php echo esc_textarea($description); ?></textarea>
+    </div>
 
-  <label for="meeting_time">Meeting Time</label><br />
-  <input type="text" name="meeting_time" value="<?php echo esc_attr($meeting_time); ?>" /><br />
+    <div class="parish-meta-box-field">
+      <label for="meeting_time">Meeting Time</label>
+      <input type="text" name="meeting_time" value="<?php echo esc_attr($meeting_time); ?>" />
+    </div>
 
-  <label for="location">Location</label><br />
-  <input type="text" name="location" value="<?php echo esc_attr($location); ?>" />
+    <div class="parish-meta-box-field">
+      <label for="location">Location</label>
+      <input type="text" name="location" value="<?php echo esc_attr($location); ?>" />
+    </div>
+  </div>
 <?php
 }
 

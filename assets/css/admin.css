@@ -1,0 +1,10 @@
+.parish-meta-box-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.parish-meta-box-field:first-child {
+  margin-top: 0;
+}
