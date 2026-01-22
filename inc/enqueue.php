@@ -1,5 +1,23 @@
 <?php
 
+// Admin Styles
+
+add_action("admin_enqueue_scripts", "parish_enqueue_admin_styles");
+
+function parish_enqueue_admin_styles($hook)
+{
+  if ($hook !== 'post.php' && $hook !== 'post-new.php') return
+
+    wp_enqueue_style(
+      "parish-admin-style",
+      get_template_directory_uri() . "/assets/css/admin.css",
+      [],
+      wp_get_theme()->get("Version")
+    );
+}
+
+// Non-Admin Styles/Scripts
+
 add_action("wp_enqueue_scripts", "parish_enqueue_scripts");
 
 function parish_enqueue_scripts()
