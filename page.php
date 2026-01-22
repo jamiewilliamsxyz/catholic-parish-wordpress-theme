@@ -5,10 +5,9 @@
     <h1 class="parish-page-title"><?php the_title(); ?></h1>
   </header>
 
-  <div class="parish-page-content-wrapper">
-    <section class="parish-page-content parish-content">
-      <?php the_content(); ?>
-    </section>
+  <section class="parish-page-content parish-content">
+    <?php the_content(); ?>
+  </section>
   </div>
 </main>
 
