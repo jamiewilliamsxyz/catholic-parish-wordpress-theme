@@ -1,0 +1,45 @@
+.parish-single-post > header {
+  background-color: rgb(250, 250, 250);
+}
+
+.parish-sp-header-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.parish-sp-thumb {
+  width: 100%;
+  height: auto;
+}
+
+.parish-sp-date-posted {
+  color: rgb(47, 47, 47);
+}
+
+.parish-sp-content {
+  padding: 24px;
+  color: rgb(47, 47, 47);
+}
+
+/* Tablet/Desktop */
+
+@media (min-width: 780px) {
+  .parish-sp-header-content {
+    max-width: 750px;
+    padding: 48px 0;
+    margin: 0 auto;
+  }
+
+  .parish-sp-date-posted {
+    font-size: 18px;
+  }
+
+  .parish-sp-content {
+    max-width: 750px;
+    padding: 48px 0;
+    margin: 0 auto;
+  }
+}

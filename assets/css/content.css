@@ -1,0 +1,141 @@
+/* Content styles for page.css & single.css */
+
+.parish-page-title,
+.parish-sp-title {
+  font-size: 34px;
+  font-weight: 600;
+  color: rgb(38, 38, 38);
+  text-align: center;
+}
+
+.parish-content h1,
+.parish-content h2,
+.parish-content h3,
+.parish-content h4,
+.parish-content h5,
+.parish-content h6 {
+  color: rgb(38, 38, 38);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.parish-content h1 {
+  font-size: 32px;
+}
+
+.parish-content h2 {
+  font-size: 28px;
+}
+
+.parish-content h3 {
+  font-size: 24px;
+}
+
+.parish-content h4 {
+  font-size: 20px;
+}
+
+.parish-content h5,
+.parish-content h6 {
+  font-size: 16px;
+}
+
+.parish-content ul,
+.parish-content ol,
+.parish-content p,
+.parish-content blockquote,
+.parish-content img {
+  margin-bottom: 15px;
+}
+
+.parish-content ul,
+.parish-content ol {
+  margin-left: 20px;
+}
+
+.parish-content li {
+  margin-bottom: 5px;
+}
+
+.parish-content blockquote {
+  border-left: solid 2px rgb(125, 211, 252);
+  padding-left: 10px;
+}
+
+.parish-content a {
+  font-weight: 500;
+  color: rgb(38, 38, 38);
+  text-decoration-color: rgba(125, 211, 252, 0.7);
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+  transition: opacity 200ms;
+}
+
+.parish-content a:hover {
+  opacity: 0.7;
+}
+
+/* Tablet/Desktop */
+
+@media (min-width: 780px) {
+  .parish-page-title,
+  .parish-sp-title {
+    font-size: 48px;
+  }
+
+  .parish-content h1,
+  .parish-content h2,
+  .parish-content h3,
+  .parish-content h4,
+  .parish-content h5,
+  .parish-content h6 {
+    margin: 15px 0;
+  }
+
+  .parish-content h1 {
+    font-size: 40px;
+  }
+
+  .parish-content h2 {
+    font-size: 36px;
+  }
+
+  .parish-content h3 {
+    font-size: 28px;
+  }
+
+  .parish-content h4 {
+    font-size: 20px;
+  }
+
+  .parish-content h5,
+  .parish-content h6 {
+    font-size: 18px;
+  }
+
+  .parish-content ul,
+  .parish-content ol,
+  .parish-content p,
+  .parish-content blockquote,
+  .parish-content img {
+    margin-bottom: 20px;
+  }
+
+  .parish-content ul,
+  .parish-content ol {
+    margin-left: 25px;
+  }
+
+  .parish-content li {
+    margin-bottom: 10px;
+  }
+
+  .parish-content blockquote {
+    border-left: solid 3px rgb(125, 211, 252);
+    padding-left: 15px;
+  }
+
+  .parish-content a {
+    text-underline-offset: 2px;
+  }
+}

@@ -17,6 +17,9 @@ function parish_theme_setup()
     "unlink-homepage-logo" => true
   ));
 
+  // Image size
+  add_image_size("parish-post-thumb", 640, 360);
+
   // Menu registration
   register_nav_menus(
     array(

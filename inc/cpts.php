@@ -16,7 +16,7 @@ function parish_register_cpts()
     "has_archive" => true,
     "rewrite" => array("slug" => "announcements"),
     "supports" =>
-    ["title", "editor", "excerpt"],
+    ["title", "editor", "excerpt", "thumbnail"],
   ));
 
   register_post_type("parish_newsletter", array(
