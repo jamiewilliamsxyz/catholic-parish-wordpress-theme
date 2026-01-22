@@ -47,6 +47,24 @@ function parish_enqueue_scripts()
     );
   }
 
+  if (is_page()) {
+    wp_enqueue_style(
+      "parish-page-style",
+      $template_uri . "/assets/css/page.css",
+      [],
+      $version
+    );
+  }
+
+  if (is_single()) {
+    wp_enqueue_style(
+      "parish-single-style",
+      $template_uri . "/assets/css/single.css",
+      [],
+      $version
+    );
+  }
+
   if (is_404()) {
     wp_enqueue_style(
       "parish-404-style",
