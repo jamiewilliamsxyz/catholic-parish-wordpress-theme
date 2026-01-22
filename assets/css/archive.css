@@ -10,6 +10,23 @@
   text-align: center;
 }
 
+.parish-archive > header > .parish-archive-header-separator {
+  background-color: rgb(125, 211, 252);
+  height: 2px;
+  width: 70%;
+  max-width: 320px;
+  border-radius: 1px;
+  margin: 16px auto;
+}
+
+.parish-archive > header > h2 {
+  color: rgb(38, 38, 38);
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
 .parish-archive > section {
   padding: 24px;
   background-color: rgb(234, 234, 234);
@@ -86,13 +103,23 @@
 
 /* Desktop */
 
-@media (min-width: 950px) {
+@media (min-width: 930px) {
   .parish-archive > header {
     padding: 54px 24px;
   }
 
   .parish-archive > header > h1 {
-    font-size: 44px;
+    font-size: 48px;
+  }
+
+  .parish-archive > header > .parish-archive-header-separator {
+    height: 3px;
+    max-width: 440px;
+    margin: 22px auto;
+  }
+
+  .parish-archive > header > h2 {
+    font-size: 24px;
   }
 
   .parish-archive-card > a {
