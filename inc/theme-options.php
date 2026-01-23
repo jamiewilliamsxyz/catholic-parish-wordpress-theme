@@ -180,7 +180,7 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_setting(
     "parish_footer_title",
     array(
-      "default" => "Parish Footer Title",
+      "default" => "Parish",
       "sanitize_callback" => "sanitize_text_field"
     )
   );
@@ -198,7 +198,7 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_setting(
     "parish_footer_info_text",
     array(
-      "default" => "Parish footer info text",
+      "default" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "sanitize_callback" => "sanitize_textarea_field"
     )
   );
@@ -217,7 +217,7 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_setting(
     "parish_footer_copyright_name",
     array(
-      "default" => "Parish Copyright Name",
+      "default" => "Parish",
       "sanitize_callback" => "sanitize_text_field"
     )
   );
