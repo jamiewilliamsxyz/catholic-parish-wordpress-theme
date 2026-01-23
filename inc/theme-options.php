@@ -81,6 +81,7 @@ function parish_register_theme_options($wp_customize)
     array(
       "label" => __("Body Font", "catholic-parish"),
       "section" => "parish_typography_section",
+      "priority" => 11,
       "type" => "select",
       "choices" =>
       array(
@@ -89,6 +90,71 @@ function parish_register_theme_options($wp_customize)
         "parish-crimson-text-font" => "Crimson Text",
         "parish-inter-font" => "Inter",
         "parish-roboto-font" => "Roboto"
+      )
+    )
+  );
+
+  // Hero Section
+
+  $wp_customize->add_section(
+    "parish_hero_section",
+    array(
+      "title" => __("Hero Section", "catholic-parish"),
+      "description" => esc_html__("Configure the hero section displayed at the top of your front page", "catholic-parish"),
+      "priority" => 103
+    )
+  );
+
+  $wp_customize->add_setting(
+    "parish_hero_title",
+    array(
+      "default" => "Parish Hero Title",
+      "sanitize_callback" => "sanitize_text_field"
+    )
+  );
+
+  $wp_customize->add_control(
+    "parish_hero_title",
+    array(
+      "label" => __("Title"),
+      "section" => "parish_hero_section",
+      "type" => "text"
+    )
+  );
+
+  $wp_customize->add_setting(
+    "parish_hero_card_text",
+    array(
+      "default" => "Parish hero card text",
+      "sanitize_callback" => "sanitize_textarea_field"
+    )
+  );
+
+  $wp_customize->add_control(
+    "parish_hero_card_text",
+    array(
+      "label" => __("Card Text"),
+      "section" => "parish_hero_section",
+      "priority" => 11,
+      "type" => "textarea"
+    )
+  );
+
+  $wp_customize->add_setting(
+    "parish_hero_bg_img",
+    array(
+      "sanitize_callback" => "esc_url_raw"
+    )
+  );
+
+  $wp_customize->add_control(
+    new WP_Customize_Image_Control(
+      $wp_customize,
+      "parish_hero_bg_img",
+      array(
+        "label" => __("Background Image"),
+        "section" => "parish_hero_section",
+        "priority" => 12,
       )
     )
   );
