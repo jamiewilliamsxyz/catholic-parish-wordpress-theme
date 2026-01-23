@@ -1,5 +1,15 @@
 <?php
 
+// Theme Option Styles/Scripts
+
+add_action("customize_controls_enqueue_scripts", "parish_enqueue_customizer_scripts");
+
+function parish_enqueue_customizer_scripts()
+{
+  wp_enqueue_script('wp-color-picker');
+  wp_enqueue_style('wp-color-picker');
+}
+
 // Admin Styles
 
 add_action("admin_enqueue_scripts", "parish_enqueue_admin_styles");
