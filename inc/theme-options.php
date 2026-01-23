@@ -15,6 +15,7 @@ function parish_register_theme_options($wp_customize)
     )
   );
 
+  // Colours - accent colour
   $wp_customize->add_setting(
     "parish_accent_colour",
     array(
@@ -43,6 +44,7 @@ function parish_register_theme_options($wp_customize)
     )
   );
 
+  // Typography - heading font
   $wp_customize->add_setting(
     "parish_heading_font",
     array(
@@ -68,6 +70,7 @@ function parish_register_theme_options($wp_customize)
     )
   );
 
+  // Typography - body font
   $wp_customize->add_setting(
     "parish_body_font",
     array(
@@ -105,6 +108,7 @@ function parish_register_theme_options($wp_customize)
     )
   );
 
+  // Hero Section - title
   $wp_customize->add_setting(
     "parish_hero_title",
     array(
@@ -122,6 +126,7 @@ function parish_register_theme_options($wp_customize)
     )
   );
 
+  // Hero Section - card text
   $wp_customize->add_setting(
     "parish_hero_card_text",
     array(
@@ -140,6 +145,7 @@ function parish_register_theme_options($wp_customize)
     )
   );
 
+  // Hero Section - background image
   $wp_customize->add_setting(
     "parish_hero_bg_img",
     array(
@@ -170,6 +176,7 @@ function parish_register_theme_options($wp_customize)
     )
   );
 
+  // Footer - title
   $wp_customize->add_setting(
     "parish_footer_title",
     array(
@@ -187,6 +194,7 @@ function parish_register_theme_options($wp_customize)
     )
   );
 
+  // Footer - parish info text
   $wp_customize->add_setting(
     "parish_footer_info_text",
     array(
@@ -205,6 +213,7 @@ function parish_register_theme_options($wp_customize)
     )
   );
 
+  // Footer - copyright name
   $wp_customize->add_setting(
     "parish_footer_copyright_name",
     array(
