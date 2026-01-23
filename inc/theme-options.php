@@ -130,7 +130,7 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_setting(
     "parish_hero_card_text",
     array(
-      "default" => "Parish hero card text",
+      "default" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
       "sanitize_callback" => "sanitize_textarea_field"
     )
   );
