@@ -158,6 +158,70 @@ function parish_register_theme_options($wp_customize)
       )
     )
   );
+
+  // Footer
+
+  $wp_customize->add_section(
+    "parish_footer_section",
+    array(
+      "title" => __("Footer", "catholic-parish"),
+      "description" => esc_html__("Manage the footer information displayed at the bottom of every page", "catholic-parish"),
+      "priority" => 104
+    )
+  );
+
+  $wp_customize->add_setting(
+    "parish_footer_title",
+    array(
+      "default" => "Parish Footer Title",
+      "sanitize_callback" => "sanitize_text_field"
+    )
+  );
+
+  $wp_customize->add_control(
+    "parish_footer_title",
+    array(
+      "label" => __("Title"),
+      "section" => "parish_footer_section",
+      "type" => "text"
+    )
+  );
+
+  $wp_customize->add_setting(
+    "parish_footer_info_text",
+    array(
+      "default" => "Parish footer info text",
+      "sanitize_callback" => "sanitize_textarea_field"
+    )
+  );
+
+  $wp_customize->add_control(
+    "parish_footer_info_text",
+    array(
+      "label" => __("Parish Info Text"),
+      "section" => "parish_footer_section",
+      "priority" => 11,
+      "type" => "textarea"
+    )
+  );
+
+  $wp_customize->add_setting(
+    "parish_footer_copyright_name",
+    array(
+      "default" => "Parish Copyright Name",
+      "sanitize_callback" => "sanitize_text_field"
+    )
+  );
+
+  $wp_customize->add_control(
+    "parish_footer_copyright_name",
+    array(
+      "label" => __("Copyright Name"),
+      "section" => "parish_footer_section",
+      "priority" => 12,
+      "type" => "text"
+    )
+  );
 }
 
 // Sanitise callback for font selects
