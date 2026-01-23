@@ -2,11 +2,12 @@
   <div class="parish-foot-wrapper">
     <div class="parish-foot-identity">
       <div class="parish-foot-title-info">
-        <h5><?php bloginfo("name"); ?></h5>
+        <?php  ?>
+        <h5><?php echo esc_html(get_theme_mod("parish_footer_title",  get_bloginfo("name"))); ?></h5>
 
         <div class="parish-foot-info">
           <h6><?php esc_html_e("Parish Info", "catholic-parish"); ?></h6>
-          <p><?php bloginfo("description"); ?></p>
+          <p><?php echo esc_html(get_theme_mod("parish_footer_info_text",  get_bloginfo("description"))); ?></p>
         </div>
       </div>
 
