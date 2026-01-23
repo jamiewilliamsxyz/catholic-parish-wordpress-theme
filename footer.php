@@ -58,36 +58,3 @@
 </body>
 
 </html>
-
-
-<!--
-
-<?php
-
-
-function parish_register_widgets()
-{
-  // Footer Links
-  register_sidebar(
-    array(
-      "name" => __("Footer Links", "catholic-parish"),
-      "id" => "parish-footer-links-widget",
-      "description" => "Parish general footer links",
-      "class" => "parish-foot-links-widget",
-      "before_title" => "<h6>",
-      "after_title" => "</h6>"
-    )
-  );
-
-  // Footer Social Links
-  register_sidebar(
-    array(
-      "name" => __("Footer Social Links", "catholic-parish"),
-      "id" => "parish-footer-social-links-widget",
-      "description" => "Parish social media footer links",
-      "class" => "parish-foot-social-links-widget",
-      "before_title" => "<h6>",
-      "after_title" => "</h6>"
-    )
-  );
-}
