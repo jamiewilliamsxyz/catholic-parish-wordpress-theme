@@ -35,18 +35,17 @@ function parish_register_cpts()
     "supports" => ["title"],
   ));
 
-  register_post_type("parish_clergy_member", array(
+  register_post_type("parish_staff_member", array(
     "labels" => array(
-      "name" => __("Clergy", "catholic-parish"),
-      "singular_name" => __("Clergy Member", "catholic-parish")
+      "name" => __("Parish Staff", "catholic-parish"),
+      "singular_name" => __("Parish Staff Member", "catholic-parish"),
     ),
-    "description" => __("Information about clergy members", "catholic-parish"),
+    "description" => __("Information about parish staff and clergy members", "catholic-parish"),
     "menu_icon" => "dashicons-businessperson",
     "public" => true,
     "show_in_rest" => true,
-    "rewrite" => array("slug" => "clergy"),
+    "rewrite" => array("slug" => "staff"),
     "supports" => ["title", "thumbnail"],
-
   ));
 
   register_post_type("parish_church_group", array(

@@ -14,10 +14,10 @@ function parish_add_meta_boxes()
   );
 
   add_meta_box(
-    "parish_clergy_id",
-    "Clergy Member Info",
-    "parish_clergy_meta_box",
-    "parish_clergy_member",
+    "parish_staff_id",
+    "Parish Staff Member Info",
+    "parish_staff_meta_box",
+    "parish_staff_member",
     "normal"
   );
 
@@ -47,16 +47,27 @@ function parish_newsletter_meta_box($post)
 <?php
 }
 
-function parish_clergy_meta_box($post)
+function parish_staff_meta_box($post)
 {
+  $role = get_post_meta($post->ID, "role", true);
+  $about = get_post_meta($post->ID, "about", true);
   $email = get_post_meta($post->ID, "email", true);
   $phone = get_post_meta($post->ID, "phone", true);
-  $about = get_post_meta($post->ID, "about", true);
 
-  wp_nonce_field("parish_save_clergy", "parish_clergy_nonce");
+  wp_nonce_field("parish_save_staff", "parish_staff_nonce");
 
 ?>
   <div class="parish-meta-box">
+    <div class="parish-meta-box-field">
+      <label for="role">Role</label>
+      <input type="text" name="role" placeholder="E.g. Assistant Priest" value="<?php echo esc_attr($role); ?>" />
+    </div>
+
+    <div class="parish-meta-box-field">
+      <label for="about">About</label>
+      <textarea name="about" rows="8" cols="50"><?php echo esc_textarea($about); ?></textarea>
+    </div>
+
     <div class="parish-meta-box-field">
       <label for="email">Email</label>
       <input type="email" name="email" value="<?php echo esc_attr($email); ?>" />
@@ -65,11 +76,6 @@ function parish_clergy_meta_box($post)
     <div class="parish-meta-box-field">
       <label for="phone">Phone</label>
       <input type="text" name="phone" value="<?php echo esc_attr($phone); ?>" />
-    </div>
-
-    <div class="parish-meta-box-field">
-      <label for="about">About</label>
-      <textarea name="about" rows="8" cols="50"><?php echo esc_textarea($about); ?></textarea>
     </div>
   </div>
 <?php
@@ -142,11 +148,27 @@ function parish_save_meta_boxes($post_id)
     }
   }
 
-  // Clergy
+  // Parish Staff
   if (
-    isset($_POST["parish_clergy_nonce"]) &&
-    wp_verify_nonce($_POST["parish_clergy_nonce"], "parish_save_clergy")
+    isset($_POST["parish_staff_nonce"]) &&
+    wp_verify_nonce($_POST["parish_staff_nonce"], "parish_save_staff")
   ) {
+    if (isset($_POST["role"])) {
+      update_post_meta(
+        $post_id,
+        "role",
+        sanitize_text_field($_POST["role"])
+      );
+    }
+
+    if (isset($_POST["about"])) {
+      update_post_meta(
+        $post_id,
+        "about",
+        sanitize_textarea_field($_POST["about"])
+      );
+    }
+
     if (isset($_POST["email"])) {
       update_post_meta(
         $post_id,
@@ -160,14 +182,6 @@ function parish_save_meta_boxes($post_id)
         $post_id,
         "phone",
         sanitize_text_field($_POST["phone"])
-      );
-    }
-
-    if (isset($_POST["about"])) {
-      update_post_meta(
-        $post_id,
-        "about",
-        sanitize_textarea_field($_POST["about"])
       );
     }
   }

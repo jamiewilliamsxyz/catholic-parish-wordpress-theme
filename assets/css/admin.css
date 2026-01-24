@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 4px;
   margin-top: 12px;
+  max-width: 450px;
 }
 
 .parish-meta-box-field:first-child {
