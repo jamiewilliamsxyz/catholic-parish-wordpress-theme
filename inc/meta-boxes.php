@@ -41,7 +41,7 @@ function parish_newsletter_meta_box($post)
   <div class="parish-meta-box">
     <div class="parish-meta-box-field">
       <label for="pdf_file">PDF File URL</label>
-      <input type="url" name="pdf_file" value="<?php echo esc_attr($pdf_file); ?>" />
+      <input type="url" name="pdf_file" placeholder="https://example.com/file.pdf" value="<?php echo esc_attr($pdf_file); ?>" />
     </div>
   </div>
 <?php
@@ -60,22 +60,22 @@ function parish_staff_meta_box($post)
   <div class="parish-meta-box">
     <div class="parish-meta-box-field">
       <label for="role">Role</label>
-      <input type="text" name="role" placeholder="E.g. Assistant Priest" value="<?php echo esc_attr($role); ?>" />
+      <input type="text" name="role" placeholder="Assistant Priest" value="<?php echo esc_attr($role); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
       <label for="about">About</label>
-      <textarea name="about" rows="8" cols="50"><?php echo esc_textarea($about); ?></textarea>
+      <textarea name="about" rows="8" placeholder="Brief bio of the staff/clergy member"><?php echo esc_textarea($about); ?></textarea>
     </div>
 
     <div class="parish-meta-box-field">
       <label for="email">Email</label>
-      <input type="email" name="email" value="<?php echo esc_attr($email); ?>" />
+      <input type="email" name="email" placeholder="john.doe@gmail.com" value="<?php echo esc_attr($email); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
       <label for="phone">Phone</label>
-      <input type="text" name="phone" value="<?php echo esc_attr($phone); ?>" />
+      <input type="text" name="phone" placeholder="+44 1234 567890" value="<?php echo esc_attr($phone); ?>" />
     </div>
   </div>
 <?php
@@ -96,32 +96,32 @@ function parish_group_meta_box($post)
   <div class="parish-meta-box">
     <div class="parish-meta-box-field">
       <label for="leader_name">Leader Name</label>
-      <input type="text" name="leader_name" value="<?php echo esc_attr($leader_name); ?>" />
+      <input type="text" name="leader_name" placeholder="John Doe" value="<?php echo esc_attr($leader_name); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
       <label for="leader_email">Leader Email</label>
-      <input type="email" name="leader_email" value="<?php echo esc_attr($leader_email); ?>" />
+      <input type="email" name="leader_email" placeholder="john.doe@gmail.com" value="<?php echo esc_attr($leader_email); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
       <label for="leader_phone">Leader Phone</label>
-      <input type="text" name="leader_phone" value="<?php echo esc_attr($leader_phone); ?>" />
+      <input type="text" name="leader_phone" placeholder="+44 1234 567890" value="<?php echo esc_attr($leader_phone); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
       <label for="description">Description</label>
-      <textarea name="description" rows="8" cols="50"><?php echo esc_textarea($description); ?></textarea>
+      <textarea name="description" rows="8" placeholder="Description of the church group"><?php echo esc_textarea($description); ?></textarea>
     </div>
 
     <div class="parish-meta-box-field">
       <label for="meeting_time">Meeting Time</label>
-      <input type="text" name="meeting_time" value="<?php echo esc_attr($meeting_time); ?>" />
+      <input type="text" name="meeting_time" placeholder="18:00 every Tuesday" value="<?php echo esc_attr($meeting_time); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
       <label for="location">Location</label>
-      <input type="text" name="location" value="<?php echo esc_attr($location); ?>" />
+      <input type="text" name="location" placeholder="Church hall" value="<?php echo esc_attr($location); ?>" />
     </div>
   </div>
 <?php
