@@ -23,10 +23,14 @@
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  color: rgb(47, 47, 47);
   text-decoration: underline;
   text-decoration-color: var(--parish-accent-colour);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 2px;
   color: var(--parish-text-dark);
+  transition: opacity 200ms;
+}
+
+.parish-404 > a:hover {
+  opacity: var(--parish-hover-opacity);
 }
