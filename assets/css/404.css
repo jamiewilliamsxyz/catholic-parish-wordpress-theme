@@ -4,18 +4,19 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: rgb(245, 245, 245);
-  color: rgb(27, 27, 27);
+  background-color: var(--parish-bg-lightest);
 }
 
 .parish-404 > h1 {
   font-weight: 600;
   font-size: 38px;
+  color: var(--parish-text-darkest);
 }
 
 .parish-404 > h2 {
   font-weight: 500;
   font-size: 22px;
+  color: var(--parish-text-darkest);
 }
 
 .parish-404 > a {
@@ -27,4 +28,5 @@
   text-decoration-color: rgba(125, 211, 252, 0.85);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 2px;
+  color: var(--parish-text-dark);
 }
