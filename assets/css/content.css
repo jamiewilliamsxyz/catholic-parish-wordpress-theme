@@ -4,7 +4,7 @@
 .parish-sp-title {
   font-size: 34px;
   font-weight: 600;
-  color: rgb(38, 38, 38);
+  color: var(--parish-text-darkest);
   text-align: center;
 }
 
@@ -14,7 +14,7 @@
 .parish-content h4,
 .parish-content h5,
 .parish-content h6 {
-  color: rgb(38, 38, 38);
+  color: var(--parish-text-darkest);
   font-weight: 600;
   margin: 10px 0;
 }
@@ -58,21 +58,21 @@
 }
 
 .parish-content blockquote {
-  border-left: solid 2px rgb(125, 211, 252);
+  border-left: solid 2px var(--parish-accent-colour);
   padding-left: 10px;
 }
 
 .parish-content a {
   font-weight: 500;
-  color: rgb(38, 38, 38);
-  text-decoration-color: rgba(125, 211, 252, 0.7);
+  color: var(--parish-text-darkest);
+  text-decoration-color: var(--parish-accent-colour);
   text-decoration-thickness: 2px;
   cursor: pointer;
   transition: opacity 200ms;
 }
 
 .parish-content a:hover {
-  opacity: 0.7;
+  opacity: var(--parish-hover-opacity);
 }
 
 /* Tablet/Desktop */
@@ -131,7 +131,7 @@
   }
 
   .parish-content blockquote {
-    border-left: solid 3px rgb(125, 211, 252);
+    border-left: solid 3px var(--parish-accent-colour);
     padding-left: 15px;
   }
 
