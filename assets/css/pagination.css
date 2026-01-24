@@ -23,7 +23,6 @@ nav.pagination > .nav-links > .page-numbers {
 
 nav.pagination > .nav-links > .current {
   transition: opacity 200ms;
-  border-radius: 1px;
   border-bottom: solid 2px rgba(125, 211, 252, 0.85);
 }
 

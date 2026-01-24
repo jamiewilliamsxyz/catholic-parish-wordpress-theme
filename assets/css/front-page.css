@@ -49,7 +49,6 @@
   background-color: rgba(38, 38, 38, 0.7);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 24px;
-  border-radius: 1px;
   border-bottom: solid 2px rgba(125, 211, 252, 0.6);
   max-width: 450px;
 }
@@ -85,7 +84,6 @@
   cursor: pointer;
   border-bottom: solid 1.5px rgba(125, 211, 252, 0.85);
   width: fit-content;
-  border-radius: 1px;
   transition: opacity 200ms;
 }
 
@@ -124,7 +122,6 @@
   gap: 8px;
   background-color: rgba(38, 38, 38);
   border-bottom: solid 2px rgba(125, 211, 252);
-  border-radius: 1px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
