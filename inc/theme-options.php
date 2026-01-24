@@ -48,7 +48,7 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_setting(
     "parish_heading_font",
     array(
-      "default" => "parish-lora-font",
+      "default" => "parish-font-lora",
       "sanitize_callback" => "parish_sanitise_font_choice"
     )
   );
@@ -61,11 +61,11 @@ function parish_register_theme_options($wp_customize)
       "type" => "select",
       "choices" =>
       array(
-        "parish-lora-font" => "Lora",
-        "parish-merriweather-font" => "Merriweather",
-        "parish-crimson-text-font" => "Crimson Text",
-        "parish-inter-font" => "Inter",
-        "parish-roboto-font" => "Roboto"
+        "parish-font-lora" => "Lora",
+        "parish-font-merriweather" => "Merriweather",
+        "parish-font-crimson-text" => "Crimson Text",
+        "parish-font-inter" => "Inter",
+        "parish-font-roboto" => "Roboto"
       )
     )
   );

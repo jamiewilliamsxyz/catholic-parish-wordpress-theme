@@ -116,11 +116,31 @@ function parish_enqueue_scripts()
     $version
   );
 
-  // Google font
-  wp_enqueue_style(
-    "parish-font",
-    "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-  );
+  // Google fonts
+  $selected_heading_font = get_theme_mod("parish_heading_font", "parish-lora-font");
+  $selected_body_font = get_theme_mod("parish_body_font", "parish-lora-font");
+
+  $font_urls = [
+    "parish-lora-font" => "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap",
+    "parish-merriweather-font" => "https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap",
+    "parish-crimson-text-font" => "https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap",
+    "parish-inter-font" => "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    "parish-roboto-font" => "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  ];
+
+  if (isset($font_urls[$selected_heading_font])) {
+    wp_enqueue_style(
+      $selected_heading_font . "-heading",
+      $font_urls[$selected_heading_font]
+    );
+  }
+
+  if (isset($font_urls[$selected_body_font])) {
+    wp_enqueue_style(
+      $selected_body_font . "-body",
+      $font_urls[$selected_body_font]
+    );
+  }
 
   // Navbar menu script
   wp_enqueue_script(
