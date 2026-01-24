@@ -41,7 +41,7 @@
 .parish-hero > header > div > h2 {
   font-size: 16px;
   font-weight: 400;
-  color: rgba(234, 234, 234);
+  color: var(--parish-text-light);
 }
 
 .parish-description-container {
@@ -49,14 +49,14 @@
   background-color: rgba(38, 38, 38, 0.7);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 24px;
-  border-bottom: solid 2px rgba(125, 211, 252, 0.6);
+  border-bottom: solid 2px var(--parish-accent-colour);
   max-width: 450px;
 }
 
 /* Latest Announcements */
 
 .parish-announcements {
-  background-color: rgba(245, 245, 245);
+  background-color: var(--parish-bg-lightest);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +68,7 @@
   font-size: 38px;
   text-align: center;
   font-weight: 600;
-  color: rgba(38, 38, 38);
+  color: var(--parish-text-darkest);
 }
 
 .parish-announcements-content {
@@ -82,24 +82,24 @@
 .parish-announcement-card > a {
   text-decoration: none;
   cursor: pointer;
-  border-bottom: solid 1.5px rgba(125, 211, 252, 0.85);
+  border-bottom: solid 1.5px var(--parish-accent-colour);
   width: fit-content;
   transition: opacity 200ms;
 }
 
 .parish-see-more-link:hover,
 .parish-announcement-card > a:hover {
-  opacity: 0.7;
+  opacity: var(--parish-hover-opacity);
 }
 
 .parish-see-more-link {
-  color: rgba(47, 47, 47);
+  color: var(--parish-text-dark);
   font-weight: 500;
   font-size: 18px;
 }
 
 .parish-announcement-card > a {
-  color: rgba(221, 221, 221);
+  color: var(--parish-text-medium);
 }
 
 .parish-latest-announcements {
@@ -120,18 +120,18 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: rgba(38, 38, 38);
-  border-bottom: solid 2px rgba(125, 211, 252);
+  background-color: var(--parish-bg-dark);
+  border-bottom: solid 2px var(--parish-accent-colour);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .parish-announcement-card > span {
-  color: rgba(204, 204, 204);
+  color: var(--parish-text-muted);
 }
 
 .parish-announcement-card > h4,
 .parish-no-announcements > p {
-  color: rgba(234, 234, 234);
+  color: var(--parish-text-light);
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
@@ -142,7 +142,7 @@
 }
 
 .parish-announcement-card > p {
-  color: rgba(204, 204, 204);
+  color: var(--parish-text-medium);
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -171,7 +171,6 @@
   }
 
   .parish-announcements {
-    background-color: rgba(245, 245, 245);
     display: flex;
     flex-direction: column;
     align-items: center;
