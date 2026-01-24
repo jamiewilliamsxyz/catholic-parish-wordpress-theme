@@ -64,7 +64,7 @@
 
 .parish-content a {
   font-weight: 500;
-  color: var(--parish-text-darkest);
+  color: var(--parish-text-dark);
   text-decoration-color: var(--parish-accent-colour);
   text-decoration-thickness: 2px;
   cursor: pointer;
