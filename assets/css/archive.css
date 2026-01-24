@@ -1,17 +1,17 @@
 .parish-archive > header {
-  background-color: rgb(250, 250, 250);
+  background-color: var(--parish-bg-light);
   padding: 48px 24px;
 }
 
 .parish-archive > header > h1 {
-  color: rgb(38, 38, 38);
+  color: var(--parish-text-darkest);
   font-size: 34px;
   font-weight: 600;
   text-align: center;
 }
 
 .parish-archive > header > .parish-archive-header-separator {
-  background-color: rgb(125, 211, 252);
+  background-color: var(--parish-accent-colour);
   height: 2px;
   width: 70%;
   max-width: 320px;
@@ -19,7 +19,7 @@
 }
 
 .parish-archive > header > h2 {
-  color: rgb(38, 38, 38);
+  color: var(--parish-text-darkest);
   font-size: 20px;
   font-weight: 400;
   font-style: italic;
@@ -28,7 +28,7 @@
 
 .parish-archive > section {
   padding: 24px;
-  background-color: rgb(234, 234, 234);
+  background-color: var(--parish-bg-lightest);
 }
 
 .parish-archive-container {
@@ -46,8 +46,8 @@
   width: 100%;
   box-sizing: border-box;
   padding: 24px;
-  background-color: rgba(38, 38, 38);
-  border-bottom: solid 2px rgba(125, 211, 252);
+  background-color: var(--parish-bg-dark);
+  border-bottom: solid 2px var(--parish-accent-colour);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -62,12 +62,12 @@
 }
 
 .parish-archive-card-content > span {
-  color: rgba(204, 204, 204);
+  color: var(--parish-text-muted);
 }
 
 .parish-archive-card-content > h2,
 .parish-archive-no-posts > p {
-  color: rgba(234, 234, 234);
+  color: var(--parish-text-light);
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
@@ -78,7 +78,7 @@
 }
 
 .parish-archive-card-content > p {
-  color: rgba(204, 204, 204);
+  color: var(--parish-text-medium);
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -88,14 +88,14 @@
 .parish-archive-card > a {
   text-decoration: none;
   cursor: pointer;
-  color: rgba(221, 221, 221);
-  border-bottom: solid 1.5px rgba(125, 211, 252, 0.85);
+  color: var(--parish-text-medium);
+  border-bottom: solid 1.5px var(--parish-accent-colour);
   width: fit-content;
   transition: opacity 200ms;
 }
 
 .parish-archive-card > a:hover {
-  opacity: 0.7;
+  opacity: var(--parish-hover-opacity);
 }
 
 /* Desktop */
