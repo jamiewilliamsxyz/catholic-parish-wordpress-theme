@@ -1,5 +1,9 @@
+.parish-single-post {
+  background-color: var(--parish-bg-lightest);
+}
+
 .parish-single-post > header {
-  background-color: rgb(250, 250, 250);
+  background-color: var(--parish-bg-light);
 }
 
 .parish-sp-header-content {
@@ -16,12 +20,12 @@
 }
 
 .parish-sp-date-posted {
-  color: rgb(47, 47, 47);
+  color: var(--parish-text-muted);
 }
 
 .parish-sp-content {
   padding: 24px;
-  color: rgb(47, 47, 47);
+  color: var(--parish-text-dark);
 }
 
 /* Tablet/Desktop */
