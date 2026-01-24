@@ -126,7 +126,7 @@
   }
 
   .parish-content-container {
-    padding-top: 137px;
+    padding: 0;
   }
 
   .parish-navbar {
@@ -134,6 +134,7 @@
     flex-direction: column;
     align-items: center;
     gap: 32px;
+    position: relative;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: var(--parish-bg-dark);
@@ -162,6 +163,11 @@
 
   .parish-navbar-menu {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 36px;
+    row-gap: 18px;
+    max-width: 1186px;
+    justify-content: center;
+    padding: 0 36px;
   }
 }

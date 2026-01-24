@@ -155,7 +155,7 @@
 
 /* Desktop */
 
-@media (min-width: 1080px) {
+@media (min-width: 950px) {
   .parish-hero {
     padding: 92px 48px 92px 48px;
     min-height: 500px;
@@ -209,9 +209,5 @@
   .parish-announcement-card > h4,
   .parish-no-announcements > p {
     font-size: 22px;
-  }
-
-  .parish-announcement-card > p {
-    -webkit-line-clamp: 1;
   }
 }

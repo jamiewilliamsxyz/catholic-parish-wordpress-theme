@@ -11,4 +11,4 @@ require_once $template_dir . "/inc/theme-setup.php";
 require_once $template_dir . "/inc/theme-options.php";
 require_once $template_dir . "/inc/theme-options-css-vars.php";
 
-// add_filter("show_admin_bar", "__return_false");
+add_filter("show_admin_bar", "__return_false");
