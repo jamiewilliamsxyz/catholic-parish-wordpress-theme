@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 18px;
-  background-color: rgb(38, 38, 38);
+  background-color: var(--parish-bg-dark);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -77,7 +77,7 @@
 }
 
 .parish-navbar-menu-container {
-  background-color: rgb(38, 38, 38);
+  background-color: var(--parish-bg-dark);
   padding: 0 18px 18px 18px;
   opacity: 0;
   transform: translateY(-10px);
@@ -102,18 +102,18 @@
 }
 
 .parish-navbar-menu > li > a {
-  color: rgb(221, 221, 221);
+  color: var(--parish-text-medium);
   text-decoration: none;
   transition: 200ms;
 }
 
 .parish-navbar-menu > li > a:hover {
-  opacity: 0.7;
+  opacity: var(--parish-hover-opacity);
 }
 
 .parish-navbar-menu > li.current_page_item > a {
   text-decoration: underline;
-  text-decoration-color: rgba(125, 211, 252, 0.85);
+  text-decoration-color: var(--parish-accent-colour);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 2px;
 }
@@ -136,7 +136,7 @@
     gap: 32px;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-color: rgb(38, 38, 38);
+    background-color: var(--parish-bg-dark);
   }
 
   .parish-navbar-topbar {
