@@ -4,6 +4,21 @@ add_action("init", "parish_register_cpts");
 
 function parish_register_cpts()
 {
+  register_post_type("parish_service", array(
+    "labels" => array(
+      "name" => __("Services", "catholic-parish"),
+      "singular_name" => __("Service", "catholic-parish")
+    ),
+    "description" => __("Parish services", "catholic-parish"),
+    "menu_icon" => "dashicons-calendar-alt
+",
+    "public" => true,
+    "show_in_rest" => true,
+    "rewrite" => array("slug" => "services"),
+    "supports" =>
+    ["title"],
+  ));
+
   register_post_type("parish_announcement", array(
     "labels" => array(
       "name" => __("Announcements", "catholic-parish"),

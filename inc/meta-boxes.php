@@ -28,6 +28,14 @@ function parish_add_meta_boxes()
     "parish_church_group",
     "normal"
   );
+
+  add_meta_box(
+    "parish_service_id",
+    "Service Info",
+    "parish_service_meta_box",
+    "parish_service",
+    "normal"
+  );
 }
 
 // Meta box callbacks
@@ -127,6 +135,33 @@ function parish_group_meta_box($post)
 <?php
 }
 
+
+function parish_service_meta_box($post)
+{
+  $service_description = get_post_meta($post->ID, "service_description", true);
+  $service_occurrences = get_post_meta($post->ID, "service_occurrences", true);
+
+
+  wp_nonce_field("parish_save_service", "parish_service_nonce");
+
+?>
+  <div class="parish-meta-box">
+    <div class="parish-meta-box-field">
+      <label for="service_description">Description</label>
+      <textarea name="service_description" rows="8" placeholder="Brief description of the service"><?php echo esc_textarea($service_description); ?></textarea>
+    </div>
+
+    <div class="parish-meta-box-field">
+      <label for="service_occurrences">Occurrences</label>
+      <textarea name="service_occurrences" rows="8"
+        placeholder="Monday: 18:00 - 19:00
+Saturday: 9:30 - 10:00
+Sunday: 9:30 - 9:55"><?php echo esc_textarea($service_occurrences); ?></textarea>
+    </div>
+  </div>
+<?php
+}
+
 // Save meta box data
 add_action("save_post", "parish_save_meta_boxes");
 
@@ -148,7 +183,7 @@ function parish_save_meta_boxes($post_id)
     }
   }
 
-  // Parish Staff
+  // Parish Staff Member
   if (
     isset($_POST["parish_staff_nonce"]) &&
     wp_verify_nonce($_POST["parish_staff_nonce"], "parish_save_staff")
@@ -236,6 +271,28 @@ function parish_save_meta_boxes($post_id)
         $post_id,
         "location",
         sanitize_text_field($_POST["location"])
+      );
+    }
+  }
+
+  // Service
+  if (
+    isset($_POST["parish_service_nonce"]) &&
+    wp_verify_nonce($_POST["parish_service_nonce"], "parish_save_service")
+  ) {
+    if (isset($_POST["service_description"])) {
+      update_post_meta(
+        $post_id,
+        "service_description",
+        sanitize_text_field($_POST["service_description"])
+      );
+    }
+
+    if (isset($_POST["service_occurrences"])) {
+      update_post_meta(
+        $post_id,
+        "service_occurrences",
+        sanitize_textarea_field($_POST["service_occurrences"])
       );
     }
   }
