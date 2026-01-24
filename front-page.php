@@ -1,9 +1,16 @@
 <?php get_header(); ?>
 
+<?php
+$hero_bg = get_theme_mod(
+  "parish_hero_bg_img",
+  get_template_directory_uri() . "/assets/images/parish-hero-bg-placeholder.jpg"
+);
+?>
+
 <main>
   <section
     class="parish-hero"
-    style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/parish-hero-bg-placeholder.jpg');">
+    style="background-image: url('<?php echo esc_url($hero_bg); ?>');">
     <header>
       <h1>
         <?php echo esc_html(get_theme_mod("parish_hero_title",  get_bloginfo("name"))); ?>
