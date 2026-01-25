@@ -54,7 +54,6 @@ function parish_newsletter_meta_box($post)
   </div>
 <?php
 }
-
 function parish_staff_meta_box($post)
 {
   $role = get_post_meta($post->ID, "role", true);
@@ -68,12 +67,19 @@ function parish_staff_meta_box($post)
   <div class="parish-meta-box">
     <div class="parish-meta-box-field">
       <label for="role"><?php esc_html_e("Role", "catholic-parish-wordpress-theme") ?></label>
-      <input type="text" name="role" placeholder="Assistant Priest" value="<?php echo esc_attr($role); ?>" />
+      <input
+        type="text"
+        name="role"
+        placeholder="<?php echo esc_attr__("Assistant Priest", "catholic-parish-wordpress-theme") ?>"
+        value="<?php echo esc_attr($role); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
       <label for="about"><?php esc_html_e("About", "catholic-parish-wordpress-theme") ?></label>
-      <textarea name="about" rows="8" placeholder="Brief bio of the staff/clergy member"><?php echo esc_textarea($about); ?></textarea>
+      <textarea
+        name="about"
+        rows="8"
+        placeholder="<?php echo esc_attr__("Brief bio of the staff/clergy member", "catholic-parish-wordpress-theme") ?>"><?php echo esc_textarea($about); ?></textarea>
     </div>
 
     <div class="parish-meta-box-field">
@@ -119,17 +125,28 @@ function parish_group_meta_box($post)
 
     <div class="parish-meta-box-field">
       <label for="description"><?php esc_html_e("Description", "catholic-parish-wordpress-theme") ?></label>
-      <textarea name="description" rows="8" placeholder="Description of the church group"><?php echo esc_textarea($description); ?></textarea>
+      <textarea
+        name="description"
+        rows="8"
+        placeholder="<?php echo esc_attr__("Description of the church group", "catholic-parish-wordpress-theme") ?>"><?php echo esc_textarea($description); ?></textarea>
     </div>
 
     <div class="parish-meta-box-field">
       <label for="meeting_time"><?php esc_html_e("Meeting Time", "catholic-parish-wordpress-theme") ?></label>
-      <input type="text" name="meeting_time" placeholder="18:00 every Tuesday" value="<?php echo esc_attr($meeting_time); ?>" />
+      <input
+        type="text"
+        name="meeting_time"
+        placeholder="18:00 <?php echo esc_attr__("every Tuesday", "catholic-parish-wordpress-theme") ?>"
+        value="<?php echo esc_attr($meeting_time); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
       <label for="location"><?php esc_html_e("Location", "catholic-parish-wordpress-theme") ?></label>
-      <input type="text" name="location" placeholder="Church hall" value="<?php echo esc_attr($location); ?>" />
+      <input
+        type="text"
+        name="location"
+        placeholder="<?php echo esc_attr__("Church hall", "catholic-parish-wordpress-theme") ?>"
+        value="<?php echo esc_attr($location); ?>" />
     </div>
   </div>
 <?php
@@ -148,15 +165,27 @@ function parish_service_meta_box($post)
   <div class="parish-meta-box">
     <div class="parish-meta-box-field">
       <label for="service_description"><?php esc_html_e("Description", "catholic-parish-wordpress-theme") ?></label>
-      <textarea name="service_description" rows="8" placeholder="Brief description of the service"><?php echo esc_textarea($service_description); ?></textarea>
+      <textarea
+        name="service_description"
+        rows="8"
+        placeholder="<?php echo esc_attr__("Brief description of the service", "catholic-parish-wordpress-theme") ?>"><?php echo esc_textarea($service_description); ?></textarea>
     </div>
+
+    <?php
+    $service_occ_placeholder = sprintf(
+      "%s: 18:00 - 19:00\n%s: 9:30 - 10:00\n%s: 9:30 - 9:55",
+      esc_html__("Monday", "catholic-parish"),
+      esc_html__("Saturday", "catholic-parish"),
+      esc_html__("Sunday", "catholic-parish")
+    );
+    ?>
 
     <div class="parish-meta-box-field">
       <label for="service_occurrences"><?php esc_html_e("Occurrences", "catholic-parish-wordpress-theme") ?></label>
-      <textarea name="service_occurrences" rows="8"
-        placeholder="Monday: 18:00 - 19:00
-Saturday: 9:30 - 10:00
-Sunday: 9:30 - 9:55"><?php echo esc_textarea($service_occurrences); ?></textarea>
+      <textarea
+        name="service_occurrences"
+        rows="8"
+        placeholder="<?php echo esc_attr($service_occ_placeholder) ?>"><?php echo esc_textarea($service_occurrences); ?></textarea>
     </div>
   </div>
 <?php
