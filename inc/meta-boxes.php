@@ -48,7 +48,7 @@ function parish_newsletter_meta_box($post)
 ?>
   <div class="parish-meta-box">
     <div class="parish-meta-box-field">
-      <label for="pdf_file">PDF File URL</label>
+      <label for="pdf_file"><?php esc_html_e("PDF File URL", "catholic-parish-wordpress-theme") ?></label>
       <input type="url" name="pdf_file" placeholder="https://example.com/file.pdf" value="<?php echo esc_attr($pdf_file); ?>" />
     </div>
   </div>
@@ -67,22 +67,22 @@ function parish_staff_meta_box($post)
 ?>
   <div class="parish-meta-box">
     <div class="parish-meta-box-field">
-      <label for="role">Role</label>
+      <label for="role"><?php esc_html_e("Role", "catholic-parish-wordpress-theme") ?></label>
       <input type="text" name="role" placeholder="Assistant Priest" value="<?php echo esc_attr($role); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
-      <label for="about">About</label>
+      <label for="about"><?php esc_html_e("About", "catholic-parish-wordpress-theme") ?></label>
       <textarea name="about" rows="8" placeholder="Brief bio of the staff/clergy member"><?php echo esc_textarea($about); ?></textarea>
     </div>
 
     <div class="parish-meta-box-field">
-      <label for="email">Email</label>
+      <label for="email"><?php esc_html_e("Email", "catholic-parish-wordpress-theme") ?></label>
       <input type="email" name="email" placeholder="john.doe@gmail.com" value="<?php echo esc_attr($email); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
-      <label for="phone">Phone</label>
+      <label for="phone"><?php esc_html_e("Phone", "catholic-parish-wordpress-theme") ?></label>
       <input type="text" name="phone" placeholder="+44 1234 567890" value="<?php echo esc_attr($phone); ?>" />
     </div>
   </div>
@@ -103,32 +103,32 @@ function parish_group_meta_box($post)
 ?>
   <div class="parish-meta-box">
     <div class="parish-meta-box-field">
-      <label for="leader_name">Leader Name</label>
+      <label for="leader_name"><?php esc_html_e("Leader Name", "catholic-parish-wordpress-theme") ?></label>
       <input type="text" name="leader_name" placeholder="John Doe" value="<?php echo esc_attr($leader_name); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
-      <label for="leader_email">Leader Email</label>
+      <label for="leader_email"><?php esc_html_e("Leader Email", "catholic-parish-wordpress-theme") ?></label>
       <input type="email" name="leader_email" placeholder="john.doe@gmail.com" value="<?php echo esc_attr($leader_email); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
-      <label for="leader_phone">Leader Phone</label>
+      <label for="leader_phone"><?php esc_html_e("Leader Phone", "catholic-parish-wordpress-theme") ?></label>
       <input type="text" name="leader_phone" placeholder="+44 1234 567890" value="<?php echo esc_attr($leader_phone); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
-      <label for="description">Description</label>
+      <label for="description"><?php esc_html_e("Description", "catholic-parish-wordpress-theme") ?></label>
       <textarea name="description" rows="8" placeholder="Description of the church group"><?php echo esc_textarea($description); ?></textarea>
     </div>
 
     <div class="parish-meta-box-field">
-      <label for="meeting_time">Meeting Time</label>
+      <label for="meeting_time"><?php esc_html_e("Meeting Time", "catholic-parish-wordpress-theme") ?></label>
       <input type="text" name="meeting_time" placeholder="18:00 every Tuesday" value="<?php echo esc_attr($meeting_time); ?>" />
     </div>
 
     <div class="parish-meta-box-field">
-      <label for="location">Location</label>
+      <label for="location"><?php esc_html_e("Location", "catholic-parish-wordpress-theme") ?></label>
       <input type="text" name="location" placeholder="Church hall" value="<?php echo esc_attr($location); ?>" />
     </div>
   </div>
@@ -147,12 +147,12 @@ function parish_service_meta_box($post)
 ?>
   <div class="parish-meta-box">
     <div class="parish-meta-box-field">
-      <label for="service_description">Description</label>
+      <label for="service_description"><?php esc_html_e("Description", "catholic-parish-wordpress-theme") ?></label>
       <textarea name="service_description" rows="8" placeholder="Brief description of the service"><?php echo esc_textarea($service_description); ?></textarea>
     </div>
 
     <div class="parish-meta-box-field">
-      <label for="service_occurrences">Occurrences</label>
+      <label for="service_occurrences"><?php esc_html_e("Occurrences", "catholic-parish-wordpress-theme") ?></label>
       <textarea name="service_occurrences" rows="8"
         placeholder="Monday: 18:00 - 19:00
 Saturday: 9:30 - 10:00

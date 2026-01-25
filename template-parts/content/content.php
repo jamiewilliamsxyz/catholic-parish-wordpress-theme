@@ -2,7 +2,10 @@
   <header>
     <div class="parish-sp-header-content">
       <h1 class="parish-sp-title"><?php the_title(); ?></h1>
-      <span class="parish-sp-date-posted">Date posted: <?php echo get_the_date(); ?></span>
+      <span class="parish-sp-date-posted">
+        <?php esc_html_e("Date posted", "catholic-parish-wordpress-theme") ?>:
+        <?php echo get_the_date(); ?>
+      </span>
 
       <?php if (has_post_thumbnail()) : ?>
         <div class="parish-sp-thumb-wrapper">

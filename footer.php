@@ -18,7 +18,7 @@
 
     <div class="parish-foot-links">
       <div class="parish-foot-links-content">
-        <h6>General Links</h6>
+        <h6><?php esc_html_e("General Links", "catholic-parish-wordpress-theme") ?></h6>
         <?php
         wp_nav_menu(
           array(
@@ -31,7 +31,7 @@
       </div>
 
       <div class="parish-foot-links-content">
-        <h6>Social Links</h6>
+        <h6><?php esc_html_e("Social Links", "catholic-parish-wordpress-theme") ?></h6>
         <?php
         wp_nav_menu(
           array(

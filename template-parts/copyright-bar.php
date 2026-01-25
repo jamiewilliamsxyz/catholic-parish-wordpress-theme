@@ -2,7 +2,7 @@
   <?php
   echo
   sprintf(
-    esc_html__("Copyright &copy; %s %s"),
+    esc_html__("Copyright &copy; %s %s", "catholic-parish-wordpress-theme"),
 
     esc_html(date_i18n("Y")),
 
