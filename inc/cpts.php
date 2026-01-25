@@ -1,5 +1,7 @@
 <?php
 
+// Register CPTs
+
 add_action("init", "parish_register_cpts");
 
 function parish_register_cpts()
@@ -138,4 +140,31 @@ function parish_register_cpts()
     "rewrite" => array("slug" => "church-groups"),
     "supports" => ["title"],
   ));
+}
+
+// Filter for custom title placeholders
+add_filter("enter_title_here", "parish_filter_enter_title", 10, 2);
+
+function parish_filter_enter_title($title_placeholder, $post)
+{
+  switch ($post->post_type) {
+    case "parish_service":
+      $title_placeholder = __("Enter Service Name", "catholic-parish-wordpress-theme");
+      break;
+    case "parish_announcement":
+      $title_placeholder = __("Enter Announcement Title", "catholic-parish-wordpress-theme");
+      break;
+    case "parish_newsletter":
+      $title_placeholder = __("Enter Newsletter Name", "catholic-parish-wordpress-theme");
+      break;
+    case "parish_staff_member":
+      $title_placeholder = __("Enter Parish Staff Member Name", "catholic-parish-wordpress-theme");
+      break;
+    case "parish_church_group":
+      $title_placeholder = __("Enter Church Group Name", "catholic-parish-wordpress-theme");
+      break;
+    default:
+      break;
+  }
+  return $title_placeholder;
 }

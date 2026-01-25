@@ -152,12 +152,10 @@ function parish_group_meta_box($post)
 <?php
 }
 
-
 function parish_service_meta_box($post)
 {
   $service_description = get_post_meta($post->ID, "service_description", true);
   $service_occurrences = get_post_meta($post->ID, "service_occurrences", true);
-
 
   wp_nonce_field("parish_save_service", "parish_service_nonce");
 
