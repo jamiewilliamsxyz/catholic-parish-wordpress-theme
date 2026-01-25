@@ -10,13 +10,12 @@ function parish_register_cpts()
       "singular_name" => __("Service", "catholic-parish-wordpress-theme")
     ),
     "description" => __("Parish services", "catholic-parish-wordpress-theme"),
-    "menu_icon" => "dashicons-calendar-alt
-",
+    "menu_icon" => "dashicons-calendar-alt",
     "public" => true,
-    "show_in_rest" => true,
+    "has_archive" => true,
+    "show_in_nav_menus" => true,
     "rewrite" => array("slug" => "services"),
-    "supports" =>
-    ["title"],
+    "supports" => ["title"],
   ));
 
   register_post_type("parish_announcement", array(
@@ -27,12 +26,10 @@ function parish_register_cpts()
     "description" => __("Parish announcements and notices", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-megaphone",
     "public" => true,
-    "show_in_rest" => true,
     "has_archive" => true,
     "show_in_nav_menus" => true,
     "rewrite" => array("slug" => "announcements"),
-    "supports" =>
-    ["title", "editor", "excerpt", "thumbnail"],
+    "supports" => ["title", "editor", "excerpt", "thumbnail"],
   ));
 
   register_post_type("parish_newsletter", array(
@@ -43,7 +40,6 @@ function parish_register_cpts()
     "description" => __("Parish newsletters", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-media-document",
     "public" => true,
-    "show_in_rest" => true,
     "has_archive" => true,
     "show_in_nav_menus" => true,
     "rewrite" => array("slug" => "newsletters"),
@@ -58,7 +54,8 @@ function parish_register_cpts()
     "description" => __("Information about parish staff and clergy members", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-businessperson",
     "public" => true,
-    "show_in_rest" => true,
+    "show_in_nav_menus" => true,
+    "has_archive" => true,
     "rewrite" => array("slug" => "staff"),
     "supports" => ["title", "thumbnail"],
   ));
@@ -71,7 +68,6 @@ function parish_register_cpts()
     "description" => __("Information about the parish groups", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-groups",
     "public" => true,
-    "show_in_rest" => true,
     "has_archive" => true,
     "show_in_nav_menus" => true,
     "rewrite" => array("slug" => "church-groups"),
