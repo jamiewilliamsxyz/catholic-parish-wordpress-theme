@@ -174,9 +174,9 @@ function parish_service_meta_box($post)
     <?php
     $service_occ_placeholder = sprintf(
       "%s: 18:00 - 19:00\n%s: 9:30 - 10:00\n%s: 9:30 - 9:55",
-      esc_html__("Monday", "catholic-parish"),
-      esc_html__("Saturday", "catholic-parish"),
-      esc_html__("Sunday", "catholic-parish")
+      esc_html__("Monday", "catholic-parish-wordpress-theme"),
+      esc_html__("Saturday", "catholic-parish-wordpress-theme"),
+      esc_html__("Sunday", "catholic-parish-wordpress-theme")
     );
     ?>
 
