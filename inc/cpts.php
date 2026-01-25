@@ -4,11 +4,24 @@ add_action("init", "parish_register_cpts");
 
 function parish_register_cpts()
 {
+  $service_labels = array(
+    "name" => _x("Services", "post type general name", "catholic-parish-wordpress-theme"),
+    "singular_name" => _x("Service", "post type singular name", "catholic-parish-wordpress-theme"),
+    "add_new" => __("Add New", "catholic-parish-wordpress-theme"),
+    "add_new_item" => __("Add New Service", "catholic-parish-wordpress-theme"),
+    "edit" => __("Edit", "catholic-parish-wordpress-theme"),
+    "edit_item" => __("Edit Service", "catholic-parish-wordpress-theme"),
+    "new_item" => __("New Service", "catholic-parish-wordpress-theme"),
+    "view" => __("View", "catholic-parish-wordpress-theme"),
+    "view_item" => __("View Service", "catholic-parish-wordpress-theme"),
+    "search_items" => __("Search Services", "catholic-parish-wordpress-theme"),
+    "not_found" => __("No Services found", "catholic-parish-wordpress-theme"),
+    "not_found_in_trash" => __("No Services found in Trash", "catholic-parish-wordpress-theme"),
+    "parent" => __("Parent Service:", "catholic-parish-wordpress-theme"),
+  );
+
   register_post_type("parish_service", array(
-    "labels" => array(
-      "name" => __("Services", "catholic-parish-wordpress-theme"),
-      "singular_name" => __("Service", "catholic-parish-wordpress-theme")
-    ),
+    "labels" => $service_labels,
     "description" => __("Parish services", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-calendar-alt",
     "public" => true,
@@ -18,11 +31,24 @@ function parish_register_cpts()
     "supports" => ["title"],
   ));
 
+  $announcement_labels = array(
+    "name" => _x("Announcements", "post type general name", "catholic-parish-wordpress-theme"),
+    "singular_name" => _x("Announcement", "post type singular name", "catholic-parish-wordpress-theme"),
+    "add_new" => __("Add New", "catholic-parish-wordpress-theme"),
+    "add_new_item" => __("Add New Announcement", "catholic-parish-wordpress-theme"),
+    "edit" => __("Edit", "catholic-parish-wordpress-theme"),
+    "edit_item" => __("Edit Announcement", "catholic-parish-wordpress-theme"),
+    "new_item" => __("New Announcement", "catholic-parish-wordpress-theme"),
+    "view" => __("View", "catholic-parish-wordpress-theme"),
+    "view_item" => __("View Announcement", "catholic-parish-wordpress-theme"),
+    "search_items" => __("Search Announcements", "catholic-parish-wordpress-theme"),
+    "not_found" => __("No Announcements found", "catholic-parish-wordpress-theme"),
+    "not_found_in_trash" => __("No Announcements found in Trash", "catholic-parish-wordpress-theme"),
+    "parent" => __("Parent Announcement:", "catholic-parish-wordpress-theme"),
+  );
+
   register_post_type("parish_announcement", array(
-    "labels" => array(
-      "name" => __("Announcements", "catholic-parish-wordpress-theme"),
-      "singular_name" => __("Announcement", "catholic-parish-wordpress-theme")
-    ),
+    "labels" => $announcement_labels,
     "description" => __("Parish announcements and notices", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-megaphone",
     "public" => true,
@@ -32,11 +58,24 @@ function parish_register_cpts()
     "supports" => ["title", "editor", "excerpt", "thumbnail"],
   ));
 
+  $newsletter_labels = array(
+    "name" => _x("Newsletters", "post type general name", "catholic-parish-wordpress-theme"),
+    "singular_name" => _x("Newsletter", "post type singular name", "catholic-parish-wordpress-theme"),
+    "add_new" => __("Add New", "catholic-parish-wordpress-theme"),
+    "add_new_item" => __("Add New Newsletter", "catholic-parish-wordpress-theme"),
+    "edit" => __("Edit", "catholic-parish-wordpress-theme"),
+    "edit_item" => __("Edit Newsletter", "catholic-parish-wordpress-theme"),
+    "new_item" => __("New Newsletter", "catholic-parish-wordpress-theme"),
+    "view" => __("View", "catholic-parish-wordpress-theme"),
+    "view_item" => __("View Newsletter", "catholic-parish-wordpress-theme"),
+    "search_items" => __("Search Newsletters", "catholic-parish-wordpress-theme"),
+    "not_found" => __("No Newsletters found", "catholic-parish-wordpress-theme"),
+    "not_found_in_trash" => __("No Newsletters found in Trash", "catholic-parish-wordpress-theme"),
+    "parent" => __("Parent Newsletter:", "catholic-parish-wordpress-theme"),
+  );
+
   register_post_type("parish_newsletter", array(
-    "labels" => array(
-      "name" => __("Newsletters", "catholic-parish-wordpress-theme"),
-      "singular_name" => __("Newsletter", "catholic-parish-wordpress-theme")
-    ),
+    "labels" => $newsletter_labels,
     "description" => __("Parish newsletters", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-media-document",
     "public" => true,
@@ -46,11 +85,24 @@ function parish_register_cpts()
     "supports" => ["title"],
   ));
 
+  $staff_member_labels = array(
+    "name" => _x("Parish Staff", "post type general name", "catholic-parish-wordpress-theme"),
+    "singular_name" => _x("Parish Staff Member", "post type singular name", "catholic-parish-wordpress-theme"),
+    "add_new" => __("Add New", "catholic-parish-wordpress-theme"),
+    "add_new_item" => __("Add New Parish Staff Member", "catholic-parish-wordpress-theme"),
+    "edit" => __("Edit", "catholic-parish-wordpress-theme"),
+    "edit_item" => __("Edit Parish Staff Member", "catholic-parish-wordpress-theme"),
+    "new_item" => __("New Parish Staff Member", "catholic-parish-wordpress-theme"),
+    "view" => __("View", "catholic-parish-wordpress-theme"),
+    "view_item" => __("View Parish Staff Member", "catholic-parish-wordpress-theme"),
+    "search_items" => __("Search Parish Staff", "catholic-parish-wordpress-theme"),
+    "not_found" => __("No Parish Staff found", "catholic-parish-wordpress-theme"),
+    "not_found_in_trash" => __("No Parish Staff found in Trash", "catholic-parish-wordpress-theme"),
+    "parent" => __("Parent Parish Staff Member:", "catholic-parish-wordpress-theme"),
+  );
+
   register_post_type("parish_staff_member", array(
-    "labels" => array(
-      "name" => __("Parish Staff", "catholic-parish-wordpress-theme"),
-      "singular_name" => __("Parish Staff Member", "catholic-parish-wordpress-theme"),
-    ),
+    "labels" => $staff_member_labels,
     "description" => __("Information about parish staff and clergy members", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-businessperson",
     "public" => true,
@@ -60,11 +112,24 @@ function parish_register_cpts()
     "supports" => ["title", "thumbnail"],
   ));
 
+  $church_group_labels = array(
+    "name" => _x("Church Groups", "post type general name", "catholic-parish-wordpress-theme"),
+    "singular_name" => _x("Church Group", "post type singular name", "catholic-parish-wordpress-theme"),
+    "add_new" => __("Add New", "catholic-parish-wordpress-theme"),
+    "add_new_item" => __("Add New Church Group", "catholic-parish-wordpress-theme"),
+    "edit" => __("Edit", "catholic-parish-wordpress-theme"),
+    "edit_item" => __("Edit Church Group", "catholic-parish-wordpress-theme"),
+    "new_item" => __("New Church Group", "catholic-parish-wordpress-theme"),
+    "view" => __("View", "catholic-parish-wordpress-theme"),
+    "view_item" => __("View Church Group", "catholic-parish-wordpress-theme"),
+    "search_items" => __("Search Church Groups", "catholic-parish-wordpress-theme"),
+    "not_found" => __("No Church Groups found", "catholic-parish-wordpress-theme"),
+    "not_found_in_trash" => __("No Church Groups found in Trash", "catholic-parish-wordpress-theme"),
+    "parent" => __("Parent Church Group:", "catholic-parish-wordpress-theme"),
+  );
+
   register_post_type("parish_church_group", array(
-    "labels" => array(
-      "name" => __("Church Groups", "catholic-parish-wordpress-theme"),
-      "singular_name" => __("Church Group", "catholic-parish-wordpress-theme")
-    ),
+    "labels" => $church_group_labels,
     "description" => __("Information about the parish groups", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-groups",
     "public" => true,
