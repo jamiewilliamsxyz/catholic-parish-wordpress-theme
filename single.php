@@ -1,24 +1,14 @@
 <?php get_header(); ?>
 
 <main>
-  <article class="parish-single-post">
-    <header>
-      <div class="parish-sp-header-content">
-        <h1 class="parish-sp-title"><?php the_title(); ?></h1>
-        <span class="parish-sp-date-posted">Date posted: <?php echo get_the_date(); ?></span>
+  <?php
+  while (have_posts()) :
+    the_post();
 
-        <?php if (has_post_thumbnail()) : ?>
-          <div class="parish-sp-thumb-wrapper">
-            <?php the_post_thumbnail("parish-post-thumb", array(
-              "class" => "parish-sp-thumb"
-            )); ?>
-          </div>
-        <?php endif; ?>
-      </div>
-    </header>
+    get_template_part("template-parts/content/content");
 
-    <div class="parish-sp-content parish-content"><?php the_content(); ?></div>
-  </article>
+  endwhile;
+  ?>
 </main>
 
 <?php get_footer(); ?>

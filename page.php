@@ -1,14 +1,17 @@
 <?php get_header(); ?>
 
-<main class="parish-page-main">
-  <header>
-    <h1 class="parish-page-title"><?php the_title(); ?></h1>
-  </header>
+<main>
+  <?php
+  while (have_posts()) :
+    the_post();
 
-  <section class="parish-page-content parish-content">
-    <?php the_content(); ?>
-  </section>
-  </div>
+    get_template_part(
+      "template-parts/content/content",
+      "page"
+    );
+
+  endwhile;
+  ?>
 </main>
 
 <?php get_footer(); ?>

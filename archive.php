@@ -12,16 +12,17 @@
 
     <section>
       <div class="parish-archive-container">
-        <?php while (have_posts()) : the_post() ?>
-          <article class="parish-archive-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <div class="parish-archive-card-content">
-              <span><?php echo get_the_date(); ?></span>
-              <h2><?php the_title(); ?></h2>
-              <p><?php the_excerpt(); ?></p>
-            </div>
-            <a href="<?php the_permalink(); ?>"><?php esc_html_e("Read more", "catholic-parish"); ?></a>
-          </article>
-        <?php endwhile; ?>
+        <?php
+        while (have_posts()) :
+          the_post();
+
+          get_template_part(
+            "template-parts/content/content-archive",
+            get_post_type()
+          );
+
+        endwhile;
+        ?>
       </div>
     </section>
 
