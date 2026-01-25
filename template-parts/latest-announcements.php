@@ -9,7 +9,7 @@ if ($announcements) :
 ?>
   <section class="parish-announcements">
     <h3>
-      <?php esc_html_e("Latest Announcements", "catholic-parish") ?>
+      <?php esc_html_e("Latest Announcements", "catholic-parish-wordpress-theme") ?>
     </h3>
 
     <div class="parish-announcements-content">
@@ -20,7 +20,7 @@ if ($announcements) :
             <h4><?php the_title(); ?></h4>
             <p><?php the_excerpt(); ?></p>
             <a href="<?php the_permalink(); ?>">
-              <?php esc_html_e("Read more", "catholic-parish") ?>
+              <?php esc_html_e("Read more", "catholic-parish-wordpress-theme") ?>
             </a>
           </article>
         <?php endforeach;
@@ -28,8 +28,8 @@ if ($announcements) :
       </div>
     <?php else : ?>
       <div class="parish-no-announcements">
-        <p><?php esc_html_e("There are no announcements at the moment", "catholic-parish") ?></p>
-        <p><?php esc_html_e("Please check back soon", "catholic-parish") ?></p>
+        <p><?php esc_html_e("There are no announcements at the moment", "catholic-parish-wordpress-theme") ?></p>
+        <p><?php esc_html_e("Please check back soon", "catholic-parish-wordpress-theme") ?></p>
       </div>
     <?php endif; ?>
 

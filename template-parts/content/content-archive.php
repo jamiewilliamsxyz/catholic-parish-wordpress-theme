@@ -4,5 +4,5 @@
     <h2><?php the_title(); ?></h2>
     <p><?php the_excerpt(); ?></p>
   </div>
-  <a href="<?php the_permalink(); ?>"><?php esc_html_e("Read more", "catholic-parish"); ?></a>
+  <a href="<?php the_permalink(); ?>"><?php esc_html_e("Read more", "catholic-parish-wordpress-theme"); ?></a>
 </article>

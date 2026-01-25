@@ -31,7 +31,7 @@
   <?php else : ?>
 
     <div class="parish-archive-no-posts">
-      <p><?php esc_html_e("No posts found", "catholic-parish"); ?></p>
+      <p><?php esc_html_e("No posts found", "catholic-parish-wordpress-theme"); ?></p>
     </div>
 
   <?php endif; ?>

@@ -9,8 +9,8 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_section(
     "parish_colours_section",
     array(
-      "title" => __("Colours", "catholic-parish"),
-      "description" => esc_html__("Customise the colours used across your site", "catholic-parish"),
+      "title" => __("Colours", "catholic-parish-wordpress-theme"),
+      "description" => esc_html__("Customise the colours used across your site", "catholic-parish-wordpress-theme"),
       "priority" => 101
     )
   );
@@ -27,7 +27,7 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_control(
     "parish_accent_colour",
     array(
-      "label" => __("Accent Colour", "catholic-parish"),
+      "label" => __("Accent Colour", "catholic-parish-wordpress-theme"),
       "section" => "parish_colours_section",
       "type" => "color"
     )
@@ -38,8 +38,8 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_section(
     "parish_typography_section",
     array(
-      "title" => __("Typography", "catholic-parish"),
-      "description" => esc_html__("Select fonts for headings and body text across your site", "catholic-parish"),
+      "title" => __("Typography", "catholic-parish-wordpress-theme"),
+      "description" => esc_html__("Select fonts for headings and body text across your site", "catholic-parish-wordpress-theme"),
       "priority" => 102
     )
   );
@@ -56,7 +56,7 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_control(
     "parish_heading_font",
     array(
-      "label" => __("Heading Font", "catholic-parish"),
+      "label" => __("Heading Font", "catholic-parish-wordpress-theme"),
       "section" => "parish_typography_section",
       "type" => "select",
       "choices" =>
@@ -82,7 +82,7 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_control(
     "parish_body_font",
     array(
-      "label" => __("Body Font", "catholic-parish"),
+      "label" => __("Body Font", "catholic-parish-wordpress-theme"),
       "section" => "parish_typography_section",
       "priority" => 11,
       "type" => "select",
@@ -102,8 +102,8 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_section(
     "parish_hero_section",
     array(
-      "title" => __("Hero Section", "catholic-parish"),
-      "description" => esc_html__("Configure the hero section displayed at the top of your front page", "catholic-parish"),
+      "title" => __("Hero Section", "catholic-parish-wordpress-theme"),
+      "description" => esc_html__("Configure the hero section displayed at the top of your front page", "catholic-parish-wordpress-theme"),
       "priority" => 103
     )
   );
@@ -170,8 +170,8 @@ function parish_register_theme_options($wp_customize)
   $wp_customize->add_section(
     "parish_footer_section",
     array(
-      "title" => __("Footer", "catholic-parish"),
-      "description" => esc_html__("Manage the footer information displayed at the bottom of every page", "catholic-parish"),
+      "title" => __("Footer", "catholic-parish-wordpress-theme"),
+      "description" => esc_html__("Manage the footer information displayed at the bottom of every page", "catholic-parish-wordpress-theme"),
       "priority" => 104
     )
   );

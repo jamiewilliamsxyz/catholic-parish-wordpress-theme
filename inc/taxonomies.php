@@ -6,8 +6,8 @@ function parish_register_taxonomies()
 {
   register_taxonomy("parish_church_group_type", "parish_church_group", array(
     "labels" => array(
-      "name" => __("Group Types", "catholic-parish"),
-      "singular_name" => __("Group Type", "catholic-parish")
+      "name" => __("Group Types", "catholic-parish-wordpress-theme"),
+      "singular_name" => __("Group Type", "catholic-parish-wordpress-theme")
     ),
     "public" => true,
     "description" => "Used to categorise church groups by type",
