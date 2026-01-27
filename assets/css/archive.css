@@ -112,6 +112,31 @@
   margin-top: 12px;
 }
 
+/* Church Group CPT */
+
+.type-parish_church_group > .parish-archive-card-content > h2 {
+  text-decoration: underline;
+  text-decoration-color: var(--parish-accent-colour);
+  max-width: fit-content;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.parish-content-archive-group-card-section {
+  margin-top: 6px;
+}
+
+.parish-content-archive-group-card-section > h3 {
+  color: var(--parish-text-medium);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.parish-content-archive-group-card-section > p {
+  color: var(--parish-text-muted);
+  font-size: 16px;
+}
+
 /* Desktop */
 
 @media (min-width: 930px) {
@@ -135,7 +160,7 @@
 
   .parish-archive-card-content > span,
   .parish-archive-card-content > p,
-  .parish-archive-card-content > a,
+  .parish-archive-card > a,
   .parish-content-archive-newsletter-link {
     font-size: 18px;
   }
@@ -174,5 +199,26 @@
 
   .parish-content-archive-newsletter-link {
     margin-top: 24px;
+  }
+
+  /* Church Group CPT */
+  .type-parish_church_group {
+    max-height: fit-content;
+  }
+
+  .type-parish_church_group > .parish-archive-card-content > h2 {
+    font-size: 23px;
+  }
+
+  .parish-content-archive-group-card-section {
+    margin-top: 10px;
+  }
+
+  .parish-content-archive-group-card-section > h3 {
+    font-size: 19px;
+  }
+
+  .parish-content-archive-group-card-section > p {
+    font-size: 17px;
   }
 }

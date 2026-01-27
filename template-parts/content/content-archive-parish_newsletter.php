@@ -9,7 +9,13 @@
 
     if ($post_newsletter_url) :
     ?>
-      <a class="parish-content-archive-newsletter-link" href="<?php echo esc_url($post_newsletter_url); ?>" target="_blank" rel="noopener">Download</a>
+      <a
+        class="parish-content-archive-newsletter-link"
+        href="<?php echo esc_url($post_newsletter_url); ?>"
+        target="_blank"
+        rel="noopener">
+        <?php esc_html_e("Download", "catholic-parish-wordpress-theme") ?>
+      </a>
     <?php endif; ?>
   </div>
 </article>
