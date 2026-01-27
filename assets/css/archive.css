@@ -85,7 +85,8 @@
   -webkit-box-orient: vertical;
 }
 
-.parish-archive-card > a {
+.parish-archive-card > a,
+.parish-content-archive-newsletter-link {
   text-decoration: none;
   cursor: pointer;
   color: var(--parish-text-medium);
@@ -94,8 +95,21 @@
   transition: opacity 200ms;
 }
 
-.parish-archive-card > a:hover {
+.parish-archive-card > a:hover,
+.parish-content-archive-newsletter-link:hover {
   opacity: var(--parish-hover-opacity);
+}
+
+/* Newsletter CPT */
+
+.type-parish_newsletter {
+  height: fit-content;
+  min-height: fit-content;
+  max-height: fit-content;
+}
+
+.parish-content-archive-newsletter-link {
+  margin-top: 12px;
 }
 
 /* Desktop */
@@ -119,12 +133,10 @@
     font-size: 24px;
   }
 
-  .parish-archive-card > a {
-    font-size: 18px;
-  }
-
   .parish-archive-card-content > span,
-  .parish-archive-card-content > p {
+  .parish-archive-card-content > p,
+  .parish-archive-card-content > a,
+  .parish-content-archive-newsletter-link {
     font-size: 18px;
   }
 
@@ -152,5 +164,15 @@
   .parish-archive-card-content > h2,
   .parish-archive-no-posts > p {
     font-size: 22px;
+  }
+
+  /* Newsletter CPT Desktop */
+
+  .type-parish_newsletter {
+    min-height: fit-content;
+  }
+
+  .parish-content-archive-newsletter-link {
+    margin-top: 24px;
   }
 }
