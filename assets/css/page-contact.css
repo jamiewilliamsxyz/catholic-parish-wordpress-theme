@@ -42,6 +42,7 @@
 .parish-contact-form > form > button {
   font-family: inherit;
   font-weight: 500;
+  font-size: 16px;
   color: var(--parish-text-dark);
   background-color: var(--parish-bg-light);
   padding: 8px 12px;
@@ -93,6 +94,20 @@
 .parish-contact-input-field > input::placeholder,
 .parish-contact-textarea-field > textarea::placeholder {
   color: var(--parish-text-muted);
+}
+
+.parish-contact-form-success-msg,
+.parish-contact-form-err-msg {
+  text-align: center;
+  font-weight: 500;
+}
+
+.parish-contact-form-success-msg {
+  color: #4ade80;
+}
+
+.parish-contact-form-err-msg {
+  color: #f87171;
 }
 
 /* Tablet/Desktop */
@@ -149,5 +164,10 @@
   .parish-contact-input-field > input::placeholder,
   .parish-contact-textarea-field > textarea::placeholder {
     font-size: 15px;
+  }
+
+  .parish-contact-form-success-msg,
+  .parish-contact-form-err-msg {
+    font-size: 18px;
   }
 }
