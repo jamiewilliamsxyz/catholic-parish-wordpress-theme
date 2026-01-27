@@ -26,7 +26,7 @@ function parish_handle_contact_form()
 
   $to = get_option("admin_email");
   $body = "Name: $contact_name\nEmail: $contact_email\n\nMessage:\n$contact_message";
-  $headers = ["Reply-To: $contact_name <$contact_email>"];
+  $headers = "Reply-To: $contact_name <$contact_email>";
 
   $email_sent = wp_mail($to, $contact_subject, $body, $headers);
 
