@@ -19,6 +19,7 @@ function parish_theme_setup()
 
   // Image size
   add_image_size("parish-post-thumb", 640, 360);
+  add_image_size("parish-staff-photo", 195, 195);
 
   // Menu registration
   register_nav_menus(
