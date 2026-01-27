@@ -166,7 +166,7 @@ function parish_service_meta_box($post)
       <textarea
         name="service_description"
         rows="8"
-        placeholder="<?php echo esc_attr__("Brief description of the service", "catholic-parish-wordpress-theme") ?>"><?php echo esc_textarea($service_description); ?></textarea>
+        placeholder="<?php echo esc_attr__("Description and information about the service", "catholic-parish-wordpress-theme") ?>"><?php echo esc_textarea($service_description); ?></textarea>
     </div>
 
     <?php
@@ -319,7 +319,7 @@ function parish_save_meta_boxes($post_id)
       update_post_meta(
         $post_id,
         "service_occurrences",
-        sanitize_textarea_field($_POST["service_occurrences"])
+        wp_kses_post($_POST["service_occurrences"])
       );
     }
   }
