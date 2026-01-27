@@ -100,6 +100,15 @@ function parish_enqueue_scripts()
     );
   }
 
+  if (is_page_template("templates/page-contact.php")) {
+    wp_enqueue_style(
+      "parish-page-contact-style",
+      $template_uri . "/assets/css/page-contact.css",
+      [],
+      $version
+    );
+  }
+
   if (is_404()) {
     wp_enqueue_style(
       "parish-404-style",

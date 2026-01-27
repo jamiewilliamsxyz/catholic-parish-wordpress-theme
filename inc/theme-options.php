@@ -165,6 +165,35 @@ function parish_register_theme_options($wp_customize)
     )
   );
 
+  // Contact Page Template
+
+  $wp_customize->add_section(
+    "parish_contact_page_section",
+    array(
+      "title" => __("Contact Page", "catholic-parish-wordpress-theme"),
+      "description" => esc_html__("Customise the contact page template", "catholic-parish-wordpress-theme"),
+      "priority" => 104
+    )
+  );
+
+  // Map - map iframe
+  $wp_customize->add_setting(
+    "parish_map_url",
+    array(
+      "sanitize_callback" => "esc_url_raw"
+    )
+  );
+
+  $wp_customize->add_control(
+    "parish_map_url",
+    array(
+      "label" => __("Google Map URL", "catholic-parish-wordpress-theme"),
+      'description' => esc_html__("Paste the Google Maps embed link", "catholic-parish-wordpress-theme") . esc_html(" (https://www.google.com/maps/embed?...)"),
+      "section" => "parish_contact_page_section",
+      "type" => "url"
+    )
+  );
+
   // Footer
 
   $wp_customize->add_section(
@@ -172,7 +201,7 @@ function parish_register_theme_options($wp_customize)
     array(
       "title" => __("Footer", "catholic-parish-wordpress-theme"),
       "description" => esc_html__("Manage the footer information displayed at the bottom of every page", "catholic-parish-wordpress-theme"),
-      "priority" => 104
+      "priority" => 105
     )
   );
 
