@@ -55,8 +55,9 @@
 
 /* Latest Announcements */
 
-.parish-announcements {
-  background-color: var(--parish-bg-lightest);
+.parish-announcements,
+.parish-services-section,
+.parish-front-page-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,12 +65,22 @@
   padding: 48px 24px 48px 24px;
 }
 
+.parish-announcement,
+.parish-front-page-content {
+  background-color: var(--parish-bg-lightest);
+}
+
 .parish-announcements > h3,
-.parish-services-section > h3 {
+.parish-services-section > h3,
+.parish-front-page-content > header > h2 {
   font-size: 38px;
   text-align: center;
   font-weight: 600;
   color: var(--parish-text-darkest);
+}
+
+.parish-front-page-content {
+  color: var(--parish-text-dark);
 }
 
 .parish-announcements-content,
@@ -161,11 +172,6 @@
 
 .parish-services-section {
   background-color: var(--parish-bg-light);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 42px;
-  padding: 48px 24px 48px 24px;
 }
 
 .parish-service-card > h4 {
@@ -195,6 +201,11 @@
 /* Desktop */
 
 @media (min-width: 950px) {
+  .parish-front-page-content > header,
+  .parish-front-page-content-section {
+    max-width: 850px;
+  }
+
   .parish-hero {
     padding: 92px 48px 92px 48px;
     min-height: 500px;
@@ -212,13 +223,15 @@
   /* Latest Announcements */
 
   .parish-announcements,
-  .parish-services-section {
+  .parish-services-section,
+  .parish-front-page-content {
     gap: 54px;
     padding: 54px 24px 54px 24px;
   }
 
   .parish-announcements > h3,
-  .parish-services-section > h3 {
+  .parish-services-section > h3,
+  .parish-front-page-content > header > h2 {
     font-size: 44px;
   }
 

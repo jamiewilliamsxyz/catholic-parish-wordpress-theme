@@ -1,9 +1,9 @@
 <article <?php post_class("parish-front-page-content"); ?>>
   <header>
-    <h3><?php the_title(); ?></h3>
+    <h2><?php the_title(); ?></h2>
   </header>
 
-  <section class="parish-front-page-content parish-content">
+  <section class="parish-front-page-content-section parish-content">
     <?php the_content(); ?>
   </section>
 </article>

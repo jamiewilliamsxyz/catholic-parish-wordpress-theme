@@ -10,21 +10,19 @@
 
 .parish-page-content {
   padding: 24px;
-  color: var(--parish-text-dark);
 }
 
 /* Tablet/Desktop */
 
 @media (min-width: 780px) {
   .parish-page-main > header {
-    padding: 54px 24px;
+    padding: 6px 0;
   }
 
+  .parish-page-main > header > h1,
   .parish-page-content {
     max-width: 750px;
-    margin: 0 auto;
-    align-self: center;
     padding: 48px 0;
-    font-size: 18px;
+    margin: 0 auto;
   }
 }

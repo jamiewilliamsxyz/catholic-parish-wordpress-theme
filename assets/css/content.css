@@ -78,6 +78,11 @@
 /* Tablet/Desktop */
 
 @media (min-width: 780px) {
+  .parish-content {
+    font-size: 18px;
+    color: var(--parish-text-dark);
+  }
+
   .parish-page-title,
   .parish-sp-title {
     font-size: 48px;

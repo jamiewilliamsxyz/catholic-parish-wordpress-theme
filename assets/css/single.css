@@ -25,13 +25,13 @@
 
 .parish-sp-content {
   padding: 24px;
-  color: var(--parish-text-dark);
 }
 
 /* Tablet/Desktop */
 
 @media (min-width: 780px) {
-  .parish-sp-header-content {
+  .parish-sp-header-content,
+  .parish-sp-content {
     max-width: 750px;
     padding: 48px 0;
     margin: 0 auto;
@@ -39,11 +39,5 @@
 
   .parish-sp-date-posted {
     font-size: 18px;
-  }
-
-  .parish-sp-content {
-    max-width: 750px;
-    padding: 48px 0;
-    margin: 0 auto;
   }
 }
