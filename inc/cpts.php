@@ -27,9 +27,6 @@ function parish_register_cpts()
     "description" => __("Parish services", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-calendar-alt",
     "public" => true,
-    "has_archive" => true,
-    "show_in_nav_menus" => true,
-    "rewrite" => array("slug" => "services"),
     "supports" => ["title"],
   ));
 
