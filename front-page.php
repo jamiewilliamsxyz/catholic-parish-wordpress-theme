@@ -27,6 +27,10 @@ $hero_bg = get_theme_mod(
   <?php
   get_template_part('template-parts/latest-announcements');
   ?>
+
+  <?php
+  get_template_part('template-parts/services');
+  ?>
 </main>
 
 <?php get_footer(); ?>
