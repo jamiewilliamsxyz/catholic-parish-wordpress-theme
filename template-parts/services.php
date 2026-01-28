@@ -29,5 +29,4 @@ if ($services) :
   endif;
     ?>
     </div>
-
   </section>
