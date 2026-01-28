@@ -6,5 +6,4 @@
   <section class="parish-page-content parish-content">
     <?php the_content(); ?>
   </section>
-  </div>
 </article>

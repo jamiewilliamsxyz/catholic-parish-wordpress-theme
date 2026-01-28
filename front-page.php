@@ -26,10 +26,15 @@ $hero_bg = get_theme_mod(
 
   <?php
   get_template_part('template-parts/latest-announcements');
-  ?>
 
-  <?php
   get_template_part('template-parts/services');
+
+  if (have_posts()) :
+    while (have_posts()) :
+      the_post();
+      get_template_part("template-parts/content/content", "front-page");
+    endwhile;
+  endif;
   ?>
 </main>
 
