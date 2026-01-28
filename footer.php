@@ -7,7 +7,7 @@
 
         <div class="parish-foot-info">
           <h6><?php esc_html_e("Parish Info", "catholic-parish-wordpress-theme"); ?></h6>
-          <p><?php echo esc_html(get_theme_mod("parish_footer_info_text",  get_bloginfo("description"))); ?></p>
+          <p><?php echo nl2br(get_theme_mod("parish_footer_info_text",  get_bloginfo("description"))); ?></p>
         </div>
       </div>
 
