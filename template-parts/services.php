@@ -2,7 +2,6 @@
 
 $services = get_posts([
   "post_type" => "parish_service",
-  "posts_per_page" => 3,
   "post_status" => "publish",
   "orderby" => "date",
   "order" => "ASC"
