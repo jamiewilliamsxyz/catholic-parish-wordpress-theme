@@ -111,7 +111,7 @@
   opacity: var(--parish-hover-opacity);
 }
 
-.parish-navbar-menu > li.current_page_item > a {
+.parish-navbar-menu > li.current-menu-item > a {
   text-decoration: underline;
   text-decoration-color: var(--parish-accent-colour);
   text-decoration-thickness: 1.5px;
