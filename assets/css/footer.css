@@ -89,7 +89,7 @@
   color: var(--parish-text-muted);
 }
 
-/* Desktop */
+/* Breakpoints */
 
 @media (min-width: 900px) {
   .parish-copyright-bar-wrapper-mobile {

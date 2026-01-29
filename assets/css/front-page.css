@@ -211,7 +211,7 @@
   color: var(--parish-text-muted);
 }
 
-/* Desktop */
+/* Breakpoint */
 
 @media (min-width: 950px) {
   .parish-front-page-content > header,

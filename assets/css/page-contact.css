@@ -110,7 +110,7 @@
   color: #f87171;
 }
 
-/* Tablet/Desktop */
+/* Breakpoint */
 
 @media (min-width: 780px) {
   .parish-contact-section {

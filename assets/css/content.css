@@ -67,7 +67,7 @@
   opacity: var(--parish-hover-opacity);
 }
 
-/* Tablet/Desktop */
+/* Breakpoint */
 
 @media (min-width: 780px) {
   .parish-content {

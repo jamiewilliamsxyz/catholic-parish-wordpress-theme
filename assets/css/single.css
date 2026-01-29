@@ -34,7 +34,7 @@
   text-align: center;
 }
 
-/* Tablet/Desktop */
+/* Breakpoint */
 
 @media (min-width: 780px) {
   .parish-sp-header-content,

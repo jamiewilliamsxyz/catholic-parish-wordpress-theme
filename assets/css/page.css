@@ -6,7 +6,7 @@
   padding: 24px;
 }
 
-/* Tablet/Desktop */
+/* Breakpoint */
 
 @media (min-width: 780px) {
   .parish-page-content {

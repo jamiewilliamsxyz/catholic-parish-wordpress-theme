@@ -78,7 +78,7 @@
   opacity: var(--parish-hover-opacity);
 }
 
-/* Newsletter CPT */
+/* CPTs */
 
 .type-parish_newsletter {
   height: fit-content;
@@ -89,8 +89,6 @@
 .parish-content-archive-newsletter-link {
   margin-top: 12px;
 }
-
-/* Church Group CPT */
 
 .type-parish_church_group > .parish-archive-card-content > h2 {
   text-decoration: underline;
@@ -114,8 +112,6 @@
   color: var(--parish-text-muted);
   font-size: 16px;
 }
-
-/* Parish Staff CPT */
 
 .parish-staff-photo {
   width: 50%;
@@ -150,7 +146,7 @@
   font-size: 16px;
 }
 
-/* Desktop */
+/* Breakpoint */
 
 @media (min-width: 930px) {
   .parish-archive-card-content > span,
@@ -184,7 +180,7 @@
     font-size: 22px;
   }
 
-  /* Newsletter CPT Desktop */
+  /* CPTs */
 
   .type-parish_newsletter {
     min-height: fit-content;
@@ -193,8 +189,6 @@
   .parish-content-archive-newsletter-link {
     margin-top: 24px;
   }
-
-  /* Church Group CPT */
 
   .type-parish_church_group {
     max-height: fit-content;
@@ -215,8 +209,6 @@
   .parish-content-archive-group-card-section > p {
     font-size: 17px;
   }
-
-  /* Parish Staff CPT */
 
   .parish-staff-photo {
     margin: 16px 0 10px 0;

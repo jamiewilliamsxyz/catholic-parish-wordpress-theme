@@ -118,7 +118,7 @@
   text-underline-offset: 2px;
 }
 
-/* Desktop */
+/* Breakpoint */
 
 @media (min-width: 950px) {
   .parish-menu-backdrop {
