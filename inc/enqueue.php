@@ -160,11 +160,11 @@ function parish_enqueue_scripts()
     true
   );
 
-  // Cards animation script
+  // Animation script
   if (is_front_page() || is_archive()) {
     wp_enqueue_script(
-      "parish-cards-animate-script",
-      $template_uri . "/assets/js/cards-animate.js",
+      "parish-animate-script",
+      $template_uri . "/assets/js/animate.js",
       [],
       $version,
       true

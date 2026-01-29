@@ -1,3 +1,12 @@
+/* Hero */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hero = document.querySelector(".parish-hero");
+  if (hero) hero.classList.add("parish-hero-has-loaded");
+});
+
+/* Cards */
+
 const cards = document.querySelectorAll(".parish-animate-card");
 const archiveCards = document.querySelectorAll(".parish-animate-archive-card");
 

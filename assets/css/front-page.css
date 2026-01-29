@@ -18,6 +18,21 @@
   z-index: 1;
 }
 
+.parish-hero > header > h1,
+.parish-description-container {
+  opacity: 0;
+  transform: translateY(15px);
+  transition:
+    opacity 500ms ease-out,
+    transform 500ms ease-out;
+}
+
+.parish-hero.parish-hero-has-loaded > header > .parish-description-container,
+.parish-hero.parish-hero-has-loaded > header > h1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .parish-hero > header {
   max-width: 600px;
   display: flex;
