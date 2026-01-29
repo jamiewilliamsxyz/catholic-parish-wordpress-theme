@@ -64,7 +64,7 @@ function parish_enqueue_scripts()
     );
   }
 
-  if (is_archive()) {
+  if (is_archive() || is_home()) {
     wp_enqueue_style(
       "parish-archive-style",
       $template_uri . "/assets/css/archive.css",
@@ -161,7 +161,7 @@ function parish_enqueue_scripts()
   );
 
   // Animation script
-  if (is_front_page() || is_archive()) {
+  if (is_front_page() || is_archive() || is_home()) {
     wp_enqueue_script(
       "parish-animate-script",
       $template_uri . "/assets/js/animate.js",
