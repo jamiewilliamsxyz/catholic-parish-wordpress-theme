@@ -16,6 +16,21 @@ add_action("admin_enqueue_scripts", "parish_enqueue_admin_styles");
 
 function parish_enqueue_admin_styles()
 {
+  $screen = get_current_screen();
+
+  if (!$screen) return;
+
+  $post_type = $screen->post_type;
+
+  if (
+    $post_type !== "parish_newsletter" &&
+    $post_type !== "parish_service" &&
+    $post_type !== "parish_staff_member" &&
+    $post_type !== "parish_church_group"
+  ) {
+    return;
+  }
+
   wp_enqueue_style(
     "parish-admin-style",
     get_template_directory_uri() . "/assets/css/admin.css",
