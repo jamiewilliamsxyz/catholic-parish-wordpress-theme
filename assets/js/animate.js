@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const hero = document.querySelector(".parish-hero");
-  if (hero) hero.classList.add("parish-hero-has-loaded");
+  hero.classList.add("parish-hero-has-loaded");
 });
 
 /* Cards */
