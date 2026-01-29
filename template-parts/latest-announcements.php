@@ -15,7 +15,7 @@ if ($announcements) :
     <div class="parish-announcements-content">
       <div class="parish-latest-announcements">
         <?php foreach ($announcements as $post) : setup_postdata($post); ?>
-          <article class="parish-announcement-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <article id="post-<?php the_ID(); ?>" <?php post_class(["parish-announcement-card", "parish-animate-card"]); ?>>
             <span><?php echo get_the_date(); ?></span>
             <h4><?php the_title(); ?></h4>
             <p><?php the_excerpt(); ?></p>

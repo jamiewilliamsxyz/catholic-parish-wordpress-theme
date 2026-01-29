@@ -10,7 +10,7 @@ $meeting_time = !empty($post_meta["meeting_time"][0]) ? $post_meta["meeting_time
 $location = !empty($post_meta["location"][0]) ? $post_meta["location"][0] : "";
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class("parish-archive-card"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(["parish-archive-card", "parish-animate-archive-card"]); ?>>
   <div class="parish-archive-card-content">
     <h2><?php the_title(); ?></h2>
 

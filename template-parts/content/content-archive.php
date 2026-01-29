@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class("parish-archive-card"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(["parish-archive-card", "parish-animate-archive-card"]); ?>>
   <div class="parish-archive-card-content">
     <span><?php echo get_the_date(); ?></span>
     <h2><?php the_title(); ?></h2>

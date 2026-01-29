@@ -51,7 +51,8 @@ body {
   --parish-hover-opacity: 0.7;
 }
 
-/* page-header */
+/* page-header Template Part*/
+
 .parish-page-header {
   padding: 48px 24px;
   background-color: var(--parish-bg-light);
@@ -74,4 +75,31 @@ body {
     max-width: 750px;
     margin: 0 auto;
   }
+}
+
+/* Card Animations */
+
+.parish-animate-card,
+.parish-animate-archive-card {
+  opacity: 0;
+}
+
+.parish-animate-card {
+  transform: translateY(40px) scale(0.95);
+  transition:
+    opacity 400ms ease-out,
+    transform 400ms ease-out;
+}
+
+.parish-animate-card.parish-card-in-view,
+.parish-animate-archive-card.parish-card-in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.parish-animate-archive-card {
+  transform: translateY(8px) scale(0.985);
+  transition:
+    opacity 0.35s ease-out,
+    transform 0.35s ease-out;
 }

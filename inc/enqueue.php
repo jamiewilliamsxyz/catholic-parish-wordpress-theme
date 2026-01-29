@@ -153,10 +153,21 @@ function parish_enqueue_scripts()
 
   // Navbar menu script
   wp_enqueue_script(
-    "parish-toggle-menu",
+    "parish-toggle-menu-script",
     $template_uri . "/assets/js/menu-toggle.js",
     [],
     $version,
     true
   );
+
+  // Cards animation script
+  if (is_front_page() || is_archive()) {
+    wp_enqueue_script(
+      "parish-cards-animate-script",
+      $template_uri . "/assets/js/cards-animate.js",
+      [],
+      $version,
+      true
+    );
+  }
 }
