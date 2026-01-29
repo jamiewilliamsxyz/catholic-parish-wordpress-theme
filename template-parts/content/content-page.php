@@ -1,7 +1,5 @@
 <article <?php post_class("parish-page-main"); ?>>
-  <header>
-    <h1 class="parish-page-title"><?php the_title(); ?></h1>
-  </header>
+  <?php get_template_part("template-parts/page-header"); ?>
 
   <section class="parish-page-content parish-content">
     <?php the_content(); ?>

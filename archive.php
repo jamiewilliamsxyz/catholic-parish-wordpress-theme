@@ -1,13 +1,9 @@
 <?php get_header(); ?>
 
 <main class="parish-archive">
-  <header>
-    <h1><?php echo post_type_archive_title(); ?></h1>
-    <div class="parish-archive-header-separator"></div>
-    <h2><?php the_archive_description(); ?></h2>
-  </header>
-
   <?php
+  get_template_part("template-parts/page-header");
+
   if (have_posts()) : ?>
 
     <section>

@@ -1,13 +1,5 @@
 /* Content styles for pages and posts */
 
-.parish-page-title,
-.parish-sp-title {
-  font-size: 34px;
-  font-weight: 600;
-  color: var(--parish-text-darkest);
-  text-align: center;
-}
-
 .parish-content h1,
 .parish-content h2,
 .parish-content h3,

@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class("parish-single-post"); ?>>
   <header>
     <div class="parish-sp-header-content">
-      <h1 class="parish-sp-title"><?php the_title(); ?></h1>
+      <h1><?php the_title(); ?></h1>
       <span class="parish-sp-date-posted">
         <?php esc_html_e("Date posted", "catholic-parish-wordpress-theme") ?>:
         <?php echo get_the_date(); ?>

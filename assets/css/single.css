@@ -20,11 +20,18 @@
 }
 
 .parish-sp-date-posted {
-  color: var(--parish-text-muted);
+  color: var(--parish-text-dark);
 }
 
 .parish-sp-content {
   padding: 24px;
+}
+
+.parish-sp-header-content > h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--parish-text-darkest);
+  text-align: center;
 }
 
 /* Tablet/Desktop */
@@ -39,5 +46,9 @@
 
   .parish-sp-date-posted {
     font-size: 18px;
+  }
+
+  .parish-sp-header-content > h1 {
+    font-size: 48px;
   }
 }

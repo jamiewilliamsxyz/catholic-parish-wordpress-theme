@@ -2,12 +2,6 @@
   background-color: var(--parish-bg-lightest);
 }
 
-.parish-page-main > header {
-  text-align: center;
-  padding: 48px 24px;
-  background-color: var(--parish-bg-light);
-}
-
 .parish-page-content {
   padding: 24px;
 }
@@ -15,11 +9,6 @@
 /* Tablet/Desktop */
 
 @media (min-width: 780px) {
-  .parish-page-main > header {
-    padding: 6px 0;
-  }
-
-  .parish-page-main > header > h1,
   .parish-page-content {
     max-width: 750px;
     padding: 48px 0;
