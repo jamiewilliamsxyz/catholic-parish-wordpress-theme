@@ -176,7 +176,7 @@ function parish_register_theme_options($wp_customize)
     )
   );
 
-  // Map - map iframe
+  // Contact Page Template - map iframe
   $wp_customize->add_setting(
     "parish_map_url",
     array(
@@ -257,6 +257,107 @@ function parish_register_theme_options($wp_customize)
       "label" => __("Copyright Name"),
       "section" => "parish_footer_section",
       "priority" => 12,
+      "type" => "text"
+    )
+  );
+
+  // Parish Details
+
+  $wp_customize->add_section(
+    "parish_details_section",
+    array(
+      "title" => __("Parish Details", "catholic-parish-wordpress-theme"),
+      "description" => esc_html__("Manage the church and office details displayed on the footer and contact page template", "catholic-parish-wordpress-theme"),
+      "priority" => 106
+    )
+  );
+
+  // Parish Details - phone
+  $wp_customize->add_setting(
+    "parish_phone",
+    array(
+      "sanitize_callback" => "sanitize_text_field"
+    )
+  );
+
+  $wp_customize->add_control(
+    "parish_phone",
+    array(
+      "label" => __("Phone Number"),
+      "section" => "parish_details_section",
+      "type" => "text"
+    )
+  );
+
+  // Parish Details - email
+  $wp_customize->add_setting(
+    "parish_email",
+    array(
+      "sanitize_callback" => "sanitize_text_field"
+    )
+  );
+
+  $wp_customize->add_control(
+    "parish_email",
+    array(
+      "label" => __("Email Address"),
+      "section" => "parish_details_section",
+      "priority" => 11,
+      "type" => "text"
+    )
+  );
+
+  // Parish Details - church address
+  $wp_customize->add_setting(
+    "parish_church_address",
+    array(
+      "sanitize_callback" => "sanitize_text_field"
+    )
+  );
+
+  $wp_customize->add_control(
+    "parish_church_address",
+    array(
+      "label" => __("Church Address"),
+      "section" => "parish_details_section",
+      "priority" => 12,
+      "type" => "text"
+    )
+  );
+
+  // Parish Details - office address
+  $wp_customize->add_setting(
+    "parish_office_address",
+    array(
+      "sanitize_callback" => "sanitize_text_field"
+    )
+  );
+
+  $wp_customize->add_control(
+    "parish_office_address",
+    array(
+      "label" => __("Office Address"),
+      "section" => "parish_details_section",
+      "priority" => 13,
+      "type" => "text"
+    )
+  );
+
+  // Parish Details - office hours
+  $wp_customize->add_setting(
+    "parish_office_hours",
+    array(
+      "sanitize_callback" => "sanitize_text_field"
+    )
+  );
+
+  $wp_customize->add_control(
+    "parish_office_hours",
+    array(
+      "label" => __("Office Opening Hours"),
+      "description" => esc_html("E.g. Mon-Fri 9:00-13:00", "catholic-parish-wordpress-theme"),
+      "section" => "parish_details_section",
+      "priority" => 14,
       "type" => "text"
     )
   );
