@@ -4,9 +4,9 @@ const content = document.getElementById("parishContentContainer");
 const toggle = document.getElementById("parishMenuToggle");
 
 toggle.addEventListener("click", () => {
-  const isOpen = menuContainer.classList.toggle("menu-open");
-  backdrop.classList.toggle("menu-open", isOpen);
-  toggle.classList.toggle("menu-open", isOpen);
+  const isOpen = menuContainer.classList.toggle("parish-menu-open");
+  backdrop.classList.toggle("parish-menu-open", isOpen);
+  toggle.classList.toggle("parish-menu-open", isOpen);
   backdrop.hidden = !isOpen;
 
   content.toggleAttribute("inert", isOpen);

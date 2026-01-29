@@ -11,7 +11,7 @@
   z-index: 900;
 }
 
-.parish-menu-backdrop.menu-open {
+.parish-menu-backdrop.parish-menu-open {
   opacity: 1;
 }
 
@@ -66,12 +66,12 @@
   transform: rotate(-90deg);
 }
 
-.parish-navbar-menu-icon.menu-open > .parish-menu-icon-closed {
+.parish-navbar-menu-icon.parish-menu-open > .parish-menu-icon-closed {
   opacity: 0;
   transform: rotate(90deg);
 }
 
-.parish-navbar-menu-icon.menu-open > .parish-menu-icon-opened {
+.parish-navbar-menu-icon.parish-menu-open > .parish-menu-icon-opened {
   opacity: 1;
   transform: rotate(0deg);
 }
@@ -87,7 +87,7 @@
     transform 200ms ease-out;
 }
 
-.parish-navbar-menu-container.menu-open {
+.parish-navbar-menu-container.parish-menu-open {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
@@ -157,7 +157,7 @@
     pointer-events: auto;
   }
 
-  .parish-navbar-menu-container.menu-open {
+  .parish-navbar-menu-container.parish-menu-open {
     box-shadow: none;
   }
 
