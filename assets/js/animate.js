@@ -23,7 +23,6 @@ const cardsObserver = new IntersectionObserver((entries) => {
 const archiveCardsObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log(entry.target);
       entry.target.classList.add("parish-card-in-view");
     } else {
       entry.target.classList.remove("parish-card-in-view");
