@@ -1,36 +1,80 @@
-.parish-contact-section {
+/* Top Section */
+
+.parish-page-contact-top-section-wrapper {
+  background-color: var(--parish-bg-lightest);
+}
+
+.parish-page-contact-top-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
+  padding: 24px 24px 48px 24px;
+}
+
+.parish-page-contact-content {
+  width: 100%;
+  max-width: 700px;
+}
+
+.parish-details-card {
+  max-height: fit-content;
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: var(--parish-bg-dark);
+  border-bottom: solid 4px var(--parish-accent-colour);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.parish-details-card-field > h3 {
+  color: var(--parish-text-medium);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.parish-details-card-field > p {
+  color: var(--parish-text-muted);
+}
+
+/* Bottom Section */
+
+.parish-page-contact-bottom-section-wrapper {
   background-color: var(--parish-bg-light);
 }
 
-.parish-contact-section > iframe,
-.parish-contact-form > form {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.parish-page-contact-bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 48px 24px 48px 24px;
 }
 
-.parish-contact-form,
-.parish-contact-section > iframe {
+.parish-page-contact-bottom-section > iframe,
+.parish-contact-form {
   width: 100%;
-  max-width: 750px;
+  box-sizing: border-box;
+  max-width: 700px;
+  border-bottom: solid 4px var(--parish-accent-colour);
 }
 
-.parish-contact-form > h2 {
-  color: var(--parish-text-darkest);
-  font-weight: 600;
-  font-size: 28px;
-  text-align: center;
-  margin-bottom: 12px;
+.parish-page-contact-bottom-section > iframe {
+  width: 100%;
 }
 
-.parish-contact-form > form {
+.parish-contact-form {
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding: 24px;
   background-color: var(--parish-bg-dark);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .parish-contact-form-col {
@@ -39,7 +83,7 @@
   gap: 12px;
 }
 
-.parish-contact-form > form > button {
+.parish-contact-form > button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -51,7 +95,7 @@
   transition: opacity 200ms;
 }
 
-.parish-contact-form > form > button:hover {
+.parish-contact-form > button:hover {
   opacity: var(--parish-hover-opacity);
 }
 
@@ -65,6 +109,8 @@
 .parish-contact-input-field > label,
 .parish-contact-textarea-field > label {
   color: var(--parish-text-medium);
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .parish-contact-textarea-field > textarea {
@@ -82,6 +128,7 @@
   outline: none;
   background-color: var(--parish-text-dark);
   transition: background-color 200ms;
+  font-size: 16px;
 }
 
 .parish-contact-input-field > input:focus,
@@ -112,44 +159,67 @@
 
 /* Breakpoint */
 
-@media (min-width: 780px) {
-  .parish-contact-section {
-    align-items: center;
-    padding: 48px 0;
+@media (min-width: 1000px) {
+  .parish-page-contact-top-section,
+  .parish-page-contact-bottom-section {
+    max-width: 1200px;
+    flex-direction: row;
+    gap: 54px;
+    margin: 0 auto;
+    padding: 54px 24px;
   }
 
-  .parish-contact-form > h2 {
-    font-size: 36px;
-    margin-bottom: 24px;
+  .parish-page-contact-content {
+    width: 90%;
   }
 
-  .parish-contact-form > form,
-  .parish-contact-section {
-    gap: 48px;
+  .parish-details-card {
+    min-width: 375px;
+    max-width: 450px;
+    display: flex;
+    gap: 20px;
   }
 
-  .parish-contact-form > form {
-    padding: 36px;
+  .parish-details-card-field > h3 {
+    font-size: 20px;
+  }
+
+  .parish-details-card-field > p {
+    font-size: 18px;
+  }
+
+  .parish-page-contact-bottom-section > iframe,
+  .parish-contact-form {
+    height: 639px;
   }
 
   .parish-contact-form-col {
-    gap: 24px;
+    gap: 22px;
   }
 
-  .parish-contact-form > form > button,
-  .parish-contact-form > form {
+  .parish-contact-form > button,
+  .parish-contact-form {
     font-size: 18px;
+  }
+
+  .parish-contact-form {
+    gap: 28px;
   }
 
   .parish-contact-input-field > input,
   .parish-contact-textarea-field > textarea,
   .parish-contact-form > form > button {
-    padding: 10px 14px;
+    padding: 10px;
   }
 
   .parish-contact-input-field,
   .parish-contact-textarea-field {
-    gap: 12px;
+    gap: 8px;
+  }
+
+  .parish-contact-input-field > label,
+  .parish-contact-textarea-field > label {
+    font-size: 20px;
   }
 
   .parish-contact-textarea-field > textarea {
@@ -158,12 +228,12 @@
 
   .parish-contact-input-field > input,
   .parish-contact-textarea-field > textarea {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .parish-contact-input-field > input::placeholder,
   .parish-contact-textarea-field > textarea::placeholder {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .parish-contact-form-success-msg,

@@ -176,7 +176,7 @@ function parish_enqueue_scripts()
   );
 
   // Animation script
-  if (is_front_page() || is_archive() || is_home()) {
+  if (is_front_page() || is_archive() || is_home() || is_page_template("templates/page-contact.php")) {
     wp_enqueue_script(
       "parish-animate-script",
       $template_uri . "/assets/js/animate.js",
