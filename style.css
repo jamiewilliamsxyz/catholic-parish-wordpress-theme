@@ -55,7 +55,7 @@ body {
 
 .parish-page-header {
   padding: 48px 24px;
-  background-color: var(--parish-bg-light);
+  background-color: var(--parish-accent-colour);
 }
 
 .parish-page-header > h1 {
