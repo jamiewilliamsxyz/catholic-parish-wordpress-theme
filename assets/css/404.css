@@ -25,7 +25,7 @@
   cursor: pointer;
   text-decoration: underline;
   text-decoration-color: var(--parish-accent-colour);
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: 2px;
   text-underline-offset: 2px;
   color: var(--parish-text-dark);
   transition: opacity 200ms;

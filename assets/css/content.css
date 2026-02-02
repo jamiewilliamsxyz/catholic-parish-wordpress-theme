@@ -61,6 +61,7 @@
   text-decoration-thickness: 2px;
   cursor: pointer;
   transition: opacity 200ms;
+  text-underline-offset: 2px;
 }
 
 .parish-content a:hover {
@@ -130,9 +131,5 @@
   .parish-content blockquote {
     border-left: solid 3px var(--parish-accent-colour);
     padding-left: 15px;
-  }
-
-  .parish-content a {
-    text-underline-offset: 2px;
   }
 }

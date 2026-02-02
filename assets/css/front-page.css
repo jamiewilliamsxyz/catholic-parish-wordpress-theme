@@ -64,7 +64,7 @@
   background-color: rgba(38, 38, 38, 0.7);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 24px;
-  border-bottom: solid 2px var(--parish-accent-colour);
+  border-bottom: solid 4px var(--parish-accent-colour);
   max-width: 450px;
 }
 
@@ -108,9 +108,11 @@
 
 .parish-see-more-link,
 .parish-announcement-card > a {
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
-  border-bottom: solid 1.5px var(--parish-accent-colour);
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--parish-accent-colour);
+  text-underline-offset: 2px;
   width: fit-content;
   transition: opacity 200ms;
 }
@@ -151,7 +153,7 @@
   flex-direction: column;
   gap: 8px;
   background-color: var(--parish-bg-dark);
-  border-bottom: solid 2px var(--parish-accent-colour);
+  border-bottom: solid 4px var(--parish-accent-colour);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 

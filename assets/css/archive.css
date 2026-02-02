@@ -18,7 +18,7 @@
   box-sizing: border-box;
   padding: 24px;
   background-color: var(--parish-bg-dark);
-  border-bottom: solid 2px var(--parish-accent-colour);
+  border-bottom: solid 4px var(--parish-accent-colour);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -65,10 +65,12 @@
 
 .parish-archive-card > a,
 .parish-content-archive-newsletter-link {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--parish-accent-colour);
   cursor: pointer;
   color: var(--parish-text-medium);
-  border-bottom: solid 1.5px var(--parish-accent-colour);
   width: fit-content;
   transition: opacity 200ms;
 }
