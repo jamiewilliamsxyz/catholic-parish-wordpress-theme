@@ -11,6 +11,11 @@
   margin: 10px 0;
 }
 
+.parish-content img {
+  border-bottom: solid 4px var(--parish-accent-colour);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .parish-content h1 {
   font-size: 32px;
 }
