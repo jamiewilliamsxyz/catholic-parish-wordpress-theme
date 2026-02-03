@@ -129,7 +129,6 @@ function parish_register_cpts()
     "labels" => $church_group_labels,
     "description" => __("Information about the parish groups", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-groups",
-    "public" => true,
     "has_archive" => true,
     "show_ui" => true,
     "show_in_nav_menus" => true,
