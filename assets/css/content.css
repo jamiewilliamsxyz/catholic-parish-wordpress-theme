@@ -76,11 +76,6 @@
     color: var(--parish-text-dark);
   }
 
-  .parish-page-title,
-  .parish-sp-title {
-    font-size: 48px;
-  }
-
   .parish-content h1,
   .parish-content h2,
   .parish-content h3,
