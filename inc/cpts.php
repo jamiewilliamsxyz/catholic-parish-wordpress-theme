@@ -102,8 +102,7 @@ function parish_register_cpts()
     "labels" => $staff_member_labels,
     "description" => __("Information about parish staff and clergy members", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-businessperson",
-    "show_ui" => true,
-    "show_in_nav_menus" => true,
+    "public" => true,
     "has_archive" => true,
     "rewrite" => array("slug" => "staff"),
     "supports" => array("title", "thumbnail"),
@@ -130,8 +129,7 @@ function parish_register_cpts()
     "description" => __("Information about the parish groups", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-groups",
     "has_archive" => true,
-    "show_ui" => true,
-    "show_in_nav_menus" => true,
+    "public" => true,
     "rewrite" => array("slug" => "church-groups"),
     "supports" => array("title"),
   ));
@@ -162,4 +160,16 @@ function parish_filter_enter_title($title_placeholder, $post)
       break;
   }
   return $title_placeholder;
+}
+
+// Redirect single church group/staff member CPT posts to their archive pages
+add_action("template_redirect", "parish_redirect_single_cpts");
+
+function parish_redirect_single_cpts()
+{
+  if (is_singular(array("parish_staff_member", "parish_church_group"))) {
+    $archive_link = get_post_type_archive_link(get_post_type());
+    wp_redirect($archive_link, 301);
+    exit;
+  }
 }
