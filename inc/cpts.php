@@ -26,8 +26,8 @@ function parish_register_cpts()
     "labels" => $service_labels,
     "description" => __("Parish services", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-calendar-alt",
-    "public" => true,
-    "supports" => ["title"],
+    "supports" => array("title"),
+    "show_ui" => true,
   ));
 
   $announcement_labels = array(
@@ -52,9 +52,8 @@ function parish_register_cpts()
     "menu_icon" => "dashicons-megaphone",
     "public" => true,
     "has_archive" => true,
-    "show_in_nav_menus" => true,
     "rewrite" => array("slug" => "announcements"),
-    "supports" => ["title", "editor", "excerpt", "thumbnail"],
+    "supports" => array("title", "editor", "excerpt", "thumbnail"),
   ));
 
   $newsletter_labels = array(
@@ -79,9 +78,8 @@ function parish_register_cpts()
     "menu_icon" => "dashicons-media-document",
     "public" => true,
     "has_archive" => true,
-    "show_in_nav_menus" => true,
     "rewrite" => array("slug" => "newsletters"),
-    "supports" => ["title"],
+    "supports" => array("title"),
   ));
 
   $staff_member_labels = array(
@@ -104,11 +102,11 @@ function parish_register_cpts()
     "labels" => $staff_member_labels,
     "description" => __("Information about parish staff and clergy members", "catholic-parish-wordpress-theme"),
     "menu_icon" => "dashicons-businessperson",
-    "public" => true,
+    "show_ui" => true,
     "show_in_nav_menus" => true,
     "has_archive" => true,
     "rewrite" => array("slug" => "staff"),
-    "supports" => ["title", "thumbnail"],
+    "supports" => array("title", "thumbnail"),
   ));
 
   $church_group_labels = array(
@@ -133,9 +131,10 @@ function parish_register_cpts()
     "menu_icon" => "dashicons-groups",
     "public" => true,
     "has_archive" => true,
+    "show_ui" => true,
     "show_in_nav_menus" => true,
     "rewrite" => array("slug" => "church-groups"),
-    "supports" => ["title"],
+    "supports" => array("title"),
   ));
 }
 
