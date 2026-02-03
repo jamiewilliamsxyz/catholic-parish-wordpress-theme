@@ -10,8 +10,7 @@ function parish_handle_contact_form()
     !isset($_POST["parish_contact_form_nonce"]) ||
     !wp_verify_nonce($_POST["parish_contact_form_nonce"], "parish_send_contact_email")
   ) {
-    wp_redirect(add_query_arg("parish_contact_status", "error", wp_get_referer()));
-    exit;
+    parish_redirect_on_submit("error");
   }
 
   $contact_name = sanitize_text_field($_POST["contact_name"]);
@@ -20,8 +19,7 @@ function parish_handle_contact_form()
   $contact_message = sanitize_textarea_field($_POST["contact_message"]);
 
   if (!$contact_name || !$contact_email || !$contact_subject || !$contact_message) {
-    wp_redirect(add_query_arg("parish_contact_status", "error", wp_get_referer()));
-    exit;
+    parish_redirect_on_submit("error");
   }
 
   $to = get_option("admin_email");
@@ -31,10 +29,15 @@ function parish_handle_contact_form()
   $email_sent = wp_mail($to, $contact_subject, $body, $headers);
 
   if ($email_sent) {
-    wp_redirect(add_query_arg("parish_contact_status", "success", wp_get_referer()));
-    exit;
+    parish_redirect_on_submit("success");
   } else {
-    wp_redirect(add_query_arg("parish_contact_status", "error", wp_get_referer()));
-    exit;
+    parish_redirect_on_submit("error");
   }
+}
+
+// Redirect back to referring page after form submission to prevent resubmission
+function parish_redirect_on_submit($status) // "success" or "error"
+{
+  wp_redirect(add_query_arg("parish_contact_status", $status, wp_get_referer()), 303);
+  exit;
 }
