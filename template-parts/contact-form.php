@@ -34,27 +34,24 @@
     </div>
   </div>
 
-  <button type="submit">
-    <?php esc_html_e("Send Email", "catholic-parish-wordpress-theme"); ?>
-  </button>
-
   <?php
-  // Form error/success message display
+  // Set button text/class based on form submit result
 
-  $form_message = "";
+  $btn_class = "";
+  $form_msg = __("Send email", "catholic-parish-wordpress-theme");
 
   if (isset($_GET["parish_contact_status"])) {
     if ($_GET["parish_contact_status"] === "success") {
-      $form_message = '<p class="parish-contact-form-success-msg">'
-        . esc_html__("Your message has been sent", "catholic-parish-wordpress-theme")
-        . '</p>';
+      $form_msg = __("Message sent", "catholic-parish-wordpress-theme");
+      $btn_class = "parish-submit-btn-success";
     } else {
-      $form_message = '<p class="parish-contact-form-err-msg">'
-        . esc_html__("An error has occurred, please try again", "catholic-parish-wordpress-theme")
-        . '</p>';
+      $form_msg = __("Send failed, try again", "catholic-parish-wordpress-theme");
+      $btn_class = "parish-submit-btn-err";
     }
   }
-
-  echo $form_message;
   ?>
+
+  <button type="submit" class="<?php echo esc_attr($btn_class) ?>">
+    <?php echo esc_html($form_msg); ?>
+  </button>
 </form>

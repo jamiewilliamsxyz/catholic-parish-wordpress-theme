@@ -95,6 +95,14 @@
   transition: opacity 200ms;
 }
 
+.parish-contact-form > button.parish-submit-btn-success {
+  color: #22c55e;
+}
+
+.parish-contact-form > button.parish-submit-btn-err {
+  color: #ef4444;
+}
+
 .parish-contact-form > button:hover {
   opacity: var(--parish-hover-opacity);
 }
@@ -141,20 +149,6 @@
 .parish-contact-input-field > input::placeholder,
 .parish-contact-textarea-field > textarea::placeholder {
   color: var(--parish-text-muted);
-}
-
-.parish-contact-form-success-msg,
-.parish-contact-form-err-msg {
-  text-align: center;
-  font-weight: 500;
-}
-
-.parish-contact-form-success-msg {
-  color: #4ade80;
-}
-
-.parish-contact-form-err-msg {
-  color: #f87171;
 }
 
 /* Breakpoint */
@@ -234,10 +228,5 @@
   .parish-contact-input-field > input::placeholder,
   .parish-contact-textarea-field > textarea::placeholder {
     font-size: 16px;
-  }
-
-  .parish-contact-form-success-msg,
-  .parish-contact-form-err-msg {
-    font-size: 18px;
   }
 }
