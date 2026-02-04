@@ -1,4 +1,4 @@
-<form method="post" action="" class="parish-contact-form parish-animate-archive-card">
+<form method="post" action="" class="parish-contact-form">
   <input type="hidden" name="parish_contact_form_submitted" value="submitted" />
   <?php
   wp_nonce_field("parish_send_contact_email", "parish_contact_form_nonce");
