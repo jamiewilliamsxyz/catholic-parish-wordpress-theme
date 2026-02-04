@@ -21,16 +21,12 @@
 .parish-hero > header > h1,
 .parish-description-container {
   opacity: 0;
-  transform: translateY(15px);
-  transition:
-    opacity 500ms ease-out,
-    transform 500ms ease-out;
+  transition: opacity 300ms ease-out;
 }
 
 .parish-hero.parish-hero-has-loaded > header > .parish-description-container,
 .parish-hero.parish-hero-has-loaded > header > h1 {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .parish-hero > header {
@@ -211,6 +207,24 @@
 
 .parish-content-service-card-section > p {
   color: var(--parish-text-muted);
+}
+
+/* Card Animations */
+
+.parish-animate-card {
+  opacity: 0;
+}
+
+.parish-animate-card {
+  transform: translateY(40px) scale(0.95);
+  transition:
+    opacity 400ms ease-out,
+    transform 400ms ease-out;
+}
+
+.parish-animate-card.parish-card-in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 /* Breakpoint */

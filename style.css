@@ -76,21 +76,3 @@ body {
     margin: 0 auto;
   }
 }
-
-/* Card Animations */
-
-.parish-animate-card {
-  opacity: 0;
-}
-
-.parish-animate-card {
-  transform: translateY(40px) scale(0.95);
-  transition:
-    opacity 400ms ease-out,
-    transform 400ms ease-out;
-}
-
-.parish-animate-card.parish-card-in-view {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
