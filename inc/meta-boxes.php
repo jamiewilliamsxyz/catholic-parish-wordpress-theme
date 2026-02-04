@@ -49,7 +49,7 @@ function parish_newsletter_meta_box($post)
   <div class="parish-meta-box">
     <div class="parish-meta-box-field">
       <label for="pdf_file"><?php esc_html_e("PDF File URL", "catholic-parish-wordpress-theme") ?></label>
-      <input type="url" name="pdf_file" placeholder="https://example.com/file.pdf" value="<?php echo esc_attr($pdf_file); ?>" />
+      <input type="url" name="pdf_file" required placeholder="https://example.com/file.pdf" value="<?php echo esc_attr($pdf_file); ?>" />
     </div>
   </div>
 <?php
