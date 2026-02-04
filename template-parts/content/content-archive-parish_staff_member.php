@@ -8,7 +8,7 @@ $email = !empty($post_meta["email"][0]) ? $post_meta["email"][0] : "";
 $phone = !empty($post_meta["phone"][0]) ? $post_meta["phone"][0] : "";
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(["parish-archive-card", "parish-animate-archive-card"]); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("parish-archive-card"); ?>>
   <div class="parish-archive-card-content">
     <h2><?php the_title(); ?></h2>
     <span><?php echo esc_html__($role, "catholic-parish-wordpress-theme"); ?></span>

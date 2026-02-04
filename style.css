@@ -79,8 +79,7 @@ body {
 
 /* Card Animations */
 
-.parish-animate-card,
-.parish-animate-archive-card {
+.parish-animate-card {
   opacity: 0;
 }
 
@@ -91,15 +90,7 @@ body {
     transform 400ms ease-out;
 }
 
-.parish-animate-card.parish-card-in-view,
-.parish-animate-archive-card.parish-card-in-view {
+.parish-animate-card.parish-card-in-view {
   opacity: 1;
   transform: translateY(0) scale(1);
-}
-
-.parish-animate-archive-card {
-  transform: translateY(8px) scale(0.985);
-  transition:
-    opacity 0.35s ease-out,
-    transform 0.35s ease-out;
 }
