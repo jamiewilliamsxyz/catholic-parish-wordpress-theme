@@ -162,12 +162,12 @@ function parish_filter_enter_title($title_placeholder, $post)
   return $title_placeholder;
 }
 
-// Redirect single church group/staff member CPT posts to their archive pages
+// Redirect single church group, staff member and newsletter CPT posts to their archive pages
 add_action("template_redirect", "parish_redirect_single_cpts");
 
 function parish_redirect_single_cpts()
 {
-  if (is_singular(array("parish_staff_member", "parish_church_group"))) {
+  if (is_singular(array("parish_staff_member", "parish_church_group", "parish_newsletter"))) {
     $archive_link = get_post_type_archive_link(get_post_type());
     wp_redirect($archive_link, 301);
     exit;
