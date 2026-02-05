@@ -6,7 +6,7 @@ $service_description = !empty($post_meta["service_description"][0]) ? $post_meta
 $service_occurrences = !empty($post_meta["service_occurrences"][0]) ? $post_meta["service_occurrences"][0] : "";
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(["parish-service-card", "parish-animate-card"]); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(array("parish-service-card", "parish-animate-card")); ?>>
   <h4><?php the_title(); ?></h4>
 
   <?php

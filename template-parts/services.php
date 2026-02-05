@@ -1,11 +1,11 @@
 <?php
 
-$services = get_posts([
+$services = get_posts(array(
   "post_type" => "parish_service",
   "post_status" => "publish",
   "orderby" => "date",
   "order" => "ASC"
-]);
+));
 
 if ($services) :
 ?>

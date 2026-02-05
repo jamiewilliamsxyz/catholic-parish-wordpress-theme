@@ -8,13 +8,13 @@ function parish_set_css_vars()
   $heading_font = get_theme_mod("parish_heading_font", "parish-font-lora");
   $body_font = get_theme_mod("parish_body_font", "parish-font-lora");
 
-  $fonts_css = [
+  $fonts_css = array(
     "parish-font-lora" => '"Lora", serif',
     "parish-font-merriweather" => '"Merriweather", serif',
     "parish-font-crimson-text" => '"Crimson Text", serif',
     "parish-font-inter" => '"Inter", sans-serif',
     "parish-font-roboto" => '"Roboto", sans-serif'
-  ];
+  );
 ?>
 
   <style>

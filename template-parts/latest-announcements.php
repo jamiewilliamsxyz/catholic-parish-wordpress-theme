@@ -1,9 +1,9 @@
 <?php
-$announcements = get_posts([
+$announcements = get_posts(array(
   "post_type" => "parish_announcement",
   "posts_per_page" => 3,
   "post_status" => "publish",
-]);
+));
 
 if ($announcements) :
 ?>
