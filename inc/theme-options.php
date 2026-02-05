@@ -267,7 +267,7 @@ function parish_register_theme_options($wp_customize)
     "parish_details_section",
     array(
       "title" => __("Parish Details", "catholic-parish-wordpress-theme"),
-      "description" => esc_html__("Manage the church and office details displayed on the footer and contact page template", "catholic-parish-wordpress-theme"),
+      "description" => esc_html__("Manage the church and office details displayed on the contact page template and shortcodes", "catholic-parish-wordpress-theme"),
       "priority" => 106
     )
   );
