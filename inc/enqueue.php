@@ -140,6 +140,15 @@ function parish_enqueue_scripts()
     $version
   );
 
+  if (is_archive()) {
+    wp_enqueue_style(
+      "parish-filter-style",
+      $template_uri . "/assets/css/filter.css",
+      [],
+      $version
+    );
+  }
+
   // Google fonts
   $selected_heading_font = get_theme_mod("parish_heading_font", "parish-font-lora");
   $selected_body_font = get_theme_mod("parish_body_font", "parish-font-lora");

@@ -1,0 +1,49 @@
+.parish-filter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 12px;
+  padding-bottom: 24px;
+}
+
+.parish-filter > a {
+  color: var(--parish-text-dark);
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 200ms;
+}
+
+.parish-filter > a:hover {
+  opacity: var(--parish-hover-opacity);
+}
+
+.parish-filter > a::before {
+  content: "[ ";
+}
+
+.parish-filter > a::after {
+  content: "] ";
+}
+
+.parish-filter > a::before,
+.parish-filter > a::after {
+  color: var(--parish-accent-colour);
+}
+
+.parish-filter-link-is-active {
+  font-weight: 600;
+}
+
+@media (min-width: 930px) {
+  .parish-filter > a {
+    font-size: 18px;
+  }
+
+  .parish-filter {
+    gap: 32px;
+    row-gap: 16px;
+    padding-bottom: 48px;
+  }
+}

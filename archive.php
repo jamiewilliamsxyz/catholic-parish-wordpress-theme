@@ -4,9 +4,12 @@
   <?php
   get_template_part("template-parts/page-header");
 
-  if (have_posts()) : ?>
+  if (have_posts()) :
+    $post_type = get_post_type();
+  ?>
 
     <section>
+      <?php if (get_object_taxonomies($post_type)) get_template_part("template-parts/filter"); ?>
       <div class="parish-archive-container">
         <?php
         while (have_posts()) :
@@ -14,7 +17,7 @@
 
           get_template_part(
             "template-parts/content/content-archive",
-            get_post_type()
+            $post_type
           );
 
         endwhile;
