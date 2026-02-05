@@ -28,7 +28,7 @@ get_header();
       endwhile;
       ?>
 
-      <div class="parish-details-card parish-animate-archive-card">
+      <div class="parish-details-card">
         <?php
         $details_arr = array(
           "phone" => "Phone",
