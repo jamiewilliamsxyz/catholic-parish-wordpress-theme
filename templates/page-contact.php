@@ -29,7 +29,6 @@ get_header();
       ?>
 
       <div class="parish-details-card parish-animate-archive-card">
-
         <?php
         $details_arr = array(
           "phone" => "Phone",
