@@ -31,7 +31,14 @@ h6 {
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: var(--parish-body-font);
+}
+
+main {
+  flex: 1;
 }
 
 /* Variables */

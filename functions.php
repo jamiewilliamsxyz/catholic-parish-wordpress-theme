@@ -12,4 +12,4 @@ require_once $template_dir . "/inc/theme-options.php";
 require_once $template_dir . "/inc/theme-options-css-vars.php";
 require_once $template_dir . "/inc/contact-form-handler.php";
 
-// add_filter("show_admin_bar", "__return_false");
+add_filter("show_admin_bar", "__return_false");
