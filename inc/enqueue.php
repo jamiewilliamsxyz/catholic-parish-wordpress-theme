@@ -26,7 +26,8 @@ function parish_enqueue_admin_styles()
     $post_type !== "parish_newsletter" &&
     $post_type !== "parish_service" &&
     $post_type !== "parish_staff_member" &&
-    $post_type !== "parish_church_group"
+    $post_type !== "parish_church_group" &&
+    $screen->id !== "toplevel_page_parish-setup-guide"
   ) {
     return;
   }

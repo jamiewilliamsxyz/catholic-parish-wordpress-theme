@@ -1,3 +1,5 @@
+/* Meta Boxes */
+
 .parish-meta-box-field {
   display: flex;
   flex-direction: column;
@@ -8,4 +10,94 @@
 
 .parish-meta-box-field:first-child {
   margin-top: 0;
+}
+
+/* Parish Setup Guide Page */
+
+.parish-setup-guide {
+  font-size: 16px;
+  padding: 12px;
+}
+
+.parish-setup-guide header,
+.parish-setup-guide footer {
+  background-color: rgb(226, 226, 226);
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+}
+
+.parish-setup-guide header {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.parish-setup-guide header > h1,
+.parish-setup-guide header > p {
+  margin-top: 0;
+}
+
+.parish-setup-guide header > p {
+  max-width: 700px;
+}
+
+.parish-setup-guide header,
+.parish-setup-guide main,
+.parish-setup-guide footer {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.parish-setup-guide footer {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.parish-setup-guide nav,
+.parish-setup-guide footer {
+  margin-top: 24px;
+}
+
+.parish-setup-guide nav,
+.parish-setup-guide section {
+  padding: 6px 0 22px 0;
+}
+
+.parish-setup-guide h1 {
+  font-size: 38px;
+}
+
+.parish-setup-guide h2 {
+  font-size: 28px;
+}
+
+.parish-setup-guide h3 {
+  font-size: 20px;
+}
+
+.parish-setup-guide h1,
+.parish-setup-guide h2,
+.parish-setup-guide h3 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.parish-setup-guide p {
+  font-size: 16px;
+}
+
+.parish-setup-guide .parish-setup-guide-subtext {
+  font-size: 15px;
+}
+
+.parish-setup-guide ul {
+  list-style: disc;
+  margin-left: 32px;
+}
+
+.parish-setup-guide em {
+  font-style: italic;
 }
