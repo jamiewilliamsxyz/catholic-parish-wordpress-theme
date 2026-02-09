@@ -17,6 +17,8 @@ function parish_add_setup_guide_page()
 
 function parish_render_setup_guide_page()
 {
+  if (!current_user_can("manage_options")) return;
+
 ?>
   <div class="parish-setup-guide wrap">
     <header>
