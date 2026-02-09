@@ -5,17 +5,17 @@ add_action("admin_menu", "parish_add_setup_guide_page");
 function parish_add_setup_guide_page()
 {
   add_menu_page(
-    "Parish Setup Guide",
-    "Parish Setup Guide",
+    __("Parish Setup Guide", "catholic-parish-wordpress-theme"),
+    __("Parish Setup Guide", "catholic-parish-wordpress-theme"),
     "manage_options",
     "parish-setup-guide",
-    "parish_setup_guide_page",
+    "parish_render_setup_guide_page",
     "dashicons-editor-help",
     25
   );
 }
 
-function parish_setup_guide_page()
+function parish_render_setup_guide_page()
 {
 ?>
   <div class="parish-setup-guide wrap">
