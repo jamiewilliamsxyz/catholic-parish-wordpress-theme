@@ -31,19 +31,19 @@ get_header();
       <div class="parish-details-card">
         <?php
         $details_arr = array(
-          "phone" => "Phone",
-          "email" => "Email",
-          "church_address" => "Church Address",
-          "office_address" => "Office Address",
-          "office_hours" => "Office Opening Hours"
+          "phone" => __("Phone", "catholic-parish-wordpress-theme"),
+          "email" => __("Email", "catholic-parish-wordpress-theme"),
+          "church_address" => __("Church Address", "catholic-parish-wordpress-theme"),
+          "office_address" => __("Office Address", "catholic-parish-wordpress-theme"),
+          "office_hours" => __("Office Opening Hours", "catholic-parish-wordpress-theme")
         );
 
         foreach ($details_arr as $key => $title) {
-          $data = get_theme_mod("parish_$key");
+          $data = get_option("cpc_parish_$key");
         ?>
           <div class="parish-details-card-field">
-            <h3><?php echo esc_html__($title, "catholic-parish-wordpress-theme"); ?></h3>
-            <p><?php echo $data ? esc_html($data) : esc_html__("Not provided", "catholic-parish-wordpress-theme"); ?></p>
+            <h3><?php echo esc_html($title); ?></h3>
+            <p><?php echo $data ? nl2br(esc_html($data)) : esc_html__("Not provided", "catholic-parish-wordpress-theme"); ?></p>
           </div>
         <?php
         }

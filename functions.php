@@ -2,7 +2,6 @@
 
 $template_dir = get_template_directory();
 
-require_once $template_dir . "/inc/shortcodes.php";
 require_once $template_dir . "/inc/enqueue.php";
 require_once $template_dir . "/inc/theme-setup.php";
 require_once $template_dir . "/inc/theme-options.php";
