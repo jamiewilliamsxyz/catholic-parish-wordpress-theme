@@ -20,7 +20,7 @@ function parish_render_setup_guide_page()
 ?>
   <div class="parish-setup-guide wrap">
     <header>
-      <h1><?php esc_html_e("Parish Setup Guide", "catholic-parish-wordpress-theme"); ?></h1>
+      <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
       <p>
         <?php esc_html_e("This setup guide helps parish administrators set up and use the Catholic Parish theme and the core companion plugin. It explains what has been added to WordPress, where content appears on the site and the important steps needed to get everything working correctly.", "catholic-parish-wordpress-theme"); ?>
       </p>
