@@ -87,7 +87,7 @@
 
 /* CPTs */
 
-.type-parish_newsletter {
+.type-cpc_newsletter {
   height: fit-content;
   min-height: fit-content;
   max-height: fit-content;
@@ -97,7 +97,7 @@
   margin-top: 12px;
 }
 
-.type-parish_church_group > .parish-archive-card-content > h2 {
+.type-cpc_church_group > .parish-archive-card-content > h2 {
   text-decoration: underline;
   text-decoration-color: var(--parish-accent-colour);
   max-width: fit-content;
@@ -127,11 +127,11 @@
   align-self: center;
 }
 
-.type-parish_staff_member > .parish-archive-card-content {
+.type-cpc_parish_staff_member > .parish-archive-card-content {
   text-align: center;
 }
 
-.type-parish_staff_member > .parish-archive-card-content > h2 {
+.type-cpc_parish_staff_member > .parish-archive-card-content > h2 {
   text-decoration: underline;
   text-decoration-color: var(--parish-accent-colour);
   font-size: 22px;
@@ -187,7 +187,7 @@
 
   /* CPTs */
 
-  .type-parish_newsletter {
+  .type-cpc_newsletter {
     min-height: fit-content;
   }
 
@@ -195,11 +195,11 @@
     margin-top: 24px;
   }
 
-  .type-parish_church_group {
+  .type-cpc_church_group {
     max-height: fit-content;
   }
 
-  .type-parish_church_group > .parish-archive-card-content > h2 {
+  .type-cpc_church_group > .parish-archive-card-content > h2 {
     font-size: 23px;
   }
 
@@ -219,11 +219,11 @@
     margin: 16px 0 10px 0;
   }
 
-  .type-parish_staff_member > .parish-archive-card-content > h2 {
+  .type-cpc_parish_staff_member > .parish-archive-card-content > h2 {
     font-size: 23px;
   }
 
-  .type-parish_staff_member > .parish-archive-card-content > span,
+  .type-cpc_parish_staff_member > .parish-archive-card-content > span,
   .parish-content-archive-staff-card-section > p {
     font-size: 17px;
   }

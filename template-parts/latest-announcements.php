@@ -1,6 +1,6 @@
 <?php
 $announcements = get_posts(array(
-  "post_type" => "parish_announcement",
+  "post_type" => "cpc_announcement",
   "posts_per_page" => 3,
   "post_status" => "publish",
 ));

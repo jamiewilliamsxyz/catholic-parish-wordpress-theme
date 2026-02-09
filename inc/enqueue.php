@@ -20,17 +20,7 @@ function parish_enqueue_admin_styles()
 
   if (!$screen) return;
 
-  $post_type = $screen->post_type;
-
-  if (
-    $post_type !== "parish_newsletter" &&
-    $post_type !== "parish_service" &&
-    $post_type !== "parish_staff_member" &&
-    $post_type !== "parish_church_group" &&
-    $screen->id !== "toplevel_page_parish-setup-guide"
-  ) {
-    return;
-  }
+  if ($screen->id !== "toplevel_page_parish-setup-guide") return;
 
   wp_enqueue_style(
     "parish-admin-style",

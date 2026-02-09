@@ -1,7 +1,7 @@
 <?php
 
 $services = get_posts(array(
-  "post_type" => "parish_service",
+  "post_type" => "cpc_service",
   "post_status" => "publish",
   "orderby" => "date",
   "order" => "ASC"

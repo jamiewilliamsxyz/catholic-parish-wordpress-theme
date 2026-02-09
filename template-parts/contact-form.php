@@ -1,7 +1,7 @@
 <form method="post" action="" class="parish-contact-form">
-  <input type="hidden" name="parish_contact_form_submitted" value="submitted" />
+  <input type="hidden" name="cpc_contact_form_submitted" value="submitted" />
   <?php
-  wp_nonce_field("parish_send_contact_email", "parish_contact_form_nonce");
+  wp_nonce_field("cpc_send_contact_email", "cpc_contact_form_nonce");
   ?>
 
   <div class="parish-contact-form-col">
@@ -40,8 +40,8 @@
   $btn_class = "";
   $form_msg = __("Send email", "catholic-parish-wordpress-theme");
 
-  if (isset($_GET["parish_contact_status"])) {
-    if ($_GET["parish_contact_status"] === "success") {
+  if (isset($_GET["cpc_contact_status"])) {
+    if ($_GET["cpc_contact_status"] === "success") {
       $form_msg = __("Message sent", "catholic-parish-wordpress-theme");
       $btn_class = "parish-submit-btn-success";
     } else {
