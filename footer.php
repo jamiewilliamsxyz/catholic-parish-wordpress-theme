@@ -12,7 +12,7 @@
       </div>
 
       <div class="parish-copyright-bar-wrapper-desktop">
-        <?php get_template_part("template-parts/copyright-bar") ?>
+        <?php get_template_part("template-parts/components/copyright-bar") ?>
       </div>
     </div>
 
@@ -46,7 +46,7 @@
   </div>
 
   <div class="parish-copyright-bar-wrapper-mobile">
-    <?php get_template_part("template-parts/copyright-bar") ?>
+    <?php get_template_part("template-parts/components/copyright-bar") ?>
   </div>
 
   </div>

@@ -25,7 +25,7 @@ $hero_bg = get_theme_mod(
   </section>
 
   <?php
-  get_template_part('template-parts/latest-announcements');
+  get_template_part('template-parts/sections/latest-announcements');
 
   if (have_posts()) :
     while (have_posts()) :
@@ -34,7 +34,7 @@ $hero_bg = get_theme_mod(
     endwhile;
   endif;
 
-  get_template_part('template-parts/services');
+  get_template_part('template-parts/sections/services');
   ?>
 </main>
 

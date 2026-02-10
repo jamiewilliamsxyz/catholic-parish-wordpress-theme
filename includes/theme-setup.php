@@ -4,6 +4,12 @@ add_action("after_setup_theme", "parish_theme_setup");
 
 function parish_theme_setup()
 {
+  // Load Text Domain
+  load_theme_textdomain(
+    "catholic-parish-wordpress-theme",
+    get_template_directory() . "/languages"
+  );
+
   // Theme support
   add_theme_support("menus");
   add_theme_support("title-tag");

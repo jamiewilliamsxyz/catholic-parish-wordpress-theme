@@ -10,13 +10,13 @@
         <?php
         while (have_posts()) :
           the_post();
-          get_template_part("template-parts/content/content-archive");
+          get_template_part("template-parts/content/content-archive/content-archive");
         endwhile;
         ?>
       </div>
     </section>
 
-    <?php get_template_part("template-parts/pagination") ?>
+    <?php get_template_part("template-parts/components/pagination") ?>
 
   <?php else : ?>
 

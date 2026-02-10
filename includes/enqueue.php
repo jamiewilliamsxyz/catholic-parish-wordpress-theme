@@ -1,10 +1,10 @@
 <?php
 
-// Theme Option Styles/Scripts
+// Customiser Styles/Scripts
 
-add_action("customize_controls_enqueue_scripts", "parish_enqueue_customizer_scripts");
+add_action("customize_controls_enqueue_scripts", "parish_enqueue_customiser_scripts");
 
-function parish_enqueue_customizer_scripts()
+function parish_enqueue_customiser_scripts()
 {
   wp_enqueue_script('wp-color-picker');
   wp_enqueue_style('wp-color-picker');
@@ -40,6 +40,7 @@ function parish_enqueue_scripts()
   $version = wp_get_theme()->get("Version");
 
   // CSS
+
   wp_enqueue_style(
     "parish-style",
     get_stylesheet_uri(),
@@ -47,24 +48,11 @@ function parish_enqueue_scripts()
     $version
   );
 
-  wp_enqueue_style(
-    "parish-header-style",
-    $template_uri . "/assets/css/header.css",
-    [],
-    $version
-  );
-
-  wp_enqueue_style(
-    "parish-footer-style",
-    $template_uri . "/assets/css/footer.css",
-    [],
-    $version
-  );
-
+  // CSS - Pages
   if (is_front_page()) {
     wp_enqueue_style(
       "parish-front-page-style",
-      $template_uri . "/assets/css/front-page.css",
+      $template_uri . "/assets/css/pages/front-page.css",
       [],
       $version
     );
@@ -73,7 +61,7 @@ function parish_enqueue_scripts()
   if (is_archive() || is_home()) {
     wp_enqueue_style(
       "parish-archive-style",
-      $template_uri . "/assets/css/archive.css",
+      $template_uri . "/assets/css/pages/archive.css",
       [],
       $version
     );
@@ -82,7 +70,7 @@ function parish_enqueue_scripts()
   if (is_page()) {
     wp_enqueue_style(
       "parish-page-style",
-      $template_uri . "/assets/css/page.css",
+      $template_uri . "/assets/css/pages/page.css",
       [],
       $version
     );
@@ -91,16 +79,7 @@ function parish_enqueue_scripts()
   if (is_single()) {
     wp_enqueue_style(
       "parish-single-style",
-      $template_uri . "/assets/css/single.css",
-      [],
-      $version
-    );
-  }
-
-  if (is_single() || is_page()) {
-    wp_enqueue_style(
-      "parish-content-style",
-      $template_uri . "/assets/css/content.css",
+      $template_uri . "/assets/css/pages/single.css",
       [],
       $version
     );
@@ -109,7 +88,7 @@ function parish_enqueue_scripts()
   if (is_page_template("templates/page-contact.php")) {
     wp_enqueue_style(
       "parish-page-contact-style",
-      $template_uri . "/assets/css/page-contact.css",
+      $template_uri . "/assets/css/pages/page-contact.css",
       [],
       $version
     );
@@ -118,7 +97,31 @@ function parish_enqueue_scripts()
   if (is_404()) {
     wp_enqueue_style(
       "parish-404-style",
-      $template_uri . "/assets/css/404.css",
+      $template_uri . "/assets/css/pages/404.css",
+      [],
+      $version
+    );
+  }
+
+  // CSS - Components
+  wp_enqueue_style(
+    "parish-header-style",
+    $template_uri . "/assets/css/components/header.css",
+    [],
+    $version
+  );
+
+  wp_enqueue_style(
+    "parish-footer-style",
+    $template_uri . "/assets/css/components/footer.css",
+    [],
+    $version
+  );
+
+  if (is_page() || is_archive()) {
+    wp_enqueue_style(
+      "parish-page-header-style",
+      $template_uri . "/assets/css/components/page-header.css",
       [],
       $version
     );
@@ -126,7 +129,7 @@ function parish_enqueue_scripts()
 
   wp_enqueue_style(
     "parish-pagination-style",
-    $template_uri . "/assets/css/pagination.css",
+    $template_uri . "/assets/css/components/pagination.css",
     [],
     $version
   );
@@ -134,7 +137,17 @@ function parish_enqueue_scripts()
   if (is_archive()) {
     wp_enqueue_style(
       "parish-filter-style",
-      $template_uri . "/assets/css/filter.css",
+      $template_uri . "/assets/css/components/filter.css",
+      [],
+      $version
+    );
+  }
+
+  // CSS - Content
+  if (is_single() || is_page()) {
+    wp_enqueue_style(
+      "parish-content-style",
+      $template_uri . "/assets/css/content.css",
       [],
       $version
     );

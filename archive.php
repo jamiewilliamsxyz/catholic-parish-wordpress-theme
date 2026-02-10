@@ -2,21 +2,21 @@
 
 <main class="parish-archive">
   <?php
-  get_template_part("template-parts/page-header");
+  get_template_part("template-parts/components/page-header");
 
   if (have_posts()) :
     $post_type = get_post_type();
   ?>
 
     <section>
-      <?php if (get_object_taxonomies($post_type)) get_template_part("template-parts/filter"); ?>
+      <?php if (get_object_taxonomies($post_type)) get_template_part("template-parts/components/filter"); ?>
       <div class="parish-archive-container">
         <?php
         while (have_posts()) :
           the_post();
 
           get_template_part(
-            "template-parts/content/content-archive",
+            "template-parts/content/content-archive/content-archive",
             $post_type
           );
 
@@ -25,7 +25,7 @@
       </div>
     </section>
 
-    <?php get_template_part("template-parts/pagination") ?>
+    <?php get_template_part("template-parts/components/pagination") ?>
 
   <?php else : ?>
 

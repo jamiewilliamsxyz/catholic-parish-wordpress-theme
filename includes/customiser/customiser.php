@@ -1,8 +1,8 @@
 <?php
 
-add_action("customize_register", "parish_register_theme_options");
+add_action("customize_register", "parish_register_customiser_options");
 
-function parish_register_theme_options($wp_customize)
+function parish_register_customiser_options($wp_customize)
 {
   // Colours
 

@@ -1,8 +1,10 @@
 <?php
 global $wp_query;
 
-$prev_icon = file_get_contents(get_template_directory() . "/assets/icons/parish-chevron-left.svg");
-$next_icon = file_get_contents(get_template_directory() . "/assets/icons/parish-chevron-right.svg");
+$template_dir = get_template_directory();
+
+$prev_icon = file_get_contents($template_dir . "/assets/icons/parish-chevron-left.svg");
+$next_icon = file_get_contents($template_dir . "/assets/icons/parish-chevron-right.svg");
 
 the_posts_pagination(
   array(
