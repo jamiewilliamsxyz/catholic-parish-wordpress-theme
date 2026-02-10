@@ -37,7 +37,7 @@ function parish_render_setup_guide_page()
           <li><a href="#parish-setup-menus"><?php esc_html_e("Set up menus", "catholic-parish-wordpress-theme"); ?></a></li>
           <li><a href="#parish-site-customisation"><?php esc_html_e("Customise the site", "catholic-parish-wordpress-theme"); ?></a></li>
           <li><a href="#parish-create-content"><?php esc_html_e("Create parish content", "catholic-parish-wordpress-theme"); ?></a></li>
-          <li><a href="#parish-templates-shortcodes-overview"><?php esc_html_e("Templates & shortcodes", "catholic-parish-wordpress-theme"); ?></a></li>
+          <li><a href="#parish-templates-shortcodes-overview"><?php esc_html_e("Parish Details, Templates & Shortcodes", "catholic-parish-wordpress-theme"); ?></a></li>
           <li><a href="#parish-theme-tips"><?php esc_html_e("Helpful tips", "catholic-parish-wordpress-theme"); ?></a></li>
         </ol>
       </nav>
@@ -48,7 +48,7 @@ function parish_render_setup_guide_page()
         <h2><?php esc_html_e("Install & Activate the Companion Plugin", "catholic-parish-wordpress-theme"); ?></h2>
 
         <p>
-          <?php esc_html_e("The Catholic Parish theme works together with a core companion plugin. This plugin allows all features that work together with the theme such as announcements, services, newsletters, parish staff, church groups CPTs and more.", "catholic-parish-wordpress-theme"); ?>
+          <?php esc_html_e("The Catholic Parish theme works together with a core companion plugin. This plugin allows all features that work together with the theme such as shortcodes, contact form logic, taxonomies and parish-specific custom post types.", "catholic-parish-wordpress-theme"); ?>
         </p>
 
         <ul>
@@ -64,10 +64,6 @@ function parish_render_setup_guide_page()
           <li><?php esc_html_e("Upload the downloaded .zip file", "catholic-parish-wordpress-theme"); ?></li>
           <li><?php echo wp_kses_post(__("Activate the plugin under <strong>Plugins → Installed Plugins</strong>", "catholic-parish-wordpress-theme")); ?></li>
         </ul>
-
-        <p>
-          <?php echo wp_kses_post(__("<strong>Important</strong>: After activating the plugin, go to <code>Settings → Permalinks</code> and click <strong>Save Changes</strong>. This ensures all parish pages and archive pages load correctly.", "catholic-parish-wordpress-theme")); ?>
-        </p>
       </section>
 
       <hr />
@@ -142,12 +138,7 @@ function parish_render_setup_guide_page()
           <li><?php echo wp_kses_post(__("<strong>Hero Section:</strong> Front page hero title, card text and background image", "catholic-parish-wordpress-theme")); ?></li>
           <li><?php echo wp_kses_post(__("<strong>Contact Page:</strong> Google Maps embed URL for the Contact Page template", "catholic-parish-wordpress-theme")); ?></li>
           <li><?php echo wp_kses_post(__("<strong>Footer:</strong> Footer title, info text and copyright name", "catholic-parish-wordpress-theme")); ?></li>
-          <li><?php echo wp_kses_post(__("<strong>Parish Details:</strong> Phone, email, office opening hours, church and office address", "catholic-parish-wordpress-theme")); ?></li>
         </ul>
-
-        <p class="parish-setup-guide-subtext description">
-          <?php esc_html_e("Parish details entered here are used in shortcodes.", "catholic-parish-wordpress-theme"); ?>
-        </p>
       </section>
 
       <hr />
@@ -187,7 +178,22 @@ function parish_render_setup_guide_page()
       <hr />
 
       <section id="parish-templates-shortcodes-overview">
-        <h2><?php esc_html_e("Templates & Shortcodes", "catholic-parish-wordpress-theme"); ?></h2>
+        <h2><?php esc_html_e("Parish Details, Templates & Shortcodes", "catholic-parish-wordpress-theme"); ?></h2>
+
+        <h3><?php esc_html_e("Parish Details", "catholic-parish-wordpress-theme"); ?></h3>
+        <p>
+          <?php echo wp_kses_post(__("Parish Details are managed by the companion plugin to provide information used across the site. Navigate to <strong>Settings -> Parish Details</strong> to enter parish details.", "catholic-parish-wordpress-theme")); ?>
+        </p>
+
+        <ul>
+          <li><?php esc_html_e("Phone Number", "catholic-parish-wordpress-theme"); ?></li>
+          <li><?php esc_html_e("Email Address", "catholic-parish-wordpress-theme"); ?></li>
+          <li><?php esc_html_e("Church Address", "catholic-parish-wordpress-theme"); ?></li>
+          <li><?php esc_html_e("Office Hours", "catholic-parish-wordpress-theme"); ?></li>
+          <li><?php esc_html_e("Office Opening Hours", "catholic-parish-wordpress-theme"); ?></li>
+        </ul>
+
+        <p class="parish-setup-guide-subtext description"><?php esc_html_e("These details are displayed automatically on the Contact Page template and via shortcodes.", "catholic-parish-wordpress-theme") ?></p>
 
         <h3><?php esc_html_e("Contact Page Template", "catholic-parish-wordpress-theme"); ?></h3>
         <ul>
@@ -198,7 +204,7 @@ function parish_render_setup_guide_page()
 
         <p class="parish-setup-guide-subtext description">
           <?php esc_html_e("The contact form on the template sends messages to the site administrator email address.", "catholic-parish-wordpress-theme"); ?><br />
-          <?php esc_html_e("Parish details and the map are taken from the Customiser.", "catholic-parish-wordpress-theme"); ?>
+          <?php esc_html_e("The map embed is taken from the Customiser.", "catholic-parish-wordpress-theme"); ?>
         </p>
 
         <h3><?php esc_html_e("Shortcodes", "catholic-parish-wordpress-theme"); ?></h3>
