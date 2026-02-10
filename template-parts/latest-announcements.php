@@ -26,14 +26,8 @@ if ($announcements) :
         <?php endforeach;
         wp_reset_postdata(); ?>
       </div>
-    <?php else : ?>
-      <div class="parish-no-announcements">
-        <p><?php esc_html_e("There are no announcements at the moment", "catholic-parish-wordpress-theme") ?></p>
-        <p><?php esc_html_e("Please check back soon", "catholic-parish-wordpress-theme") ?></p>
-      </div>
-    <?php endif; ?>
 
-    <a href="<?php echo esc_url(get_post_type_archive_link("parish_announcement")); ?>" class="parish-see-more-link">See more</a>
+      <a href="<?php echo esc_url(get_post_type_archive_link("parish_announcement")); ?>" class="parish-see-more-link">See more</a>
     </div>
-
   </section>
+<?php endif; ?>

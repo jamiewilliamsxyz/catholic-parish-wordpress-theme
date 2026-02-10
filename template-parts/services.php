@@ -23,9 +23,6 @@ if ($services) :
         wp_reset_postdata();
         ?>
       </div>
-    <?php
-  else : return;
-  endif;
-    ?>
     </div>
   </section>
+<?php endif; ?>
