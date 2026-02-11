@@ -27,7 +27,7 @@ if ($announcements) :
         wp_reset_postdata(); ?>
       </div>
 
-      <a href="<?php echo esc_url(get_post_type_archive_link("parish_announcement")); ?>" class="parish-see-more-link">See more</a>
+      <a href="<?php echo esc_url(get_post_type_archive_link("cpc_announcement")); ?>" class="parish-see-more-link">See more</a>
     </div>
   </section>
 <?php endif; ?>

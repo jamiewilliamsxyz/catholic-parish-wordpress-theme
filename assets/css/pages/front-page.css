@@ -64,7 +64,7 @@
   max-width: 450px;
 }
 
-/* Latest Announcements/Services Sections */
+/* Latest Announcements/Services/Content Sections */
 
 .parish-announcements,
 .parish-services-section,
@@ -76,7 +76,11 @@
   padding: 48px 24px 48px 24px;
 }
 
-.parish-announcement,
+.parish-services-section,
+.parish-announcements {
+  background-color: var(--parish-bg-light);
+}
+
 .parish-front-page-content {
   background-color: var(--parish-bg-lightest);
 }
@@ -142,6 +146,7 @@
   max-height: fit-content;
   width: 100%;
   max-width: 650px;
+  min-width: 300px;
   box-sizing: border-box;
   padding: 24px;
   display: flex;
@@ -173,10 +178,6 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-}
-
-.parish-services-section {
-  background-color: var(--parish-bg-light);
 }
 
 .parish-service-card > h4 {

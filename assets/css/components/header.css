@@ -2,7 +2,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-top: 84px; /* Taking into account topbar nav height */
+  padding-top: 83px; /* Taking into account topbar nav height */
 }
 
 .parish-menu-backdrop {
@@ -80,6 +80,9 @@
 }
 
 .parish-navbar-menu-container {
+  position: absolute;
+  top: 83px;
+  width: 100%;
   background-color: var(--parish-bg-dark);
   padding: 0 18px 18px 18px;
   opacity: 0;
@@ -154,6 +157,8 @@
   }
 
   .parish-navbar-menu-container {
+    position: static;
+    width: auto;
     background-color: none;
     padding: 0;
     opacity: 1;

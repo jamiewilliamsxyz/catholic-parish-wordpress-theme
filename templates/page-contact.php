@@ -11,7 +11,7 @@ get_header();
   $title = get_the_title();
 
   if (!empty($title)) :
-    get_template_part("template-parts/page-header");
+    get_template_part("template-parts/components/page-header");
   else :
   ?>
     <header class="parish-page-header">

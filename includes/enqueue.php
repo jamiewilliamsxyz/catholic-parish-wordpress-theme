@@ -185,8 +185,8 @@ function parish_enqueue_scripts()
 
   // Navbar menu script
   wp_enqueue_script(
-    "parish-toggle-menu-script",
-    $template_uri . "/assets/js/menu-toggle.js",
+    "parish-navbar-menu-script",
+    $template_uri . "/assets/js/navbar-menu.js",
     [],
     $version,
     true
