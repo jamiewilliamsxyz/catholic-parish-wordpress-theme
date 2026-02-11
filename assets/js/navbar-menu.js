@@ -6,19 +6,19 @@ const toggle = document.getElementById("parishMenuToggle");
 const openMenu = () => {
   menuContainer.classList.add("parish-menu-open");
   backdrop.classList.add("parish-menu-open");
-  backdrop.classList.add("parish-menu-open");
   backdrop.hidden = false;
   content.setAttribute("inert", "");
   toggle.setAttribute("aria-expanded", "true");
+  toggle.setAttribute("aria-label", "Close menu");
 };
 
 const closeMenu = () => {
   menuContainer.classList.remove("parish-menu-open");
   backdrop.classList.remove("parish-menu-open");
-  backdrop.classList.remove("parish-menu-open");
   backdrop.hidden = true;
   content.removeAttribute("inert");
   toggle.setAttribute("aria-expanded", "false");
+  toggle.setAttribute("aria-label", "Open menu");
 };
 
 // Toggle on icon click

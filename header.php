@@ -23,7 +23,7 @@
         }
         ?>
 
-        <button aria-expanded="false" id="parishMenuToggle" class="parish-navbar-menu-icon">
+        <button aria-expanded="false" id="parishMenuToggle" class="parish-navbar-menu-icon" aria-label="Open menu">
           <?php
           echo file_get_contents(get_template_directory() .
             "/assets/icons/parish-menu-icon-closed.svg");
