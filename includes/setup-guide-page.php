@@ -1,5 +1,9 @@
 <?php
 
+if (!defined("ABSPATH")) {
+  exit;
+}
+
 add_action("admin_menu", "parish_add_setup_guide_page");
 
 function parish_add_setup_guide_page()

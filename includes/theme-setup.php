@@ -1,5 +1,9 @@
 <?php
 
+if (!defined("ABSPATH")) {
+  exit;
+}
+
 add_action("after_setup_theme", "parish_theme_setup");
 
 function parish_theme_setup()

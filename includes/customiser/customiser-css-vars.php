@@ -1,5 +1,9 @@
 <?php
 
+if (!defined("ABSPATH")) {
+  exit;
+}
+
 add_action("wp_head", "parish_set_css_vars");
 
 function parish_set_css_vars()

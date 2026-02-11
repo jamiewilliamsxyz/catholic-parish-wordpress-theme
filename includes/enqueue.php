@@ -1,5 +1,9 @@
 <?php
 
+if (!defined("ABSPATH")) {
+  exit;
+}
+
 // Customiser Styles/Scripts
 
 add_action("customize_controls_enqueue_scripts", "parish_enqueue_customiser_scripts");

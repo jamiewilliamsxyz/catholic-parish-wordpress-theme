@@ -1,5 +1,10 @@
 <?php
 
+if (!defined("ABSPATH")) {
+  exit;
+}
+
+
 add_action("customize_register", "parish_register_customiser_options");
 
 function parish_register_customiser_options($wp_customize)
