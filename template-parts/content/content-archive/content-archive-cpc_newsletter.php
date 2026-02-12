@@ -14,7 +14,7 @@
         href="<?php echo esc_url($post_newsletter_url); ?>"
         target="_blank"
         rel="noopener">
-        <?php esc_html_e("Download", "catholic-parish-wordpress-theme") ?>
+        <?php esc_html_e("View newsletter", "catholic-parish-wordpress-theme") ?>
       </a>
     <?php endif; ?>
   </div>
