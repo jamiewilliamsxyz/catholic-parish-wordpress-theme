@@ -42,7 +42,8 @@
           "menu_class" => "parish-navbar-menu",
           "container_class" => "parish-navbar-menu-container",
           "container_id" => "parishNavbarMenuContainer",
-          "theme_location" => "parish-navbar-menu"
+          "theme_location" => "parish-navbar-menu",
+          "fallback_cb" => false,
         )
       );
       ?>
