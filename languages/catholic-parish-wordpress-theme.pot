@@ -1,0 +1,581 @@
+# Copyright (C) 2026 Jamie Williams
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Catholic Parish 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/catholic-parish-wordpress-theme\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-02-12T19:12:16+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: catholic-parish-wordpress-theme\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Catholic Parish"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/jamiewilliamsxyz/catholic-parish-wordpress-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A clean, accessible classic WordPress theme designed for local Catholic parishes to manage parish information, announcements, mass times and more with minimal complexity"
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Jamie Williams"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://github.com/jamiewilliamsxyz"
+msgstr ""
+
+#: 404.php:7
+msgid "Page not found"
+msgstr ""
+
+#: 404.php:11
+msgid "Return home"
+msgstr ""
+
+#: archive.php:33
+#: index.php:24
+msgid "No posts found"
+msgstr ""
+
+#: footer.php:9
+msgid "Parish Info"
+msgstr ""
+
+#: footer.php:23
+msgid "General Links"
+msgstr ""
+
+#: footer.php:37
+msgid "Social Links"
+msgstr ""
+
+#: includes/customiser/customiser.php:17
+msgid "Colours"
+msgstr ""
+
+#: includes/customiser/customiser.php:18
+msgid "Customise the colours used across your site"
+msgstr ""
+
+#: includes/customiser/customiser.php:35
+msgid "Accent Colour"
+msgstr ""
+
+#: includes/customiser/customiser.php:46
+msgid "Typography"
+msgstr ""
+
+#: includes/customiser/customiser.php:47
+msgid "Select fonts for headings and body text across your site"
+msgstr ""
+
+#: includes/customiser/customiser.php:64
+msgid "Heading Font"
+msgstr ""
+
+#: includes/customiser/customiser.php:90
+msgid "Body Font"
+msgstr ""
+
+#: includes/customiser/customiser.php:110
+msgid "Hero Section"
+msgstr ""
+
+#: includes/customiser/customiser.php:111
+msgid "Configure the hero section displayed at the top of your front page"
+msgstr ""
+
+#. Template Name of the theme
+#: includes/customiser/customiser.php:178
+msgid "Contact Page"
+msgstr ""
+
+#: includes/customiser/customiser.php:179
+msgid "Customise the contact page template"
+msgstr ""
+
+#: includes/customiser/customiser.php:195
+msgid "Google Map URL"
+msgstr ""
+
+#: includes/customiser/customiser.php:196
+msgid "Paste the Google Maps embed link"
+msgstr ""
+
+#: includes/customiser/customiser.php:207
+msgid "Footer"
+msgstr ""
+
+#: includes/customiser/customiser.php:208
+msgid "Manage the footer information displayed at the bottom of every page"
+msgstr ""
+
+#: includes/setup-guide-page.php:12
+#: includes/setup-guide-page.php:13
+msgid "Parish Setup Guide"
+msgstr ""
+
+#: includes/setup-guide-page.php:31
+msgid "This setup guide helps parish administrators set up and use the Catholic Parish theme and the core companion plugin. It explains what has been added to WordPress, where content appears on the site and the important steps needed to get everything working correctly."
+msgstr ""
+
+#: includes/setup-guide-page.php:37
+msgid "Quick Setup Steps"
+msgstr ""
+
+#: includes/setup-guide-page.php:39
+msgid "Install & activate the companion plugin"
+msgstr ""
+
+#: includes/setup-guide-page.php:40
+msgid "Set the front page"
+msgstr ""
+
+#: includes/setup-guide-page.php:41
+msgid "Set up menus"
+msgstr ""
+
+#: includes/setup-guide-page.php:42
+msgid "Customise the site"
+msgstr ""
+
+#: includes/setup-guide-page.php:43
+msgid "Create parish content"
+msgstr ""
+
+#: includes/setup-guide-page.php:44
+#: includes/setup-guide-page.php:179
+msgid "Parish Details, Templates & Shortcodes"
+msgstr ""
+
+#: includes/setup-guide-page.php:45
+msgid "Helpful tips"
+msgstr ""
+
+#: includes/setup-guide-page.php:52
+msgid "Install & Activate the Companion Plugin"
+msgstr ""
+
+#: includes/setup-guide-page.php:55
+msgid "The Catholic Parish theme works together with a core companion plugin. This plugin allows all features that work together with the theme such as shortcodes, contact form logic, taxonomies and parish-specific custom post types."
+msgstr ""
+
+#: includes/setup-guide-page.php:59
+msgid "Download the plugin from the GitHub repository <a href=\"https://github.com/jamiewilliamsxyz/catholic-parish-core\" target=\"_blank\" rel=\"noopener\">here</a>"
+msgstr ""
+
+#: includes/setup-guide-page.php:60
+msgid "Rename the plugin file name to <strong>\"catholic-wordpress-core\"</strong> and the theme file name to <strong>\"catholic-parish-wordpress-theme\"</strong>"
+msgstr ""
+
+#: includes/setup-guide-page.php:61
+msgid "Go to <strong>Plugins → Add Plugin → Upload Plugin</strong>"
+msgstr ""
+
+#: includes/setup-guide-page.php:62
+msgid "Upload the downloaded .zip file"
+msgstr ""
+
+#: includes/setup-guide-page.php:63
+msgid "Activate the plugin under <strong>Plugins → Installed Plugins</strong>"
+msgstr ""
+
+#: includes/setup-guide-page.php:70
+msgid "Set the Front Page"
+msgstr ""
+
+#: includes/setup-guide-page.php:73
+msgid "The theme has a custom front page which must be set in WordPress."
+msgstr ""
+
+#: includes/setup-guide-page.php:77
+msgid "Go to <strong>Settings → Reading</strong>"
+msgstr ""
+
+#: includes/setup-guide-page.php:78
+msgid "Set <strong>Your homepage displays</strong> to <strong>A static page</strong>"
+msgstr ""
+
+#: includes/setup-guide-page.php:79
+msgid "Select the page you want to use as the homepage"
+msgstr ""
+
+#: includes/setup-guide-page.php:83
+msgid "Content written in the front page editor appears below the latest announcements section."
+msgstr ""
+
+#: includes/setup-guide-page.php:90
+msgid "Set Up Menus"
+msgstr ""
+
+#: includes/setup-guide-page.php:93
+msgid "The theme has three menu locations:"
+msgstr ""
+
+#: includes/setup-guide-page.php:97
+msgid "<strong>Navbar</strong> - main site navigation"
+msgstr ""
+
+#: includes/setup-guide-page.php:98
+msgid "<strong>Footer General Links</strong>"
+msgstr ""
+
+#: includes/setup-guide-page.php:99
+msgid "<strong>Footer Social Links</strong>"
+msgstr ""
+
+#: includes/setup-guide-page.php:103
+msgid "Head to <strong>Appearance → Menus</strong> to create and manage your menus."
+msgstr ""
+
+#: includes/setup-guide-page.php:106
+msgid "Navbar Menu"
+msgstr ""
+
+#: includes/setup-guide-page.php:108
+msgid "Create a new menu and assign it to the <strong>Navbar Menu</strong> location"
+msgstr ""
+
+#: includes/setup-guide-page.php:109
+msgid "Add pages and archive pages (Announcements, Newsletters, Services, Parish Staff, Church Groups)"
+msgstr ""
+
+#: includes/setup-guide-page.php:110
+msgid "Save the menu"
+msgstr ""
+
+#: includes/setup-guide-page.php:114
+msgid "Archive pages will automatically display content from their sections, no extra setup is required."
+msgstr ""
+
+#: includes/setup-guide-page.php:117
+msgid "Footer Menus"
+msgstr ""
+
+#: includes/setup-guide-page.php:119
+msgid "Create separate menus for <strong>Footer General Links</strong> and <strong>Footer Social Links</strong>"
+msgstr ""
+
+#: includes/setup-guide-page.php:120
+msgid "Use <strong>Custom Links</strong> for external sites and social media links"
+msgstr ""
+
+#: includes/setup-guide-page.php:127
+msgid "Customise the Site"
+msgstr ""
+
+#: includes/setup-guide-page.php:130
+msgid "Most visual and content settings are managed through the WordPress Customiser. Navigate to <strong>Appearance → Customise</strong>."
+msgstr ""
+
+#: includes/setup-guide-page.php:134
+msgid "<strong>Colours:</strong> Accent colour"
+msgstr ""
+
+#: includes/setup-guide-page.php:135
+msgid "<strong>Typography:</strong> Fonts"
+msgstr ""
+
+#: includes/setup-guide-page.php:136
+msgid "<strong>Hero Section:</strong> Front page hero title, card text and background image"
+msgstr ""
+
+#: includes/setup-guide-page.php:137
+msgid "<strong>Contact Page:</strong> Google Maps embed URL for the Contact Page template"
+msgstr ""
+
+#: includes/setup-guide-page.php:138
+msgid "<strong>Footer:</strong> Footer title, info text and copyright name"
+msgstr ""
+
+#: includes/setup-guide-page.php:145
+msgid "Create Parish Content"
+msgstr ""
+
+#: includes/setup-guide-page.php:148
+msgid "The companion plugin adds the following content sections to the admin menu."
+msgstr ""
+
+#: includes/setup-guide-page.php:153
+msgid "<strong>Announcements</strong><br />Used for parish news and notices.<br /><em>Where it appears:</em> Front page latest announcements section and announcements archive."
+msgstr ""
+
+#: includes/setup-guide-page.php:156
+msgid "<strong>Services</strong><br />Used for Mass, Confession, Adoration and similar services.<br /><em>Where it appears:</em> Front page services section."
+msgstr ""
+
+#: includes/setup-guide-page.php:159
+msgid "<strong>Newsletters</strong><br />Upload PDF newsletters.<br /><em>Where it appears:</em> Newsletters archive page."
+msgstr ""
+
+#: includes/setup-guide-page.php:162
+msgid "<strong>Parish Staff</strong><br />Clergy and parish staff members.<br /><em>Where it appears:</em> Parish Staff archive page."
+msgstr ""
+
+#: includes/setup-guide-page.php:164
+msgid "Includes filtering by the staff type taxonomy terms."
+msgstr ""
+
+#: includes/setup-guide-page.php:168
+msgid "<strong>Church Groups</strong><br />Parish groups and ministries.<br /><em>Where it appears:</em> Church Groups archive page."
+msgstr ""
+
+#: includes/setup-guide-page.php:170
+msgid "Includes filtering by group type taxonomy terms."
+msgstr ""
+
+#: includes/setup-guide-page.php:181
+msgid "Parish Details"
+msgstr ""
+
+#: includes/setup-guide-page.php:183
+msgid "Parish Details are managed by the companion plugin to provide information used across the site. Navigate to <strong>Settings -> Parish Details</strong> to enter parish details."
+msgstr ""
+
+#: includes/setup-guide-page.php:187
+msgid "Phone Number"
+msgstr ""
+
+#: includes/setup-guide-page.php:188
+msgid "Email Address"
+msgstr ""
+
+#: includes/setup-guide-page.php:189
+#: templates/page-contact.php:36
+msgid "Church Address"
+msgstr ""
+
+#: includes/setup-guide-page.php:190
+msgid "Office Hours"
+msgstr ""
+
+#: includes/setup-guide-page.php:191
+#: templates/page-contact.php:38
+msgid "Office Opening Hours"
+msgstr ""
+
+#: includes/setup-guide-page.php:194
+msgid "These details are displayed automatically on the Contact Page template and via shortcodes."
+msgstr ""
+
+#: includes/setup-guide-page.php:196
+msgid "Contact Page Template"
+msgstr ""
+
+#: includes/setup-guide-page.php:198
+msgid "Create or edit a page"
+msgstr ""
+
+#: includes/setup-guide-page.php:199
+msgid "Select the <strong>Contact Page</strong> template in the page tab on the right sidebar"
+msgstr ""
+
+#: includes/setup-guide-page.php:200
+msgid "Publish or save the page"
+msgstr ""
+
+#: includes/setup-guide-page.php:204
+msgid "The contact form on the template sends messages to the site administrator email address."
+msgstr ""
+
+#: includes/setup-guide-page.php:205
+msgid "The map embed is taken from the Customiser."
+msgstr ""
+
+#: includes/setup-guide-page.php:208
+msgid "Shortcodes"
+msgstr ""
+
+#: includes/setup-guide-page.php:210
+msgid "Shortcodes allow you to add parish details into pages or posts via the editor."
+msgstr ""
+
+#: includes/setup-guide-page.php:219
+msgid "inserts all the above details"
+msgstr ""
+
+#: includes/setup-guide-page.php:226
+msgid "Helpful Tips"
+msgstr ""
+
+#: includes/setup-guide-page.php:229
+msgid "Set your site title, tagline and admin email under <strong>Settings → General</strong>"
+msgstr ""
+
+#: includes/setup-guide-page.php:230
+msgid "Disable comments if not required"
+msgstr ""
+
+#: includes/setup-guide-page.php:231
+msgid "Use the <strong>Post name</strong> permalink structure"
+msgstr ""
+
+#: includes/setup-guide-page.php:232
+msgid "Preview pages before publishing"
+msgstr ""
+
+#: includes/setup-guide-page.php:233
+msgid "Archive pages automatically display posts from their corresponding custom post type"
+msgstr ""
+
+#: includes/setup-guide-page.php:234
+msgid "If a page shows \"404\", navigate to <code>Settings → Permalinks</code> and click <strong>Save Changes</strong>"
+msgstr ""
+
+#: includes/setup-guide-page.php:235
+msgid "If admin pages display the theme or plugin is not installed warning: install them, rename the plugin to <strong>\"catholic-wordpress-core\"</strong>, rename the theme to <strong>\"catholic-parish-wordpress-theme\"</strong> and activate them"
+msgstr ""
+
+#: includes/setup-guide-page.php:241
+msgid "Theme GitHub repository"
+msgstr ""
+
+#: includes/setup-guide-page.php:242
+msgid "Plugin GitHub repository"
+msgstr ""
+
+#: includes/theme-setup.php:46
+msgid "Navbar Menu Location"
+msgstr ""
+
+#: includes/theme-setup.php:47
+msgid "Footer General Links Location"
+msgstr ""
+
+#: includes/theme-setup.php:48
+msgid "Footer Social Links Location"
+msgstr ""
+
+#: template-parts/components/contact-form.php:10
+msgid "Name"
+msgstr ""
+
+#: template-parts/components/contact-form.php:17
+#: templates/page-contact.php:35
+msgid "Email"
+msgstr ""
+
+#: template-parts/components/contact-form.php:24
+msgid "Subject"
+msgstr ""
+
+#: template-parts/components/contact-form.php:26
+msgid "Support"
+msgstr ""
+
+#: template-parts/components/contact-form.php:31
+msgid "Message"
+msgstr ""
+
+#: template-parts/components/contact-form.php:33
+msgid "Your message"
+msgstr ""
+
+#: template-parts/components/contact-form.php:41
+msgid "Send email"
+msgstr ""
+
+#: template-parts/components/contact-form.php:45
+msgid "Message sent"
+msgstr ""
+
+#: template-parts/components/contact-form.php:48
+msgid "Send failed, try again"
+msgstr ""
+
+#: template-parts/components/copyright-bar.php:3
+msgid "Copyright"
+msgstr ""
+
+#: template-parts/components/filter.php:17
+msgid "All"
+msgstr ""
+
+#: template-parts/components/pagination.php:12
+msgid "Previous"
+msgstr ""
+
+#: template-parts/components/pagination.php:13
+msgid "Next"
+msgstr ""
+
+#: template-parts/content/content-archive/content-archive-cpc_church_group.php:19
+msgid "Leader Details"
+msgstr ""
+
+#: template-parts/content/content-archive/content-archive-cpc_church_group.php:34
+msgid "Group Description"
+msgstr ""
+
+#: template-parts/content/content-archive/content-archive-cpc_church_group.php:41
+msgid "Meeting Time"
+msgstr ""
+
+#: template-parts/content/content-archive/content-archive-cpc_church_group.php:48
+msgid "Location"
+msgstr ""
+
+#: template-parts/content/content-archive/content-archive-cpc_newsletter.php:17
+msgid "View newsletter"
+msgstr ""
+
+#: template-parts/content/content-archive/content-archive-cpc_staff_member.php:27
+msgid "About"
+msgstr ""
+
+#: template-parts/content/content-archive/content-archive-cpc_staff_member.php:35
+#: templates/page-contact.php:18
+msgid "Contact"
+msgstr ""
+
+#: template-parts/content/content-archive/content-archive.php:7
+#: template-parts/sections/latest-announcements.php:23
+msgid "Read more"
+msgstr ""
+
+#: template-parts/content/content-cpc_service.php:15
+msgid "Description"
+msgstr ""
+
+#: template-parts/content/content-cpc_service.php:22
+msgid "Occurrences"
+msgstr ""
+
+#: template-parts/content/content.php:6
+msgid "Date posted"
+msgstr ""
+
+#: template-parts/sections/latest-announcements.php:12
+msgid "Latest Announcements"
+msgstr ""
+
+#: template-parts/sections/services.php:14
+msgid "Parish Services"
+msgstr ""
+
+#: templates/page-contact.php:34
+msgid "Phone"
+msgstr ""
+
+#: templates/page-contact.php:37
+msgid "Office Address"
+msgstr ""
+
+#: templates/page-contact.php:46
+msgid "Not provided"
+msgstr ""
