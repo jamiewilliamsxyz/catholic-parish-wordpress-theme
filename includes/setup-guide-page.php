@@ -56,14 +56,7 @@ function parish_render_setup_guide_page()
         </p>
 
         <ul>
-          <li>
-            <?php
-            printf(
-              wp_kses_post(__('Download the plugin from the GitHub repository <a href="%s" target="_blank" rel="noopener">here</a>', "catholic-parish-wordpress-theme")),
-              esc_url("https://github.com/jamiewilliamsxyz/catholic-parish-core")
-            );
-            ?>
-          </li>
+          <li><?php echo wp_kses_post(__('Download the plugin from the GitHub repository <a href="https://github.com/jamiewilliamsxyz/catholic-parish-core" target="_blank" rel="noopener">here</a>', "catholic-parish-wordpress-theme")); ?></li>
           <li><?php echo wp_kses_post(__('Rename the plugin file name to <strong>"catholic-wordpress-core"</strong> and the theme file name to <strong>"catholic-parish-wordpress-theme"</strong>', "catholic-parish-wordpress-theme")); ?></li>
           <li><?php echo wp_kses_post(__("Go to <strong>Plugins → Add Plugin → Upload Plugin</strong>", "catholic-parish-wordpress-theme")); ?></li>
           <li><?php esc_html_e("Upload the downloaded .zip file", "catholic-parish-wordpress-theme"); ?></li>
