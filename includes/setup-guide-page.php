@@ -64,6 +64,7 @@ function parish_render_setup_guide_page()
             );
             ?>
           </li>
+          <li><?php echo wp_kses_post(__('First of all, make sure the plugin file name is <strong>catholic-wordpress-core</strong> and the themes file name is <strong>catholic-parish-wordpress-theme</strong>. If not, rename them.', "catholic-parish-wordpress-theme")); ?></li>
           <li><?php echo wp_kses_post(__("Go to <strong>Plugins → Add Plugin → Upload Plugin</strong>", "catholic-parish-wordpress-theme")); ?></li>
           <li><?php esc_html_e("Upload the downloaded .zip file", "catholic-parish-wordpress-theme"); ?></li>
           <li><?php echo wp_kses_post(__("Activate the plugin under <strong>Plugins → Installed Plugins</strong>", "catholic-parish-wordpress-theme")); ?></li>
@@ -232,6 +233,7 @@ function parish_render_setup_guide_page()
         <h2><?php esc_html_e("Helpful Tips", "catholic-parish-wordpress-theme"); ?></h2>
 
         <ul>
+          <li><?php echo wp_kses_post(__('When downloading the theme and plugin from GitHub, the branch name may be included in the file name. Make sure to remove it so the file name for the plugin is <strong>catholic-wordpress-core</strong> and the themes file name is <strong>catholic-parish-wordpress-theme</strong>.', "catholic-parish-wordpress-theme")); ?></li>
           <li><?php echo wp_kses_post(__("Set your site title, tagline and admin email under <strong>Settings → General</strong>", "catholic-parish-wordpress-theme")); ?></li>
           <li><?php esc_html_e("Disable comments if not required", "catholic-parish-wordpress-theme"); ?></li>
           <li><?php echo wp_kses_post(__("Use the <strong>Post name</strong> permalink structure", "catholic-parish-wordpress-theme")); ?></li>

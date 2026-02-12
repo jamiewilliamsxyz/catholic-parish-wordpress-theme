@@ -17,14 +17,23 @@ function parish_theme_setup()
   // Theme support
   add_theme_support("menus");
   add_theme_support("title-tag");
-  add_theme_support("html5");
   add_theme_support("post-thumbnails");
+
+  add_theme_support("html5", array(
+    "search-form",
+    "comment-form",
+    "comment-list",
+    "gallery",
+    "caption",
+    "style",
+    "script",
+  ));
 
   add_theme_support("custom-logo", array(
     "height" => 48,
     "width" => 48,
     "flex-width" => true,
-    "unlink-homepage-logo" => true
+    "unlink-homepage-logo" => true,
   ));
 
   // Image size
