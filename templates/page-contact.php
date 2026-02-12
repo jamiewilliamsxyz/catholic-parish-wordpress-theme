@@ -54,7 +54,7 @@ get_header();
 
   <div class="parish-page-contact-bottom-section-wrapper">
     <section class="parish-page-contact-bottom-section">
-      <?php get_template_part("template-parts/contact-form"); ?>
+      <?php get_template_part("template-parts/components/contact-form"); ?>
 
       <?php
       $map_url = get_theme_mod("parish_map_url");
