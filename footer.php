@@ -17,30 +17,33 @@
     </div>
 
     <div class="parish-foot-links">
+
       <div class="parish-foot-links-content">
-        <h6><?php esc_html_e("General Links", "catholic-parish-wordpress-theme") ?></h6>
+        <?php if (has_nav_menu("parish-footer-general-links-menu")) : ?>
+          <h6><?php esc_html_e("General Links", "catholic-parish-wordpress-theme") ?></h6>
         <?php
-        wp_nav_menu(
-          array(
-            "menu_class" => "parish-foot-links-menu",
-            "container_class" => "parish-foot-links-menu-container",
-            "theme_location" => "parish-footer-general-links-menu"
-          )
-        );
-        ?>
+          wp_nav_menu(
+            array(
+              "menu_class" => "parish-foot-links-menu",
+              "container_class" => "parish-foot-links-menu-container",
+              "theme_location" => "parish-footer-general-links-menu"
+            )
+          );
+        endif; ?>
       </div>
 
       <div class="parish-foot-links-content">
-        <h6><?php esc_html_e("Social Links", "catholic-parish-wordpress-theme") ?></h6>
+        <?php if (has_nav_menu("parish-footer-social-links-menu")) : ?>
+          <h6><?php esc_html_e("Social Links", "catholic-parish-wordpress-theme") ?></h6>
         <?php
-        wp_nav_menu(
-          array(
-            "menu_class" => "parish-foot-links-menu",
-            "container_class" => "parish-foot-links-menu-container",
-            "theme_location" => "parish-footer-social-links-menu"
-          )
-        );
-        ?>
+          wp_nav_menu(
+            array(
+              "menu_class" => "parish-foot-links-menu",
+              "container_class" => "parish-foot-links-menu-container",
+              "theme_location" => "parish-footer-social-links-menu"
+            )
+          );
+        endif; ?>
       </div>
     </div>
   </div>
