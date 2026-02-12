@@ -45,7 +45,7 @@ function parish_theme_setup()
     array(
       "parish-navbar-menu" => __("Navbar Menu Location", "catholic-parish-wordpress-theme"),
       "parish-footer-general-links-menu" => __("Footer General Links Location", "catholic-parish-wordpress-theme"),
-      "parish-footer-social-links-menu" => __("Navbar Social Links Location", "catholic-parish-wordpress-theme")
+      "parish-footer-social-links-menu" => __("Footer Social Links Location", "catholic-parish-wordpress-theme")
     )
   );
 }
