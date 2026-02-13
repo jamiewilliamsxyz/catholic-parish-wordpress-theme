@@ -41,7 +41,7 @@ function parish_render_setup_guide_page()
           <li><a href="#parish-setup-menus"><?php esc_html_e("Set up menus", "catholic-parish-wordpress-theme"); ?></a></li>
           <li><a href="#parish-site-customisation"><?php esc_html_e("Customise the site", "catholic-parish-wordpress-theme"); ?></a></li>
           <li><a href="#parish-create-content"><?php esc_html_e("Create parish content", "catholic-parish-wordpress-theme"); ?></a></li>
-          <li><a href="#parish-templates-shortcodes-overview"><?php esc_html_e("Parish Details, Templates & Shortcodes", "catholic-parish-wordpress-theme"); ?></a></li>
+          <li><a href="#parish-templates-shortcodes-overview"><?php esc_html_e("Parish details, templates & shortcodes", "catholic-parish-wordpress-theme"); ?></a></li>
           <li><a href="#parish-theme-tips"><?php esc_html_e("Helpful tips", "catholic-parish-wordpress-theme"); ?></a></li>
         </ol>
       </nav>
