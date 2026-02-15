@@ -45,13 +45,9 @@
   margin-bottom: 15px;
 }
 
-.parish-content ul,
-.parish-content ol {
-  margin-left: 20px;
-}
-
 .parish-content li {
   margin-bottom: 5px;
+  margin-left: 20px;
 }
 
 .parish-content blockquote {
