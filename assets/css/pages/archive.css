@@ -1,4 +1,10 @@
-.parish-archive > section {
+.parish-archive {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.parish-archive-main-wrapper > section {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -164,7 +170,7 @@
     font-size: 18px;
   }
 
-  .parish-archive > section {
+  .parish-archive-main-wrapper > section {
     padding: 48px;
   }
 

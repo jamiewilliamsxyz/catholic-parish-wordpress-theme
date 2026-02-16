@@ -1,39 +1,41 @@
 <?php get_header(); ?>
 
 <main class="parish-archive">
-  <?php
-  get_template_part("template-parts/components/page-header");
+  <div class="parish-archive-main-wrapper">
 
-  if (have_posts()) :
-    $post_type = get_post_type();
-  ?>
+    <?php
+    get_template_part("template-parts/components/page-header");
 
-    <section>
-      <?php if (get_object_taxonomies($post_type)) get_template_part("template-parts/components/filter"); ?>
-      <div class="parish-archive-container">
-        <?php
-        while (have_posts()) :
-          the_post();
+    if (have_posts()) :
+      $post_type = get_post_type();
+    ?>
 
-          get_template_part(
-            "template-parts/content/content-archive/content-archive",
-            $post_type
-          );
+      <section>
+        <?php if (get_object_taxonomies($post_type)) get_template_part("template-parts/components/filter"); ?>
+        <div class="parish-archive-container">
+          <?php
+          while (have_posts()) :
+            the_post();
 
-        endwhile;
-        ?>
-      </div>
-    </section>
+            get_template_part(
+              "template-parts/content/content-archive/content-archive",
+              $post_type
+            );
 
-    <?php get_template_part("template-parts/components/pagination") ?>
+          endwhile;
+          ?>
+        </div>
+      </section>
+  </div>
+  <?php get_template_part("template-parts/components/pagination") ?>
 
-  <?php else : ?>
+<?php else : ?>
 
-    <div class="parish-archive-no-posts">
-      <p><?php esc_html_e("No posts found", "catholic-parish-wordpress-theme"); ?></p>
-    </div>
+  <div class="parish-archive-no-posts">
+    <p><?php esc_html_e("No posts found", "catholic-parish-wordpress-theme"); ?></p>
+  </div>
 
-  <?php endif; ?>
+<?php endif; ?>
 
 </main>
 
