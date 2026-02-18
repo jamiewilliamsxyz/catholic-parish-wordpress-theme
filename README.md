@@ -15,7 +15,7 @@ To follow WordPress best practices, I have separated presentation (theme) from c
 
 ### 🖼️ Demo Site & Admin Dashboard Screenshots
 
-👉 [Screenshots](#screenshots)
+👉 [Screenshots](https://github.com/jamiewilliamsxyz/catholic-parish-wordpress-theme/tree/main?tab=readme-ov-file#%EF%B8%8F-screenshots)
 
 ## 📌 Project Overview
 
