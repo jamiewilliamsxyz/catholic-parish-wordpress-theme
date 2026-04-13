@@ -11,7 +11,7 @@ To follow WordPress best practices, I have separated presentation (theme) from c
 
 ### 💻 Demo Site
 
-👉 [Catholic Parish demo site _- coming soon_]()
+👉 [Catholic Parish demo site](https://catholicparishdemo.site)
 
 ### 🖼️ Demo Site & Admin Dashboard Screenshots
 
